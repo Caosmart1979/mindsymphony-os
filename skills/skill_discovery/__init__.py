@@ -4,11 +4,15 @@
 """
 
 import os
+from pathlib import Path
 from typing import Dict, List, Any, Optional
+
 from skill_metadata import load_all_skills, SkillMetadata
 from skill_index import SkillIndex
 from skill_router import SkillRouter, RouteResult
 from cache_manager import CacheManager
+from validation import validate_file_path, sanitize_filename
+from exceptions import SkillDiscoveryError
 
 
 class SkillDiscovery:
@@ -196,9 +200,21 @@ class SkillDiscovery:
 
         Args:
             output_path: 输出文件路径
+
+        Raises:
+            SkillDiscoveryError: 可视化失败
         """
         try:
             import graphviz
+
+            # 验证并清理输出路径
+            output_path = sanitize_filename(output_path)
+            if not output_path.endswith('.png'):
+                output_path += '.png'
+
+            # 限制在当前目录
+            output_file = Path(os.getcwd()) / output_path
+            output_base = str(output_file.with_suffix(''))
 
             dot = graphviz.Digraph(comment='Skill Relationships')
             dot.attr(rankdir='LR')
@@ -220,14 +236,15 @@ class SkillDiscovery:
                     if related in self.index.skills:
                         dot.edge(name, related, style='dashed', color='gray')
 
-            # 渲染
-            dot.render(output_path.replace('.png', ''), format='png', view=True)
+            # 渲染（不自动打开）
+            dot.render(output_base, format='png', view=False, cleanup=True)
             print(f"✅ 关系图已保存到: {output_path}")
+            print(f"   手动打开: open {output_path}")
 
         except ImportError:
             print("⚠️  需要安装 graphviz: pip install graphviz")
         except Exception as e:
-            print(f"⚠️  可视化失败: {e}")
+            raise SkillDiscoveryError(f"Visualization failed: {e}")
 
     def export_index(self, output_path: str = 'skill_index_export.json'):
         """
@@ -235,13 +252,27 @@ class SkillDiscovery:
 
         Args:
             output_path: 输出文件路径
+
+        Raises:
+            SkillDiscoveryError: 导出失败
         """
         import json
 
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(self.index.to_dict(), f, indent=2, ensure_ascii=False)
+        try:
+            # 验证并清理输出路径
+            output_path = sanitize_filename(output_path)
+            if not output_path.endswith('.json'):
+                output_path += '.json'
 
-        print(f"✅ 索引已导出到: {output_path}")
+            # 限制在当前目录
+            output_file = Path(os.getcwd()) / output_path
+
+            with output_file.open('w', encoding='utf-8') as f:
+                json.dump(self.index.to_dict(), f, indent=2, ensure_ascii=False)
+
+            print(f"✅ 索引已导出到: {output_path}")
+        except Exception as e:
+            raise SkillDiscoveryError(f"Export failed: {e}")
 
 
 # 便捷函数
