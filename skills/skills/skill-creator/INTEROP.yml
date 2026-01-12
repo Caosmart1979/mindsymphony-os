@@ -1,0 +1,50 @@
+# INTEROP.yml - Skill Creator技能互操作性配置
+skill:
+  name: skill-creator
+  version: 1.0.0
+  category: create
+  priority: critical
+  status: active
+
+metadata:
+  display_name: Skill Creator
+  description: Guide for creating effective skills that extend Claude's capabilities
+  author: Anthropic
+  license: See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [skill-templates, skill-validation, best-practices]
+  consumes: []
+  tags: [skill, creation, development, tools, templates, skill-development]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [file_write, code_generation]
+  optional_features: [skill_validator, template_engine]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: structured
+      weight: 0.6
+    - name: agile
+      weight: 0.4
+  metrics: ["success_rate", "skill_quality", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.8
+  routing_patterns:
+    - pattern: "create skill|new skill|skill development|build skill"
+      confidence: 0.95
+    - pattern: "skill template|skill guide|how to skill"
+      confidence: 0.85
+  related_skills: [mcp-builder, doc-skill-generator, cognitive-architect]

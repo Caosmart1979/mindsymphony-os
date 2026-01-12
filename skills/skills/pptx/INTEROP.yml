@@ -1,0 +1,50 @@
+# INTEROP.yml - PPTX技能互操作性配置
+skill:
+  name: pptx
+  version: 1.0.0
+  category: document
+  priority: medium
+  status: active
+
+metadata:
+  display_name: Presentation Designer
+  description: Presentation creation, editing, and analysis with .pptx files
+  author: Anthropic
+  license: Proprietary - See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [presentation-creation, slide-designs, layout-templates]
+  consumes: [brand-guidelines, content-sources]
+  tags: [pptx, powerpoint, presentation, slides, deck]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [file_write, file_read]
+  optional_features: [template_engine, design_export]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: python-pptx
+      weight: 0.8
+    - name: template-based
+      weight: 0.2
+  metrics: ["success_rate", "design_quality", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "pptx|presentation|slides|powerpoint|deck"
+      confidence: 0.95
+    - pattern: "create presentation|slide design|ppt"
+      confidence: 0.9
+  related_skills: [docx, pdf, frontend-design, brand-guidelines]

@@ -1,0 +1,156 @@
+# MindSymphony OS - Git Ignore File
+
+# ============== Dependencies ==============
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============== Claude Code ==============
+.claude/
+.claude-plugins/
+!.claude/commands/
+!.claude/skills/
+
+# ============== Temporary Files ==============
+tmp/
+tmp.*/
+temp/
+temp.*/
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# ============== OS Generated ==============
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============== IDE / Editor ==============
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.history/
+*.bak
+*.backup
+
+# ============== Test & Coverage ==============
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+*.cover
+.hypothesis/
+.mypy_cache/
+
+# ============== Build Artifacts ==============
+*.min.js
+*.min.css
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============== Environment ==============
+.env
+.env.*
+!.env.example
+*.local
+secrets/
+*.key
+*.pem
+
+# ============== Backup Files ==============
+backup/
+backups/
+*.backup
+*.old
+
+# ============== Archives ==============
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============== Extracted / Temp Dirs ==============
+temp_extract/
+temp_*/
+*_extracted/
+*_v*_extracted/
+
+# ============== Large Files ==============
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+
+# ============== Node ==============
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ============== Python ==============
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============== Git ==============
+*.orig
+*.rej
+
+# ============== Documentation ==============
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# ============== Specific to Project ==============
+nul
+*.skill
+*.tar.gz
+
+# ============== Playwright ==============
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============== Outputs ==============
+output/
+out/

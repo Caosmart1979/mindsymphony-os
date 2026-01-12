@@ -1,0 +1,286 @@
+# MindSymphony Skill Registry
+# 结构化元数据注册表 - 解决路由黑盒问题
+# 版本: v19.0
+
+# ============================================================
+# 设计原则：
+# 1. 机器可读：YAML格式，支持程序化解析
+# 2. 路由优化：关键词+领域双索引，减少LLM路由开销
+# 3. 安全标记：每个skill标注安全等级和权限要求
+# ============================================================
+
+version: "19.0"
+updated_at: "2026-01-05"
+
+# ------------------------------------------------------------
+# 元配置
+# ------------------------------------------------------------
+config:
+  default_router: "keyword"  # keyword | semantic | hybrid
+  fallback_skill: "cognitive-architect"
+  max_routing_depth: 3
+  security_mode: "strict"  # strict | permissive
+
+# ------------------------------------------------------------
+# 核心技能注册
+# ------------------------------------------------------------
+core_skills:
+  - id: cognitive-architect
+    name: 认知建筑师
+    layer: fa
+    type: execution
+    path: core/cognitive-architect.md
+    triggers:
+      zh: [计划, 分解, 协调, 项目管理, 战略规划, 复杂任务, 任务拆解]
+      en: [plan, decompose, coordinate, project, strategy, complex task]
+    domains: [general, strategy, management]
+    security_level: safe
+    can_delegate: true
+    description: "蜂后，复杂任务的战略分解者"
+
+  - id: knowledge-explorer
+    name: 知识探索者
+    layer: shu
+    type: analytical
+    path: core/knowledge-explorer.md
+    triggers:
+      zh: [研究, 分析, 调研, 知识, 学习, 了解, 查找, 搜索]
+      en: [research, analyze, study, knowledge, learn, find, search]
+    domains: [research, learning, analysis]
+    security_level: safe
+    can_delegate: false
+    description: "知识结构化研究"
+
+  - id: concept-singularity
+    name: 概念奇点
+    layer: shu
+    type: creative
+    path: core/concept-singularity.md
+    triggers:
+      zh: [创意, 设计, 视觉, 概念, 灵感, 想法, 创新]
+      en: [creative, design, visual, concept, idea, innovation]
+    domains: [creative, design, visual]
+    security_level: safe
+    can_delegate: false
+    description: "视觉概念涌现"
+
+  - id: brand-alchemist
+    name: 品牌炼金师
+    layer: dao
+    type: creative
+    path: core/brand-alchemist.md
+    triggers:
+      zh: [品牌, 定位, 价值, 使命, 愿景, 身份, 故事]
+      en: [brand, positioning, value, mission, vision, identity, story]
+    domains: [branding, marketing, strategy]
+    security_level: safe
+    can_delegate: false
+    description: "品牌价值挖掘"
+
+  - id: prompt-pharmacist
+    name: 提示词药剂师
+    layer: shu
+    type: execution
+    path: core/prompt-pharmacist.md
+    triggers:
+      zh: [提示词, prompt, 优化, 诊断, 改进prompt]
+      en: [prompt, optimize, diagnose, improve prompt]
+    domains: [prompt-engineering, ai]
+    security_level: safe
+    can_delegate: false
+    description: "提示词诊断优化"
+
+  - id: official-writer
+    name: 公文撰写官
+    layer: qi
+    type: execution
+    path: core/official-writer.md
+    triggers:
+      zh: [公文, 报告, 文书, 正式文档, 通知, 请示, 批复]
+      en: [official, report, document, formal, notice]
+    domains: [writing, official, document]
+    security_level: safe
+    can_delegate: false
+    description: "公文报告撰写"
+
+# ------------------------------------------------------------
+# 外部技能集成（快捷入口）
+# ------------------------------------------------------------
+integrations:
+  - id: academic-forge
+    name: 学术研究锻造
+    path: integrations/academic-forge.md
+    external_path: /mnt/skills/user/academic-forge
+    triggers:
+      zh: [学术, 论文, 研究设计, 统计方法, 文献, 投稿, NHANES, CHARLS]
+      en: [academic, paper, research design, statistics, literature, manuscript]
+    domains: [academic, research, medical]
+    security_level: safe
+    priority: high
+    description: "端到端学术研究流程"
+
+  - id: ai-agent-architect
+    name: AI智能体架构师
+    path: integrations/ai-agent-architect.md
+    external_path: /mnt/skills/user/ai-agent-architect
+    triggers:
+      zh: [agent, 智能体, 认知架构, ReAct, CoALA, 评估, 语言代理]
+      en: [agent, cognitive architecture, ReAct, CoALA, evaluation, language agent]
+    domains: [ai, engineering, agent]
+    security_level: safe
+    priority: high
+    description: "基于姚顺雨范式的AI Agent设计"
+
+  - id: gemini-cli-integration
+    name: Gemini CLI集成
+    path: integrations/gemini-cli.md
+    external_path: /mnt/skills/user/gemini-cli-integration
+    triggers:
+      zh: [gemini, 视频分析, 音频转录, 大文件, 100万token, 多模态]
+      en: [gemini, video, audio, large file, multimodal, million token]
+    domains: [multimodal, video, audio]
+    security_level: external_call  # 需要调用外部CLI
+    priority: medium
+    description: "Gemini CLI多模态能力扩展"
+
+  - id: skill-creator-meta
+    name: 技能创建元系统
+    path: integrations/skill-creator-meta.md
+    external_path: /mnt/skills/user/skill-creator-meta
+    triggers:
+      zh: [创建skill, 技能开发, skill设计, 元技能]
+      en: [create skill, skill development, skill design, meta skill]
+    domains: [meta, skill-creation]
+    security_level: safe
+    priority: medium
+    description: "Skill创建方法论"
+
+  - id: notebooklm
+    name: NotebookLM知识检索
+    path: integrations/notebooklm.md
+    external_path: /mnt/skills/user/notebooklm-skill
+    triggers:
+      zh: [NotebookLM, 知识库, 文档查询, 笔记本, 研究资料, 查阅文档]
+      en: [NotebookLM, knowledge base, document query, notebook, research docs]
+    domains: [knowledge, research, document]
+    security_level: external_system  # 需要浏览器自动化+Google认证
+    priority: medium
+    requires_setup: true
+    description: "基于来源的知识检索，减少幻觉"
+
+# ------------------------------------------------------------
+# 扩展技能索引（按领域分组）
+# ------------------------------------------------------------
+extensions:
+  meta:
+    path: extensions/meta/
+    skills:
+      - id: verification-loop
+        triggers: [验证, 检验, 闭环, 质量检查]
+        security_level: safe
+      - id: plan-first
+        triggers: [计划模式, plan mode, 先规划]
+        security_level: safe
+      - id: continuous-learning
+        triggers: [记录, 学习, 迭代, 改进]
+        security_level: safe
+      - id: inner-loop-automation
+        triggers: [自动化, 重复任务, 快捷命令]
+        security_level: safe
+      - id: skill-curator
+        triggers: [找skill, 搜索技能, 推荐skill]
+        security_level: safe
+      - id: skill-forge
+        triggers: [铸造skill, 创建技能]
+        security_level: safe
+      - id: quality-gate
+        triggers: [校验, 校对, 质量门]
+        security_level: safe
+
+  creative:
+    path: extensions/creative/
+    skills:
+      - id: algorithmic-art
+        triggers: [生成艺术, p5.js, 算法艺术, creative coding]
+        security_level: safe
+      - id: canvas-design
+        triggers: [海报, 视觉设计, 平面设计]
+        security_level: safe
+
+  engineering:
+    path: extensions/engineering/
+    skills:
+      - id: mcp-builder
+        triggers: [mcp, mcp服务器, 工具开发]
+        security_level: code_execution
+      - id: artifacts-builder
+        triggers: [artifacts, react组件, html]
+        security_level: safe
+      - id: webapp-testing
+        triggers: [测试, playwright, e2e]
+        security_level: code_execution
+
+  domains:
+    document:
+      path: extensions/domains/document/
+      skills:
+        - id: docx
+          triggers: [word, docx, 文档]
+          security_level: file_access
+        - id: pdf
+          triggers: [pdf, 填表, pdf处理]
+          security_level: file_access
+        - id: pptx
+          triggers: [ppt, 演示文稿, 幻灯片]
+          security_level: file_access
+        - id: xlsx
+          triggers: [excel, 表格, xlsx, 电子表格]
+          security_level: file_access
+
+    n8n:
+      path: extensions/domains/n8n/
+      skills:
+        - id: workflow-architect
+          triggers: [n8n, 工作流, 自动化]
+          security_level: external_system  # 高风险：涉及外部系统
+        - id: feishu-connector
+          triggers: [飞书, feishu, lark]
+          security_level: external_system  # 高风险：涉及外部系统
+
+# ------------------------------------------------------------
+# 安全等级定义
+# ------------------------------------------------------------
+security_levels:
+  safe:
+    description: "纯文本处理，无外部影响"
+    requires_confirmation: false
+    
+  file_access:
+    description: "需要读写本地文件"
+    requires_confirmation: false
+    
+  code_execution:
+    description: "涉及代码执行"
+    requires_confirmation: true
+    
+  external_call:
+    description: "调用外部CLI或API"
+    requires_confirmation: true
+    
+  external_system:
+    description: "操作外部业务系统（高风险）"
+    requires_confirmation: true
+    sanitize_input: true  # 强制输入消毒
+
+# ------------------------------------------------------------
+# 领域-技能映射（加速路由）
+# ------------------------------------------------------------
+domain_index:
+  academic: [academic-forge, knowledge-explorer, academic-research]
+  writing: [official-writer, adaptive-style, content-strategy]
+  creative: [concept-singularity, brand-alchemist, algorithmic-art, canvas-design]
+  engineering: [mcp-builder, artifacts-builder, code-analysis, code-refactor]
+  document: [docx, pdf, pptx, xlsx]
+  ai: [ai-agent-architect, prompt-pharmacist, gemini-cli-integration]
+  automation: [workflow-architect, n8n, inner-loop-automation]
+  meta: [skill-forge, skill-curator, verification-loop, plan-first]

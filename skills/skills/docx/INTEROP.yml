@@ -1,0 +1,50 @@
+# INTEROP.yml - DOCX技能互操作性配置
+skill:
+  name: docx
+  version: 1.0.0
+  category: document
+  priority: medium
+  status: active
+
+metadata:
+  display_name: DOCX Processor
+  description: Comprehensive document creation, editing, and analysis with .docx files
+  author: Anthropic
+  license: Proprietary - See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [document-creation, document-editing, tracked-changes, comments]
+  consumes: [templates, brand-guidelines]
+  tags: [docx, word, document, office, editing, tracked-changes]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [file_write, file_read]
+  optional_features: [template_engine, formatting_preservation]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: python-docx
+      weight: 0.7
+    - name: mammoth
+      weight: 0.3
+  metrics: ["success_rate", "formatting_preservation", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "docx|word|\ .doc|document creation|document editing"
+      confidence: 0.9
+    - pattern: "tracked changes|comments|word document"
+      confidence: 0.85
+  related_skills: [doc-coauthoring, pptx, pdf, internal-comms]

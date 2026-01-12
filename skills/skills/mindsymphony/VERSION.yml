@@ -1,0 +1,180 @@
+# MindSymphony Version Declaration
+# 统一版本声明，解决测评报告指出的版本号差异问题
+
+system:
+  name: "MindSymphony"
+  full_name: "心智协奏系统™"
+  version: "19.1.0"
+  codename: "External Synapse"
+  release_date: "2026-01-05"
+  
+  # 版本历史
+  evolution:
+    - version: "15.3"
+      codename: "Honeycomb Concert"
+      description: "蜂巢协奏版，引入工蜂单元和信息素协议"
+      
+    - version: "18.3"
+      codename: "Boris Integration"
+      description: "整合Boris Cherny 13条经验"
+      
+    - version: "19.0"
+      codename: "OS Architecture"
+      description: "操作系统架构版，引入Intent Router和Security Gateway"
+      
+    - version: "19.1"
+      codename: "External Synapse"
+      description: "外部神经突触版，打通n8n集成，解决封闭性悖论"
+
+# 组件版本
+components:
+  core:
+    description: "核心认知框架（6个核心技能）"
+    version: "19.1.0"
+    min_compatible: "19.0.0"
+    path: "core/"
+    skills_count: 6
+    
+  extensions:
+    description: "扩展技能包（90+技能）"
+    version: "19.1.0"
+    min_compatible: "18.0.0"
+    path: "extensions/"
+    modules:
+      - name: "meta"
+        skills_count: 16
+      - name: "strategy"
+        skills_count: 7
+      - name: "research"
+        skills_count: 4
+      - name: "creative"
+        skills_count: 13
+      - name: "writing"
+        skills_count: 5
+      - name: "thinking"
+        skills_count: 14
+      - name: "engineering"
+        skills_count: 11
+      - name: "domains"
+        skills_count: 20
+        
+  router:
+    description: "意图路由系统"
+    version: "19.1.0"
+    min_compatible: "19.0.0"
+    path: "router/"
+    components:
+      - "intent-router.md"
+      - "registry.yml"
+      - "hard-logic-layer.md"
+      
+  gateway:
+    description: "安全网关系统"
+    version: "19.1.0"
+    min_compatible: "19.0.0"
+    path: "gateway/"
+    components:
+      - "security-gateway.md"
+      - "external-synapse.md"
+      - "egress-policy.md"
+      - "version-check.md"
+      
+  integrations:
+    description: "外部技能集成"
+    version: "19.1.0"
+    min_compatible: "19.0.0"
+    path: "integrations/"
+    external_skills:
+      - name: "academic-forge"
+        status: "active"
+      - name: "ai-agent-architect"
+        status: "active"
+      - name: "gemini-cli"
+        status: "active"
+      - name: "skill-creator-meta"
+        status: "active"
+      - name: "notebooklm"
+        status: "active"
+        requires_setup: true
+
+# 兼容性矩阵
+compatibility:
+  core_to_extensions:
+    "19.1.x": ["19.x", "18.x"]
+    "19.0.x": ["19.x", "18.x", "17.x"]
+    "18.x": ["18.x", "17.x", "16.x"]
+    
+  core_to_router:
+    "19.1.x": ["19.x"]
+    "19.0.x": ["19.x"]
+    "18.x": null  # 18不支持router
+    
+  core_to_gateway:
+    "19.1.x": ["19.x"]
+    "19.0.x": ["19.x"]
+    "18.x": null  # 18不支持gateway
+
+# 功能开关
+features:
+  # v19.0引入
+  intent_router: true
+  security_gateway: true
+  hard_logic_layer: true
+  skill_registry: true
+  
+  # v19.1引入
+  external_synapse: true
+  egress_policy: true
+  version_check: true
+  notebooklm_integration: true
+  
+  # 待开发
+  visual_dashboard: false
+  auto_config_generation: false
+  self_evolution: false
+
+# 外部依赖
+dependencies:
+  runtime:
+    - name: "Claude API"
+      version: ">=2024-01-01"
+      required: true
+      
+    - name: "Python"
+      version: ">=3.10"
+      required: false
+      note: "仅NotebookLM集成需要"
+      
+    - name: "patchright"
+      version: ">=1.55.0"
+      required: false
+      note: "仅NotebookLM集成需要"
+      
+  optional:
+    - name: "n8n"
+      purpose: "工作流自动化"
+      
+    - name: "Feishu API"
+      purpose: "飞书消息推送"
+
+# 统计
+statistics:
+  total_skills: 96
+  core_skills: 6
+  extension_skills: 90
+  external_integrations: 5
+  router_components: 4
+  gateway_components: 4
+  
+# 变更日志
+changelog:
+  "19.1.0":
+    date: "2026-01-05"
+    type: "minor"
+    changes:
+      - "[新增] External Synapse - 外部通信接口"
+      - "[新增] Egress Policy - 出站安全策略"
+      - "[新增] Version Check - 版本一致性校验"
+      - "[新增] NotebookLM Integration - 知识库查询集成"
+      - "[改进] 解决测评报告指出的'封闭性悖论'"
+      - "[改进] 统一版本命名规范"

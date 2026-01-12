@@ -1,0 +1,77 @@
+{
+  "name": "canvas-design",
+  "version": "1.0.0",
+  "description": "Create beautiful visual art in .png and .pdf documents using design philosophy",
+  "license": "Complete terms in LICENSE.txt",
+  "category": "design",
+  "tags": ["visual", "art", "design", "canvas", "creative", "graphics"],
+  "capabilities": [
+    "create_visual_art",
+    "design_posters",
+    "create_pdfs",
+    "generate_pngs",
+    "design_philosophy",
+    "visual_composition",
+    "artistic_interpretation"
+  ],
+  "input_types": [
+    "design_concept",
+    "artistic_requirements",
+    "visual_specifications"
+  ],
+  "output_types": [
+    "visual_artifacts",
+    "pdf_documents",
+    "png_images",
+    "design_philosophy"
+  ],
+  "interoperability": {
+    "provides": [
+      "visual_designs",
+      "artwork",
+      "canvas_layouts",
+      "visual_compositions",
+      "design_assets"
+    ],
+    "consumes": [
+      "brand_guidelines",
+      "design_tokens",
+      "visual_concepts",
+      "artistic_direction"
+    ],
+    "dependencies": [],
+    "conflicts": [],
+    "related": [
+      "frontend-design",
+      "brand-guidelines",
+      "algorithmic-art"
+    ],
+    "collaboration_mode": "independent",
+    "integration_points": {
+      "can_consume_from": [
+        {
+          "skill": "brand-guidelines",
+          "resource": "brand_guidelines",
+          "description": "Apply brand colors, fonts, and styles to canvas designs"
+        },
+        {
+          "skill": "frontend-design",
+          "resource": "design_tokens",
+          "description": "Use design tokens for consistent styling"
+        }
+      ],
+      "can_provide_to": [
+        {
+          "skill": "frontend-design",
+          "resource": "visual_designs",
+          "description": "Provide visual artwork for frontend components"
+        },
+        {
+          "skill": "brand-guidelines",
+          "resource": "design_assets",
+          "description": "Create visual assets for brand guidelines"
+        }
+      ]
+    }
+  }
+}

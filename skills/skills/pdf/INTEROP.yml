@@ -1,0 +1,50 @@
+# INTEROP.yml - PDF技能互操作性配置
+skill:
+  name: pdf
+  version: 1.0.0
+  category: document
+  priority: medium
+  status: active
+
+metadata:
+  display_name: PDF Toolkit
+  description: Comprehensive PDF manipulation for extraction, creation, merge, split, and forms
+  author: Anthropic
+  license: Proprietary - See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [pdf-extraction, pdf-creation, pdf-manipulation, form-filling]
+  consumes: [templates, data-sources]
+  tags: [pdf, document, extraction, forms, merge, split]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [file_write, file_read]
+  optional_features: [ocr, form_validation]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: pypdf
+      weight: 0.5
+    - name: fitz
+      weight: 0.5
+  metrics: ["success_rate", "extraction_accuracy", "processing_speed"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "pdf|extract pdf|pdf form|merge pdf|split pdf"
+      confidence: 0.95
+    - pattern: "pdf creation|pdf analysis|fill form"
+      confidence: 0.85
+  related_skills: [docx, pptx, doc-coauthoring]

@@ -1,0 +1,50 @@
+# INTEROP.yml - Cognitive Architect技能互操作性配置
+skill:
+  name: cognitive-architect
+  version: 1.0.0
+  category: cognitive
+  priority: high
+  status: active
+
+metadata:
+  display_name: Cognitive Architect
+  description: Advanced cognitive architecture design for AI systems and workflows
+  author: Anthropic / Community
+  license: See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [cognitive-patterns, architecture-design, thinking-frameworks]
+  consumes: [problem-context, requirements]
+  tags: [cognitive, architecture, thinking, problem-solving, framework]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [complex_reasoning]
+  optional_features: [visualization, pattern_matching]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: analytical
+      weight: 0.5
+    - name: creative
+      weight: 0.5
+  metrics: ["success_rate", "solution_quality", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.75
+  routing_patterns:
+    - pattern: "cognitive|architecture|thinking|problem solving|framework"
+      confidence: 0.85
+    - pattern: "design thinking|system design|mental model"
+      confidence: 0.8
+  related_skills: [mindsymphony, skill-creator, knowledge-explorer]

@@ -1,0 +1,50 @@
+# INTEROP.yml - Database Schema Architect技能互操作性配置
+skill:
+  name: database-schema-architect
+  version: 1.0.0
+  category: engineering
+  priority: medium
+  status: active
+
+metadata:
+  display_name: Database Schema Architect
+  description: Expert database schema design and optimization guidance
+  author: Anthropic
+  license: Apache-2.0
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [schema-designs, er-diagrams, optimization-strategies]
+  consumes: [data-requirements, business-logic]
+  tags: [database, schema, sql, nosql, orm, data-modeling, optimization]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [code_generation, diagram_creation]
+  optional_features: [query_analysis, migration_planning]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: sql-first
+      weight: 0.7
+    - name: nosql-first
+      weight: 0.3
+  metrics: ["success_rate", "schema_quality", "performance_improvement"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "database|schema|sql|nosql|orm|data model"
+      confidence: 0.9
+    - pattern: "database design|er diagram|query optimization"
+      confidence: 0.85
+  related_skills: [api-integration-designer, code-refactoring-expert, devops-workflow-designer]

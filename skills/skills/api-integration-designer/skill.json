@@ -1,0 +1,81 @@
+{
+  "name": "api-integration-designer",
+  "version": "1.0.0",
+  "description": "Expert API design and integration guidance for REST APIs, GraphQL schemas, and service integration",
+  "license": "Apache-2.0",
+  "category": "development",
+  "tags": ["api", "integration", "rest", "graphql", "authentication", "webhooks"],
+  "capabilities": [
+    "design_rest_apis",
+    "design_graphql_schemas",
+    "implement_authentication",
+    "handle_rate_limiting",
+    "create_api_clients",
+    "implement_webhooks",
+    "real_time_streams"
+  ],
+  "input_types": [
+    "api_requirements",
+    "service_specifications",
+    "integration_needs"
+  ],
+  "output_types": [
+    "api_designs",
+    "api_specifications",
+    "integration_code",
+    "authentication_schemes"
+  ],
+  "interoperability": {
+    "provides": [
+      "api_specifications",
+      "api_contracts",
+      "integration_designs",
+      "authentication_flows",
+      "endpoint_definitions"
+    ],
+    "consumes": [
+      "database_schemas",
+      "business_requirements",
+      "service_architecture"
+    ],
+    "dependencies": [],
+    "conflicts": [],
+    "related": [
+      "database-schema-architect",
+      "code-refactoring-expert",
+      "devops-workflow-designer"
+    ],
+    "collaboration_mode": "sequential",
+    "integration_points": {
+      "can_consume_from": [
+        {
+          "skill": "database-schema-architect",
+          "resource": "database_schemas",
+          "description": "Design API endpoints based on database structure"
+        },
+        {
+          "skill": "doc-coauthoring",
+          "resource": "api_requirements",
+          "description": "Implement APIs based on documented requirements"
+        }
+      ],
+      "can_provide_to": [
+        {
+          "skill": "code-refactoring-expert",
+          "resource": "api_specifications",
+          "description": "Provide API specs for code refactoring"
+        },
+        {
+          "skill": "devops-workflow-designer",
+          "resource": "api_contracts",
+          "description": "Provide API contracts for CI/CD integration"
+        },
+        {
+          "skill": "frontend-design",
+          "resource": "endpoint_definitions",
+          "description": "Provide API endpoints for frontend integration"
+        }
+      ]
+    }
+  }
+}

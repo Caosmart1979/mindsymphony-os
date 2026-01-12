@@ -1,0 +1,46 @@
+# INTEROP.yml - Gemini CLI Integration技能互操作性配置
+skill:
+  name: gemini-cli-integration
+  version: 1.0.0
+  category: integration
+  priority: medium
+  status: active
+
+metadata:
+  display_name: Gemini CLI Integration
+  description: Deep integration between Claude Code and Gemini CLI for multimodal capabilities
+  author: Community
+  license: See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [multimodal-processing, large-context, video-audio-analysis]
+  consumes: [media-files, large-codebases]
+  tags: [gemini, multimodal, video, audio, integration, external-ai]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [external_tools, file_processing]
+  optional_features: [media_analysis, context_bridge]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: false
+  variants: []
+  metrics: ["success_rate", "processing_quality", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "gemini|multimodal|video|audio|large context|1m token"
+      confidence: 0.9
+    - pattern: "image analysis|video processing|audio transcription"
+      confidence: 0.8
+  related_skills: [mcp-builder, mindsymphony, skill-creator]

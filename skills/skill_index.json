@@ -1,0 +1,962 @@
+{
+  "_cache_time": 1767832859.401032,
+  "_version": "1.0",
+  "index": {
+    "skills": {
+      "algorithmic-art": {
+        "name": "algorithmic-art",
+        "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.3793876,
+        "_path": "D:\\Claudecode\\skills\\skills\\algorithmic-art"
+      },
+      "api-integration-designer": {
+        "name": "api-integration-designer",
+        "description": "Expert API design and integration guidance. Use this skill when designing REST APIs, GraphQL schemas, integrating third-party services, implementing authentication (OAuth, JWT, API keys), handling rate limiting, creating API clients, or working with webhooks and real-time data streams.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157188.3733485,
+        "_path": "D:\\Claudecode\\skills\\skills\\api-integration-designer"
+      },
+      "brand-guidelines": {
+        "name": "brand-guidelines",
+        "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "design",
+        "tags": [
+          "brand",
+          "design",
+          "style",
+          "colors",
+          "typography",
+          "visual-identity",
+          "branding",
+          "anthropic"
+        ],
+        "provides": [
+          {
+            "id": "brand-guidelines",
+            "description": "Anthropic 官方品牌规范（颜色、字体、标识）",
+            "format": "json",
+            "location": "references/brand-tokens.json"
+          },
+          {
+            "id": "design-tokens",
+            "description": "标准化设计令牌（颜色、字体、间距）",
+            "format": "json",
+            "location": "references/brand-tokens.json"
+          },
+          {
+            "id": "color-palette",
+            "description": "品牌色彩方案",
+            "format": "json",
+            "location": "references/colors.json"
+          },
+          {
+            "id": "typography-system",
+            "description": "字体系统规范",
+            "format": "json",
+            "location": "references/typography.json"
+          }
+        ],
+        "consumes": [],
+        "related": [
+          "frontend-design",
+          "canvas-design",
+          "pptx",
+          "docx",
+          "theme-factory",
+          "artifacts-builder"
+        ],
+        "skill_id": "brand-guidelines",
+        "version": "1.0.0",
+        "inputs": [
+          {
+            "type": "brand-identity",
+            "description": "品牌标识信息",
+            "required": false
+          },
+          {
+            "type": "style-preferences",
+            "description": "样式偏好",
+            "required": false
+          }
+        ],
+        "outputs": [
+          {
+            "type": "design-tokens",
+            "description": "设计令牌（颜色、字体等）"
+          },
+          {
+            "type": "styled-document",
+            "description": "应用品牌样式的文档"
+          },
+          {
+            "type": "color-specifications",
+            "description": "颜色规范（RGB值）"
+          },
+          {
+            "type": "font-specifications",
+            "description": "字体规范（字体族、大小、权重）"
+          }
+        ],
+        "triggers": [
+          {
+            "level": "high",
+            "confidence": 100,
+            "keywords": [
+              "品牌",
+              "品牌规范",
+              "样式",
+              "Anthropic",
+              "brand colors",
+              "brand guidelines",
+              "视觉识别",
+              "VI"
+            ]
+          },
+          {
+            "level": "medium",
+            "confidence": 70,
+            "keywords": [
+              "颜色",
+              "字体",
+              "样式规范",
+              "设计规范",
+              "色彩",
+              "排版"
+            ]
+          }
+        ],
+        "prerequisites": [],
+        "collaboration": {
+          "sequential": [],
+          "parallel": [],
+          "provides_to": [
+            {
+              "skill": "frontend-design",
+              "resource": "design-tokens",
+              "reason": "提供品牌设计令牌"
+            },
+            {
+              "skill": "canvas-design",
+              "resource": "design-tokens",
+              "reason": "提供品牌颜色和字体"
+            },
+            {
+              "skill": "pptx",
+              "resource": "color-palette",
+              "reason": "提供品牌色彩"
+            },
+            {
+              "skill": "docx",
+              "resource": "typography-system",
+              "reason": "提供字体规范"
+            }
+          ]
+        },
+        "_mtime": 1767832501.0262098,
+        "_path": "D:\\Claudecode\\skills\\skills\\brand-guidelines"
+      },
+      "canvas-design": {
+        "name": "canvas-design",
+        "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.3833928,
+        "_path": "D:\\Claudecode\\skills\\skills\\canvas-design"
+      },
+      "code-refactoring-expert": {
+        "name": "code-refactoring-expert",
+        "description": "Expert guidance on refactoring code for improved maintainability, readability, and performance. Use this skill when cleaning up legacy code, reducing technical debt, applying design patterns, optimizing algorithms, improving code organization, or making code more testable and modular.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157244.6272414,
+        "_path": "D:\\Claudecode\\skills\\skills\\code-refactoring-expert"
+      },
+      "database-schema-architect": {
+        "name": "database-schema-architect",
+        "description": "Expert database schema design and optimization guidance. Use this skill when designing database schemas, creating ER diagrams, optimizing queries, normalizing data, implementing indexes, planning migrations, choosing between SQL/NoSQL, or working with ORMs and data modeling.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157279.7838833,
+        "_path": "D:\\Claudecode\\skills\\skills\\database-schema-architect"
+      },
+      "devops-workflow-designer": {
+        "name": "devops-workflow-designer",
+        "description": "Expert DevOps workflow and CI/CD pipeline design guidance. Use this skill when setting up CI/CD pipelines, automating deployments, configuring infrastructure as code, implementing monitoring/alerting, containerizing applications, managing cloud resources, or improving development workflows.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157416.9388497,
+        "_path": "D:\\Claudecode\\skills\\skills\\devops-workflow-designer"
+      },
+      "doc-coauthoring": {
+        "name": "doc-coauthoring",
+        "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+        "category": "workflow",
+        "tags": [
+          "documentation",
+          "writing",
+          "workflow",
+          "collaboration",
+          "docs",
+          "technical-writing",
+          "specification",
+          "proposal"
+        ],
+        "provides": [
+          {
+            "id": "workflow-state",
+            "description": "文档工作流状态（阶段、迭代、完成度）",
+            "format": "yaml",
+            "location": "references/workflow-state.yaml"
+          },
+          {
+            "id": "document-structure",
+            "description": "标准文档结构模板",
+            "format": "markdown",
+            "location": "references/templates/"
+          },
+          {
+            "id": "document-metadata",
+            "description": "文档元数据（类型、受众、目标）",
+            "format": "yaml",
+            "optional": true
+          }
+        ],
+        "consumes": [
+          {
+            "id": "document-templates",
+            "description": "文档模板",
+            "optional": true,
+            "fallback": "使用默认文档结构"
+          },
+          {
+            "id": "workflow-state",
+            "description": "现有工作流状态",
+            "optional": true,
+            "fallback": "开始新工作流"
+          }
+        ],
+        "related": [
+          "official-writer",
+          "docx",
+          "internal-comms",
+          "skill-creator",
+          "mcp-builder"
+        ],
+        "skill_id": "doc-coauthoring",
+        "version": "1.0.0",
+        "inputs": [
+          {
+            "type": "document-intent",
+            "description": "文档意图（类型、受众、目标）",
+            "required": true
+          },
+          {
+            "type": "context-dump",
+            "description": "上下文信息",
+            "required": true
+          },
+          {
+            "type": "existing-document",
+            "description": "现有文档内容（编辑时）",
+            "required": false
+          },
+          {
+            "type": "template",
+            "description": "文档模板",
+            "required": false
+          }
+        ],
+        "outputs": [
+          {
+            "type": "structured-document",
+            "description": "结构化文档（Markdown/其他格式）"
+          },
+          {
+            "type": "workflow-state",
+            "description": "工作流状态更新"
+          },
+          {
+            "type": "reader-feedback",
+            "description": "读者测试反馈"
+          }
+        ],
+        "triggers": [
+          {
+            "level": "high",
+            "confidence": 100,
+            "keywords": [
+              "写文档",
+              "创建文档",
+              "协作写作",
+              "文档工作流",
+              "写一个文档",
+              "起草文档",
+              "co-authoring",
+              "文档协作"
+            ]
+          },
+          {
+            "level": "medium",
+            "confidence": 70,
+            "keywords": [
+              "文档",
+              "技术规范",
+              "提案",
+              "设计文档",
+              "PRD",
+              "RFC",
+              "decision doc",
+              "技术文档"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "condition": "文档类型: 明确文档类型（技术规范、提案、决策文档等）",
+            "optional": false,
+            "priority": "high"
+          },
+          {
+            "condition": "目标受众: 明确文档的主要受众",
+            "optional": false,
+            "priority": "high"
+          }
+        ],
+        "workflow_stages": [
+          {
+            "id": "context_gathering",
+            "name": "上下文收集",
+            "description": "收集所有相关上下文信息",
+            "optional": false
+          },
+          {
+            "id": "refinement",
+            "name": "迭代优化",
+            "description": "逐节构建和优化文档",
+            "optional": false
+          },
+          {
+            "id": "reader_testing",
+            "name": "读者测试",
+            "description": "用新鲜 Claude 测试文档可读性",
+            "optional": true
+          }
+        ],
+        "collaboration": {
+          "sequential": [
+            {
+              "skill": "official-writer",
+              "optional": true,
+              "stage": "refinement",
+              "reason": "使用正式写作风格"
+            },
+            {
+              "skill": "docx",
+              "optional": true,
+              "stage": "final",
+              "reason": "输出为 DOCX 格式"
+            }
+          ],
+          "parallel": [],
+          "integrates_with": [
+            {
+              "system": "claude-code",
+              "feature": "sub-agents",
+              "reason": "读者测试需要子代理"
+            },
+            {
+              "system": "artifacts",
+              "feature": "create_file",
+              "reason": "创建文档草稿"
+            }
+          ]
+        },
+        "state_machine": {
+          "initial": "context_gathering",
+          "states": [
+            {
+              "id": "context_gathering",
+              "transitions": [
+                {
+                  "to": "refinement",
+                  "condition": "上下文收集完成"
+                }
+              ]
+            },
+            {
+              "id": "refinement",
+              "transitions": [
+                {
+                  "to": "reader_testing",
+                  "condition": "所有草稿完成"
+                },
+                {
+                  "to": "complete",
+                  "condition": "用户跳过测试"
+                }
+              ]
+            },
+            {
+              "id": "reader_testing",
+              "transitions": [
+                {
+                  "to": "refinement",
+                  "condition": "发现需要修复的问题"
+                },
+                {
+                  "to": "complete",
+                  "condition": "测试通过"
+                }
+              ]
+            },
+            {
+              "id": "complete",
+              "final": true
+            }
+          ]
+        },
+        "_mtime": 1767832521.8219664,
+        "_path": "D:\\Claudecode\\skills\\skills\\doc-coauthoring"
+      },
+      "docx": {
+        "name": "docx",
+        "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "_mtime": 1767149082.4739933,
+        "_path": "D:\\Claudecode\\skills\\skills\\docx"
+      },
+      "frontend-design": {
+        "name": "frontend-design",
+        "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "design",
+        "tags": [
+          "frontend",
+          "ui",
+          "web",
+          "react",
+          "vue",
+          "html",
+          "css",
+          "component",
+          "interface"
+        ],
+        "provides": [
+          {
+            "id": "design-tokens",
+            "description": "自适应设计令牌（颜色、字体、间距）",
+            "format": "json",
+            "location": "references/design-tokens.json",
+            "optional": true
+          },
+          {
+            "id": "component-templates",
+            "description": "React/Vue 组件模板",
+            "format": "tsx/vue",
+            "location": "assets/components/",
+            "optional": true
+          },
+          {
+            "id": "html-css-code",
+            "description": "生产级 HTML/CSS 代码",
+            "format": "html/css",
+            "optional": true
+          }
+        ],
+        "consumes": [
+          {
+            "id": "brand-guidelines",
+            "description": "品牌规范（颜色、字体、标识）",
+            "optional": true,
+            "fallback": "使用自适应设计系统"
+          },
+          {
+            "id": "design-tokens",
+            "description": "外部设计令牌",
+            "optional": true,
+            "fallback": "生成设计令牌"
+          },
+          {
+            "id": "user-assets",
+            "description": "用户提供的资源（图片、图标等）",
+            "optional": true,
+            "fallback": "使用占位符或生成式内容"
+          }
+        ],
+        "related": [
+          "brand-guidelines",
+          "canvas-design",
+          "theme-factory",
+          "artifacts-builder",
+          "algorithmic-art",
+          "web-artifacts-builder"
+        ],
+        "skill_id": "frontend-design",
+        "version": "1.0.0",
+        "inputs": [
+          {
+            "type": "design-brief",
+            "description": "设计需求描述",
+            "required": true
+          },
+          {
+            "type": "design-tokens",
+            "description": "设计令牌",
+            "required": false
+          },
+          {
+            "type": "component-specs",
+            "description": "组件规格说明",
+            "required": false
+          },
+          {
+            "type": "technical-constraints",
+            "description": "技术约束（框架、性能、可访问性）",
+            "required": false
+          }
+        ],
+        "outputs": [
+          {
+            "type": "react-components",
+            "description": "React/TSX 组件代码"
+          },
+          {
+            "type": "vue-components",
+            "description": "Vue/SFC 组件代码"
+          },
+          {
+            "type": "html-css",
+            "description": "HTML/CSS 代码"
+          },
+          {
+            "type": "design-documentation",
+            "description": "设计决策文档"
+          }
+        ],
+        "triggers": [
+          {
+            "level": "high",
+            "confidence": 100,
+            "keywords": [
+              "前端",
+              "UI",
+              "网页",
+              "网站",
+              "组件",
+              "React",
+              "Vue",
+              "HTML",
+              "CSS",
+              "界面",
+              "dashboard",
+              "landing page",
+              "web app",
+              "前端界面",
+              "用户界面"
+            ]
+          },
+          {
+            "level": "medium",
+            "confidence": 60,
+            "keywords": [
+              "设计",
+              "视觉",
+              "样式",
+              "美化",
+              "布局"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "condition": "品牌规范: 使用 brand-guidelines 技能以获得一致的品牌样式",
+            "optional": true,
+            "priority": "medium"
+          },
+          {
+            "condition": "设计令牌: 从其他技能获取设计令牌以保持一致性",
+            "optional": true,
+            "priority": "low"
+          },
+          {
+            "condition": "技术栈: 明确前端框架（React/Vue/纯HTML）",
+            "optional": true,
+            "priority": "high"
+          }
+        ],
+        "collaboration": {
+          "sequential": [
+            {
+              "skill": "brand-guidelines",
+              "optional": true,
+              "reason": "应用品牌样式"
+            }
+          ],
+          "parallel": [],
+          "post_processing": [
+            {
+              "skill": "artifacts-builder",
+              "optional": true,
+              "reason": "打包为可部署的制品"
+            }
+          ]
+        },
+        "_mtime": 1767832483.1655395,
+        "_path": "D:\\Claudecode\\skills\\skills\\frontend-design"
+      },
+      "gemini-cli-integration": {
+        "name": "gemini-cli-integration",
+        "description": "Claude Code与Gemini CLI的深度集成方案。Use when (1) 需要在Claude Code中处理图片、视频、音频等多模态内容, (2) 需要分析超大文件或整个代码仓库(100万token上下文), (3) 想要自动化多模态工作流, (4) 配置Claude Code的Skills和Subagent调用外部AI, (5) 需要补齐Claude Code的多模态短板。",
+        "_mtime": 1767143814.0,
+        "_path": "D:\\Claudecode\\skills\\skills\\gemini-cli-integration"
+      },
+      "internal-comms": {
+        "name": "internal-comms",
+        "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5107975,
+        "_path": "D:\\Claudecode\\skills\\skills\\internal-comms"
+      },
+      "mcp-builder": {
+        "name": "mcp-builder",
+        "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "create",
+        "tags": [
+          "mcp",
+          "server",
+          "integration",
+          "api",
+          "tools",
+          "protocol",
+          "model-context-protocol"
+        ],
+        "provides": [
+          {
+            "id": "mcp-templates",
+            "description": "MCP 服务器模板（Python/TypeScript）",
+            "format": "code",
+            "location": "reference/"
+          },
+          {
+            "id": "mcp-best-practices",
+            "description": "MCP 开发最佳实践",
+            "format": "markdown",
+            "location": "reference/"
+          },
+          {
+            "id": "evaluation-framework",
+            "description": "MCP 服务器评估框架",
+            "format": "xml",
+            "location": "reference/evaluation.md"
+          }
+        ],
+        "consumes": [
+          {
+            "id": "api-specs",
+            "description": "API 文档或规范",
+            "optional": true,
+            "fallback": "用户直接描述 API"
+          }
+        ],
+        "related": [
+          "skill-creator",
+          "doc-skill-generator",
+          "gemini-cli-integration"
+        ],
+        "skill_id": "mcp-builder",
+        "version": "1.0.0",
+        "inputs": [
+          {
+            "type": "api-documentation",
+            "description": "要集成的 API 文档",
+            "required": false
+          },
+          {
+            "type": "service-description",
+            "description": "服务描述和功能需求",
+            "required": true
+          }
+        ],
+        "outputs": [
+          {
+            "type": "mcp-server",
+            "description": "完整的 MCP 服务器代码"
+          },
+          {
+            "type": "evaluation-questions",
+            "description": "评估问题集（XML格式）"
+          },
+          {
+            "type": "documentation",
+            "description": "服务器文档和使用说明"
+          }
+        ],
+        "triggers": [
+          {
+            "level": "high",
+            "confidence": 100,
+            "keywords": [
+              "创建MCP服务器",
+              "MCP server",
+              "model context protocol",
+              "构建 MCP",
+              "MCP 集成",
+              "create mcp",
+              "build mcp server"
+            ]
+          },
+          {
+            "level": "medium",
+            "confidence": 70,
+            "keywords": [
+              "MCP",
+              "协议集成",
+              "工具集成",
+              "API集成"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "condition": "明确要集成的服务或 API",
+            "optional": false,
+            "priority": "high"
+          },
+          {
+            "condition": "选择实现语言（Python/TypeScript）",
+            "optional": false,
+            "priority": "high"
+          }
+        ],
+        "collaboration": {
+          "sequential": [],
+          "parallel": [
+            {
+              "skill": "doc-skill-generator",
+              "optional": true,
+              "reason": "从 API 文档生成基础 MCP 结构"
+            }
+          ],
+          "integrates_with": [
+            {
+              "system": "mcp-inspector",
+              "feature": "testing",
+              "reason": "测试 MCP 服务器"
+            },
+            {
+              "system": "claude-code",
+              "feature": "file operations",
+              "reason": "创建服务器文件"
+            }
+          ]
+        },
+        "_mtime": 1767832827.4957757,
+        "_path": "D:\\Claudecode\\skills\\skills\\mcp-builder"
+      },
+      "mindsymphony": {
+        "name": "mindsymphony",
+        "description": "心智协奏系统 v18.3（融合增强版）。6个核心技能 + 80个扩展技能，整合官方skill设计智慧，强化输出质量与系统协作。Use when (1) 需要战略规划和任务分解, (2) 需要知识研究和结构分析, (3) 需要创意设计和品牌塑造, (4) 需要批判思维和多角度审视, (5) 需要技术开发和代码优化, (6) 需要n8n自动化工作流。",
+        "_mtime": 1767078960.0,
+        "_path": "D:\\Claudecode\\skills\\skills\\mindsymphony_backup_v18.3"
+      },
+      "pdf": {
+        "name": "pdf",
+        "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "_mtime": 1767149082.5199082,
+        "_path": "D:\\Claudecode\\skills\\skills\\pdf"
+      },
+      "pptx": {
+        "name": "pptx",
+        "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "_mtime": 1767149082.5262032,
+        "_path": "D:\\Claudecode\\skills\\skills\\pptx"
+      },
+      "skill-creator": {
+        "name": "skill-creator",
+        "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "create",
+        "tags": [
+          "skill",
+          "creation",
+          "development",
+          "tools",
+          "templates",
+          "skill-development"
+        ],
+        "provides": [
+          {
+            "id": "skill-templates",
+            "description": "技能模板和初始化脚本",
+            "format": "markdown",
+            "location": "references/"
+          },
+          {
+            "id": "skill-validation",
+            "description": "技能验证规则和质量检查",
+            "format": "python",
+            "location": "scripts/"
+          },
+          {
+            "id": "best-practices",
+            "description": "技能开发最佳实践指南",
+            "format": "markdown",
+            "location": "references/"
+          }
+        ],
+        "consumes": [],
+        "related": [
+          "mcp-builder",
+          "doc-skill-generator",
+          "cognitive-architect"
+        ],
+        "skill_id": "skill-creator",
+        "version": "1.0.0",
+        "inputs": [
+          {
+            "type": "skill-idea",
+            "description": "技能创意或需求描述",
+            "required": true
+          },
+          {
+            "type": "examples",
+            "description": "使用示例",
+            "required": false
+          }
+        ],
+        "outputs": [
+          {
+            "type": "skill-directory",
+            "description": "完整的技能目录结构"
+          },
+          {
+            "type": "SKILL.md",
+            "description": "技能主文件"
+          },
+          {
+            "type": "packaged-skill",
+            "description": ".skill 打包文件"
+          }
+        ],
+        "triggers": [
+          {
+            "level": "high",
+            "confidence": 100,
+            "keywords": [
+              "创建技能",
+              "创建skill",
+              "开发技能",
+              "skill创建",
+              "新建技能",
+              "制作技能",
+              "create skill",
+              "develop skill",
+              "skill template"
+            ]
+          },
+          {
+            "level": "medium",
+            "confidence": 70,
+            "keywords": [
+              "技能开发",
+              "技能模板",
+              "skill",
+              "技能设计"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "condition": "明确技能用途和目标场景",
+            "optional": false,
+            "priority": "high"
+          },
+          {
+            "condition": "准备使用示例",
+            "optional": true,
+            "priority": "medium"
+          }
+        ],
+        "collaboration": {
+          "sequential": [],
+          "parallel": [],
+          "integrates_with": [
+            {
+              "system": "claude-code",
+              "feature": "file operations",
+              "reason": "创建技能目录和文件"
+            },
+            {
+              "system": "claude-code",
+              "feature": "bash",
+              "reason": "运行初始化和打包脚本"
+            }
+          ]
+        },
+        "_mtime": 1767832809.3682635,
+        "_path": "D:\\Claudecode\\skills\\skills\\skill-creator"
+      },
+      "slack-gif-creator": {
+        "name": "slack-gif-creator",
+        "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5605435,
+        "_path": "D:\\Claudecode\\skills\\skills\\slack-gif-creator"
+      },
+      "testing-strategy-planner": {
+        "name": "testing-strategy-planner",
+        "description": "Comprehensive testing strategy and implementation guidance. Use this skill when planning test coverage, writing unit tests, integration tests, E2E tests, choosing testing frameworks, implementing TDD/BDD, mocking, test automation, or improving code quality through testing.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157331.7265136,
+        "_path": "D:\\Claudecode\\skills\\skills\\testing-strategy-planner"
+      },
+      "theme-factory": {
+        "name": "theme-factory",
+        "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5635455,
+        "_path": "D:\\Claudecode\\skills\\skills\\theme-factory"
+      },
+      "web-artifacts-builder": {
+        "name": "web-artifacts-builder",
+        "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5706298,
+        "_path": "D:\\Claudecode\\skills\\skills\\web-artifacts-builder"
+      },
+      "webapp-testing": {
+        "name": "webapp-testing",
+        "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.572635,
+        "_path": "D:\\Claudecode\\skills\\skills\\webapp-testing"
+      },
+      "xlsx": {
+        "name": "xlsx",
+        "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "_mtime": 1767149082.5765278,
+        "_path": "D:\\Claudecode\\skills\\skills\\xlsx"
+      }
+    },
+    "statistics": {
+      "total_skills": 23,
+      "categories": {
+        "design": [
+          "brand-guidelines",
+          "frontend-design"
+        ],
+        "workflow": [
+          "doc-coauthoring"
+        ],
+        "create": [
+          "mcp-builder",
+          "skill-creator"
+        ]
+      },
+      "tags_count": 37,
+      "resources_count": 18
+    }
+  }
+}

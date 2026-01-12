@@ -1,0 +1,46 @@
+# INTEROP.yml - Brand Guidelines技能互操作性配置
+skill:
+  name: brand-guidelines
+  version: 1.0.0
+  category: design
+  priority: medium
+  status: active
+
+metadata:
+  display_name: Brand Guidelines
+  description: Applies Anthropic's official brand colors and typography to artifacts
+  author: Anthropic
+  license: See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [brand-guidelines, design-tokens, color-palette, typography-system]
+  consumes: []
+  tags: [brand, design, style, colors, typography, visual-identity, branding]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: []
+  optional_features: [color_picker, font_preview]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: false
+  variants: []
+  metrics: ["adherence_rate", "user_satisfaction"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "brand|branding|guidelines|colors|typography|anthropic brand"
+      confidence: 0.9
+    - pattern: "design tokens|visual identity|style guide"
+      confidence: 0.85
+  related_skills: [frontend-design, canvas-design, pptx, docx, theme-factory]

@@ -1,0 +1,50 @@
+# INTEROP.yml - MCP Builder技能互操作性配置
+skill:
+  name: mcp-builder
+  version: 1.0.0
+  category: engineering
+  priority: high
+  status: active
+
+metadata:
+  display_name: MCP Builder
+  description: Guide for creating high-quality MCP servers for external service integration
+  author: Anthropic
+  license: See LICENSE.txt
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [mcp-templates, mcp-best-practices, evaluation-framework]
+  consumes: [api-specs]
+  tags: [mcp, server, integration, api, tools, protocol, model-context-protocol]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [code_generation, file_write]
+  optional_features: [api_validation, testing_framework]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: python-fastmcp
+      weight: 0.5
+    - name: typescript-sdk
+      weight: 0.5
+  metrics: ["success_rate", "code_quality", "user_satisfaction", "integration_success"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.75
+  routing_patterns:
+    - pattern: "mcp|mcp server|model context protocol|build mcp|create mcp"
+      confidence: 0.95
+    - pattern: "integration|external api|tool server|custom tools"
+      confidence: 0.7
+  related_skills: [skill-creator, doc-skill-generator, gemini-cli-integration, api-integration-designer]

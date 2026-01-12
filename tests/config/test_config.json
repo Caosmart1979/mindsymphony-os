@@ -1,0 +1,32 @@
+{
+  "test_settings": {
+    "timeout": 30,
+    "max_retries": 3,
+    "parallel_workers": 4
+  },
+  "performance": {
+    "thresholds": {
+      "skill_loading": 5.0,
+      "index_creation": 10.0,
+      "single_route": 1.0,
+      "batch_route_avg": 1.0
+    },
+    "memory_limits": {
+      "max_index_memory_mb": 500,
+      "max_router_memory_mb": 100
+    }
+  },
+  "coverage": {
+    "target_percentage": 80,
+    "exclude_paths": [
+      "tests/",
+      "venv/",
+      "__pycache__/"
+    ]
+  },
+  "reporting": {
+    "output_dir": "tests/reports",
+    "formats": ["json", "html", "terminal"],
+    "include_timestamp": true
+  }
+}

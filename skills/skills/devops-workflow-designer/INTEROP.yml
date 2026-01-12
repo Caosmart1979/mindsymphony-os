@@ -1,0 +1,52 @@
+# INTEROP.yml - DevOps Workflow Designer技能互操作性配置
+skill:
+  name: devops-workflow-designer
+  version: 1.0.0
+  category: engineering
+  priority: medium
+  status: active
+
+metadata:
+  display_name: DevOps Workflow Designer
+  description: Expert DevOps workflow and CI/CD pipeline design guidance
+  author: Anthropic
+  license: Apache-2.0
+  created_at: 2025-01-08
+  updated_at: 2025-01-08
+
+capabilities:
+  provides: [cicd-pipelines, infrastructure-as-code, monitoring-strategies]
+  consumes: [project-requirements, deployment-targets]
+  tags: [devops, cicd, pipeline, automation, infrastructure, monitoring]
+
+compatibility:
+  claude_code_minimum: "1.0"
+  required_features: [code_generation, file_write]
+  optional_features: [cloud_integration, container_orchestration]
+
+performance:
+  avg_execution_time: null
+  avg_success_rate: null
+  total_invocations: 0
+  last_invocation: null
+
+ab_testing:
+  enabled: true
+  variants:
+    - name: github-actions
+      weight: 0.4
+    - name: gitlab-ci
+      weight: 0.3
+    - name: jenkins
+      weight: 0.3
+  metrics: ["success_rate", "pipeline_reliability", "deployment_frequency"]
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.7
+  routing_patterns:
+    - pattern: "devops|cicd|pipeline|deployment|automation|ci/cd"
+      confidence: 0.9
+    - pattern: "workflow|infrastructure|monitoring|container"
+      confidence: 0.8
+  related_skills: [api-integration-designer, code-refactoring-expert, database-schema-architect]

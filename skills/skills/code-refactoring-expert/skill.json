@@ -1,0 +1,74 @@
+{
+  "name": "code-refactoring-expert",
+  "version": "1.0.0",
+  "description": "Expert guidance on refactoring code for improved maintainability, readability, and performance",
+  "license": "Apache-2.0",
+  "category": "development",
+  "tags": ["refactoring", "code-quality", "maintenance", "design-patterns", "optimization"],
+  "capabilities": [
+    "refactor_legacy_code",
+    "reduce_technical_debt",
+    "apply_design_patterns",
+    "optimize_algorithms",
+    "improve_code_organization",
+    "enhance_testability",
+    "modularize_code"
+  ],
+  "input_types": [
+    "code_base",
+    "refactoring_requirements",
+    "quality_metrics"
+  ],
+  "output_types": [
+    "refactored_code",
+    "code_patterns",
+    "quality_reports"
+  ],
+  "interoperability": {
+    "provides": [
+      "code_patterns",
+      "refactored_code",
+      "quality_improvements",
+      "design_pattern_implementations"
+    ],
+    "consumes": [
+      "api_specifications",
+      "code_base",
+      "testing_frameworks"
+    ],
+    "dependencies": [],
+    "conflicts": [],
+    "related": [
+      "api-integration-designer",
+      "database-schema-architect",
+      "devops-workflow-designer"
+    ],
+    "collaboration_mode": "enhancement",
+    "integration_points": {
+      "can_consume_from": [
+        {
+          "skill": "api-integration-designer",
+          "resource": "api_specifications",
+          "description": "Refactor code to match updated API specifications"
+        },
+        {
+          "skill": "database-schema-architect",
+          "resource": "schema_changes",
+          "description": "Refactor data access layer for schema changes"
+        }
+      ],
+      "can_provide_to": [
+        {
+          "skill": "devops-workflow-designer",
+          "resource": "code_patterns",
+          "description": "Provide consistent code patterns for CI/CD"
+        },
+        {
+          "skill": "doc-coauthoring",
+          "resource": "code_examples",
+          "description": "Provide refactored code examples for documentation"
+        }
+      ]
+    }
+  }
+}
