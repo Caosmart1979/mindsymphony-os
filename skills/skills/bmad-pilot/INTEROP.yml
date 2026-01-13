@@ -1,0 +1,194 @@
+skill:
+  name: bmad-pilot
+  version: 1.0.0
+  category: workflow
+  priority: high
+  description: BMAD敏捷开发工作流编排器 - 自动编排6个角色完成端到端开发
+
+capabilities:
+  provides:
+    - id: bmad-workflow
+      type: workflow
+      description: 完整的BMAD敏捷开发流程
+    - id: enterprise-workflow
+      type: workflow
+      description: 企业级开发工作流
+    - id: agile-sprint
+      type: workflow
+      description: 敏捷Sprint规划和执行
+
+  consumes:
+    - id: requirements-analysis
+      from: c-06-knowledge-explorer
+      optional: false
+    - id: architecture-design
+      from: b-07-codebase-ecologist
+      optional: false
+    - id: task-breakdown
+      from: m-03-cognitive-architect
+      optional: false
+    - id: code-implementation
+      from: b-08-intelligent-refactor
+      optional: false
+    - id: testing-strategy
+      from: testing-strategy-planner
+      optional: false
+
+  tags:
+    - agile
+    - bmad
+    - workflow
+    - enterprise
+    - orchestration
+    - sprint
+    - devops
+
+discovery:
+  auto_route: true
+  confidence_threshold: 0.8
+
+  routing_patterns:
+    - pattern: "bmad|敏捷|sprint|工作流|企业开发"
+      confidence: 0.95
+      description: BMAD工作流关键词
+
+    - pattern: "完整.*开发|端到端|全流程"
+      confidence: 0.85
+      description: 完整开发流程
+
+    - pattern: "需求.*设计.*开发.*测试|产品.*架构.*编码"
+      confidence: 0.90
+      description: 多阶段开发流程
+
+    - pattern: "product owner|architect|tech lead|developer|reviewer|qa"
+      confidence: 0.85
+      description: BMAD角色关键词
+
+  triggers:
+    - level: high
+      keywords:
+        - /bmad
+        - bmad
+        - 敏捷开发
+        - sprint规划
+        - 企业工作流
+      confidence: 95
+
+    - level: medium
+      keywords:
+        - 完整开发流程
+        - 端到端开发
+        - 全生命周期
+        - 产品开发
+      confidence: 80
+
+collaboration:
+  sequential:
+    - skill: c-06-knowledge-explorer
+      role: Product Owner
+      description: 需求分析和用户故事
+
+    - skill: b-07-codebase-ecologist
+      role: Architect
+      description: 系统架构设计
+
+    - skill: m-03-cognitive-architect
+      role: Tech Lead
+      description: Sprint规划和任务分解
+
+    - skill: b-08-intelligent-refactor
+      role: Developer
+      description: 代码实现
+
+    - skill: code-review
+      role: Code Reviewer
+      description: 代码审查（内置功能）
+
+    - skill: testing-strategy-planner
+      role: QA Engineer
+      description: 测试验证
+
+  parallel:
+    - skills:
+        - frontend-design
+        - database-schema-architect
+      when: "需要前端或数据库设计"
+
+    - skills:
+        - api-integration-designer
+        - devops-workflow-designer
+      when: "需要API设计或DevOps配置"
+
+  conflicts:
+    - with: []
+      reason: BMAD是编排器，不与其他技能冲突
+
+metadata:
+  complexity: medium
+  execution_time: "5-15分钟"
+  output_format: markdown
+
+  use_cases:
+    - "新功能开发"
+    - "重构现有代码"
+    - "快速原型验证"
+    - "企业级项目交付"
+    - "Sprint规划"
+
+  related_skills:
+    - c-06-knowledge-explorer
+    - b-07-codebase-ecologist
+    - m-03-cognitive-architect
+    - b-08-intelligent-refactor
+    - testing-strategy-planner
+    - frontend-design
+    - database-schema-architect
+    - api-integration-designer
+    - devops-workflow-designer
+
+examples:
+  - input: "/bmad 添加用户登录功能"
+    output: "完整的6阶段交付包（需求、架构、计划、代码、审查、测试）"
+
+  - input: "/bmad 重构支付模块 - 重点关注安全性"
+    output: "安全优先的完整重构方案"
+
+  - input: "/bmad 快速原型 - 实时聊天功能"
+    output: "快速验证的原型实现"
+
+quality_gates:
+  test_coverage:
+    threshold: 80
+    enforcement: warning  # warning 或 blocking
+
+  code_quality:
+    - no_lint_errors: true
+    - security_scan: true
+    - documentation: recommended
+
+  performance:
+    - response_time: "<200ms"
+    - concurrent_users: ">500"
+
+integration:
+  github:
+    create_issue: true
+    create_pr: true
+    link_issue: true
+
+  linear:
+    create_epic: true
+    create_tasks: true
+
+  ci_cd:
+    trigger_pipeline: optional
+    run_tests: recommended
+
+version_history:
+  - version: 1.0.0
+    date: 2026-01-12
+    changes:
+      - 初始发布
+      - 支持6个标准角色
+      - 完整的企业级工作流
+      - 灵活的技能编排
