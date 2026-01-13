@@ -28,6 +28,7 @@ wheels/
 .claude-plugins/
 !.claude/commands/
 !.claude/skills/
+!.claude/CONTEXT.md
 
 # ============== Temporary Files ==============
 tmp/
