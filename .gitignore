@@ -155,3 +155,4 @@ playwright/.cache/
 # ============== Outputs ==============
 output/
 out/
+*.exe
