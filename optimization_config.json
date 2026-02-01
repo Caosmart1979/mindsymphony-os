@@ -1,0 +1,19 @@
+{
+    "quality_threshold": 70,
+    "usage_threshold": 3,
+    "inactive_days_threshold": 30,
+    "optimization_categories": [
+        "description_optimization",
+        "trigger_optimization",
+        "path_validation",
+        "duplicate_detection",
+        "usage_analysis"
+    ],
+    "automatic_optimization": false,
+    "report_generation": true,
+    "notification": false,
+    "daily_schedule": "02:00",
+    "weekly_schedule": "03:00",
+    "monthly_schedule": "04:00",
+    "output_dir": "optimization_reports"
+}

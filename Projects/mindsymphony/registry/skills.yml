@@ -1,0 +1,271 @@
+# MindSymphony Skill Registry
+# 统一的技能注册表，支持意图路由和自动调度
+# Version: 1.0
+
+# ============================================================
+# 核心配置
+# ============================================================
+system:
+  name: mindsymphony
+  version: "18.3"
+  default_router: keyword  # keyword | semantic | hybrid
+  fallback_skill: cognitive-architect
+
+# ============================================================
+# 内部技能注册（MindSymphony原生）
+# ============================================================
+internal_skills:
+
+  # --- 核心层 (Core) ---
+  cognitive-architect:
+    path: core/cognitive-architect.md
+    layer: fa
+    type: execution
+    triggers:
+      zh: [计划, 分解, 协调, 项目管理, 战略规划, 复杂任务, 拆解]
+      en: [plan, decompose, coordinate, project, strategy]
+    priority: 100  # 最高优先级，作为默认路由
+    description: 蜂后，复杂任务的战略分解者
+
+  knowledge-explorer:
+    path: core/knowledge-explorer.md
+    layer: shu
+    type: analytical
+    triggers:
+      zh: [研究, 分析, 调研, 知识, 学习, 了解, 探索]
+      en: [research, analyze, study, knowledge, explore]
+    priority: 90
+    description: 知识结构化研究
+
+  concept-singularity:
+    path: core/concept-singularity.md
+    layer: shu
+    type: creative
+    triggers:
+      zh: [创意, 设计, 视觉, 概念, 灵感, 创作]
+      en: [creative, design, visual, concept, idea]
+    priority: 85
+    description: 视觉概念涌现
+
+  brand-alchemist:
+    path: core/brand-alchemist.md
+    layer: dao
+    type: creative
+    triggers:
+      zh: [品牌, 定位, 价值, 使命, 愿景, 故事]
+      en: [brand, positioning, value, mission, vision]
+    priority: 80
+    description: 品牌价值挖掘
+
+  prompt-pharmacist:
+    path: core/prompt-pharmacist.md
+    layer: shu
+    type: execution
+    triggers:
+      zh: [提示词, prompt, 优化提示, 改进prompt]
+      en: [prompt, optimize, improve prompt]
+    priority: 75
+    description: 提示词诊断优化
+
+  official-writer:
+    path: core/official-writer.md
+    layer: qi
+    type: execution
+    triggers:
+      zh: [公文, 报告, 文书, 通知, 请示, 批复]
+      en: [official, report, document, memo]
+    priority: 70
+    description: 公文报告撰写
+
+  # --- Meta层（系统能力）---
+  skill-curator:
+    path: extensions/meta/skill-curator.md
+    layer: qi
+    type: execution
+    triggers:
+      zh: [找skill, 搜索技能, 推荐skill, 技能策展]
+      en: [find skill, search skill, recommend skill]
+    priority: 95
+    description: 技能策展系统
+
+  verification-loop:
+    path: extensions/meta/verification-loop.md
+    layer: fa
+    type: execution
+    triggers:
+      zh: [验证, 检验, 闭环, 质量检查]
+      en: [verify, validate, check quality]
+    priority: 85
+    description: 验证闭环系统
+
+  plan-first:
+    path: extensions/meta/plan-first.md
+    layer: fa
+    type: execution
+    triggers:
+      zh: [先规划, 计划模式, 方案确认]
+      en: [plan first, plan mode]
+    priority: 85
+    description: 计划优先协议
+
+  skill-forge:
+    path: extensions/meta/skill-forge.md
+    layer: qi
+    type: execution
+    triggers:
+      zh: [创建skill, 铸造技能, 新建技能]
+      en: [create skill, forge skill, new skill]
+    priority: 90
+    description: 技能铸造系统
+
+# ============================================================
+# 外部技能注册（集成的独立Skill）
+# ============================================================
+external_skills:
+
+  academic-forge:
+    path: /mnt/skills/user/academic-forge
+    type: domain
+    triggers:
+      zh: [学术研究, 论文设计, 研究方法, 统计分析, NHANES, CHARLS, 队列研究]
+      en: [academic, research design, statistics, cohort study]
+    priority: 95
+    description: 学术研究全流程系统
+    domains: [medicine, statistics, epidemiology]
+
+  academic-manuscript:
+    path: /mnt/skills/user/academic-manuscript
+    type: domain
+    triggers:
+      zh: [写论文, 学术写作, 投稿, 审稿意见, SCI论文]
+      en: [manuscript, academic writing, submission, reviewer]
+    priority: 90
+    description: 学术稿件撰写系统
+    domains: [writing, academic]
+
+  ai-agent-architect:
+    path: /mnt/skills/user/ai-agent-architect
+    type: domain
+    triggers:
+      zh: [agent设计, 认知架构, ReAct, 智能体, AI代理]
+      en: [agent design, cognitive architecture, ReAct, AI agent]
+    priority: 85
+    description: AI Agent设计框架
+    domains: [ai, engineering]
+
+  skill-creator-meta:
+    path: /mnt/skills/user/skill-creator-meta
+    type: meta
+    triggers:
+      zh: [创建skill, skill设计, 技能开发]
+      en: [create skill, skill design, skill development]
+    priority: 88
+    description: Skill创建方法论
+    domains: [meta, engineering]
+
+  gemini-cli-integration:
+    path: /mnt/skills/user/gemini-cli-integration
+    type: tool
+    triggers:
+      zh: [用gemini, gemini分析, 视频分析, 音频转录, 大文件]
+      en: [gemini, video analysis, audio transcription, large file]
+    priority: 80
+    description: Gemini CLI多模态集成
+    domains: [multimodal, tools]
+
+# ============================================================
+# 领域路由规则
+# ============================================================
+domain_routing:
+  
+  # 学术领域 -> 优先academic系列
+  academic:
+    keywords: [论文, 研究, 学术, SCI, 统计, 队列, NHANES, 流行病]
+    primary: academic-forge
+    secondary: academic-manuscript
+    fallback: knowledge-explorer
+
+  # AI/工程领域 -> 优先agent-architect
+  ai_engineering:
+    keywords: [agent, 智能体, AI系统, 认知架构, prompt工程]
+    primary: ai-agent-architect
+    secondary: skill-creator-meta
+    fallback: cognitive-architect
+
+  # 多模态处理 -> gemini
+  multimodal:
+    keywords: [视频, 音频, 图片分析, 大文件, 100万token]
+    primary: gemini-cli-integration
+    secondary: null
+    fallback: knowledge-explorer
+
+  # 技能管理 -> skill系列
+  skill_management:
+    keywords: [创建skill, 找skill, 技能, skill]
+    primary: skill-curator
+    secondary: skill-forge
+    fallback: cognitive-architect
+
+  # 默认 -> cognitive-architect分解
+  default:
+    primary: cognitive-architect
+    secondary: knowledge-explorer
+    fallback: null
+
+# ============================================================
+# 复合意图处理
+# ============================================================
+compound_intents:
+  
+  # "帮我写一篇关于BRI的SCI论文"
+  # -> academic-forge(研究设计) + academic-manuscript(写作)
+  academic_full_pipeline:
+    pattern: [写论文, 研究, SCI]
+    skills: [academic-forge, academic-manuscript]
+    mode: sequential
+
+  # "创建一个用于学术研究的skill"
+  # -> skill-creator-meta + academic领域知识
+  create_domain_skill:
+    pattern: [创建skill, 学术/医学/金融]
+    skills: [skill-creator-meta, domain_context]
+    mode: parallel
+
+# ============================================================
+# 安全规则（回应评审的安全盲区问题）
+# ============================================================
+security:
+  
+  # 外部输入消毒
+  sanitize_external_input: true
+  
+  # 危险操作白名单
+  dangerous_operations:
+    - file_delete
+    - system_command
+    - api_call_with_auth
+  
+  # 需要确认的操作
+  require_confirmation:
+    - 删除文件
+    - 执行系统命令
+    - 发送到外部API
+    - 修改配置文件
+
+# ============================================================
+# 性能优化（回应评审的延迟问题）
+# ============================================================
+performance:
+  
+  # 路由层使用关键词匹配，不走LLM
+  router_mode: keyword_first
+  
+  # 缓存常用路由结果
+  cache_routing: true
+  cache_ttl: 3600
+  
+  # 简单任务直接执行，不经过plan-first
+  skip_planning_for:
+    - 简单查询
+    - 单步操作
+    - 信息检索

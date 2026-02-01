@@ -1,0 +1,49 @@
+Create a tech-style infographic illustration about Progressive Loading Mechanism.
+
+Image Specifications:
+- Type: Infographic illustration
+- Orientation: Landscape
+- Aspect Ratio: 16:9
+- Style: Hand-drawn illustration
+
+Color Palette:
+- Primary: Deep blue (#0A1628)
+- Secondary: Violet (#6366F1)
+- Accents: Neon cyan (#00F0FF), Neon magenta (#FF006E)
+- Neutral: Dark gray (#1E293B), Light gray (#CBD5E1)
+
+Visual Elements:
+- Circuit board patterns
+- Data flow lines
+- Geometric shapes (hexagons, triangles)
+- Glowing effects
+- Grid background
+
+Composition:
+- Center-aligned, emphasizing symmetry
+- Multi-layered stacking
+- Strong sense of depth
+- Connection lines between elements
+
+Core Principles:
+- Maintain hand-drawn quality throughout, no photorealistic elements
+- For sensitive/copyrighted subjects, create stylistically similar alternatives
+- Keep information concise and highlight key concepts
+- Use generous negative space for visual scanning
+- Maintain clear visual hierarchy
+
+Topic Description:
+Progressive loading - a mechanism where AI loads only the essential information first (name/description), then loads detailed content only when needed.
+
+Visual Content to Include:
+- Three concentric hexagonal layers, like an accordion or telescoping sections
+- Layer 1 (smallest, center): Label "name + description" with "~100 tokens" text, faint opacity
+- Layer 2 (medium): Label "SKILL.md" with "main instructions" text, medium opacity
+- Layer 3 (largest, outer): Label "detailed parameters" with "styles, prompts, etc" text, full opacity
+- Arrows showing the expansion direction from center outward
+- Circuit lines connecting the layers
+- Each layer has increasing glow intensity
+- Text: "Load on Demand" at the bottom
+- "Token Saver" badge in corner
+
+Output as a high-quality image file.

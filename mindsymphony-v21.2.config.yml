@@ -1,0 +1,280 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# MindSymphony v21.2 - "Lightning" 进化层升级
+# ═══════════════════════════════════════════════════════════════════════════════
+# 版本: 21.2.0-lightning
+# 更新: 2026-02-01
+# 理念: "ZERO CODE CHANGE (almost)" - 让进化成为基础设施
+#
+# 核心升级:
+# - Lightning Training Layer (受 Microsoft Agent Lightning 启发)
+# - 非侵入式追踪 (Tracer)
+# - 奖励信号工程 (Reward Engine)
+# - 自动提示词优化 (APO)
+#
+# 新增能力:
+# 1. 自动追踪所有技能调用，无需修改现有代码
+# 2. 从用户交互中提取显式和隐式奖励
+# 3. 自动优化表现不佳的技能提示词
+# 4. A/B 测试验证优化效果
+# ═══════════════════════════════════════════════════════════════════════════════
+
+system:
+  version: "21.2.0-lightning"
+  codename: "Evolutionary Synapse + Training Infrastructure"
+  updated: "2026-02-01"
+  mode: "lightning_evolution"
+  description: "进化的智能生态系统 + Lightning 训练基础设施"
+
+  # 核心哲学
+  philosophy:
+    v21_1: "认知进化 + 外部共生 = 真正开放的智能系统"
+    v21_2: "ZERO CODE CHANGE - 让进化成为基础设施而非重构"
+
+  # 五大支柱
+  pillars:
+    - "unified_triggers"        # 统一触发层
+    - "evolution_protocol"      # 进化协议层
+    - "external_synapse"        # 外部通信层
+    - "collaboration_orchestrator"  # 协作编排层
+    - "lightning_training"      # ⭐ 新增: Lightning 训练层
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Lightning Training Layer ⭐ v21.2 核心新增
+# ═══════════════════════════════════════════════════════════════════════════════
+
+lightning_layer:
+  enabled: true
+  description: "受 Microsoft Agent Lightning 启发的训练基础设施"
+
+  # ─────────────────────────────────────────────────────────
+  # Tracer 追踪器
+  # ─────────────────────────────────────────────────────────
+  tracer:
+    enabled: true
+    store_path: "~/.claude/mindsymphony-v21/lightning/spans.db"
+
+    # 采样配置
+    sampling:
+      rate: 1.0              # 开发阶段100%，生产可降至0.1
+      adaptive: true         # 自适应采样（错误时提高采样率）
+
+    # 存储配置
+    storage:
+      store_full_data: true  # 存储完整输入输出
+      max_queue_size: 10000  # 异步队列大小
+      flush_interval_ms: 5000
+
+    # 自动追踪点
+    auto_instrument:
+      skill_invocation: true
+      tool_execution: true
+      cross_skill_handoff: true
+      user_interaction: true
+
+  # ─────────────────────────────────────────────────────────
+  # Lightning Store
+  # ─────────────────────────────────────────────────────────
+  store:
+    enabled: true
+    db_path: "~/.claude/mindsymphony-v21/lightning/store.db"
+
+    # 数据保留策略
+    retention:
+      spans_days: 90
+      episodes_days: 365
+      metrics_days: 365
+
+    # 自动清理
+    auto_cleanup:
+      enabled: true
+      schedule: "0 3 * * *"  # 每天凌晨3点
+
+  # ─────────────────────────────────────────────────────────
+  # Reward Engine 奖励引擎
+  # ─────────────────────────────────────────────────────────
+  reward_engine:
+    enabled: true
+
+    # 奖励类型权重
+    weights:
+      explicit: 1.0    # 用户直接反馈
+      implicit: 0.6    # 从交互推断
+      computed: 0.4    # 跨任务计算
+
+    # 隐式信号提取
+    implicit_signals:
+      task_completion: true
+      engagement_quality: true
+      sentiment_analysis: true
+      efficiency_metrics: true
+
+    # 计算奖励
+    computed_rewards:
+      synergy: true    # 多技能协同
+      novelty: true    # 新模式探索
+      consistency: true  # 输出一致性
+
+  # ─────────────────────────────────════════════════────────
+  # APO Pipeline 自动提示词优化
+  # ─────────────────────────────────────────────────────────
+  apo:
+    enabled: true
+
+    # 触发条件
+    trigger:
+      min_samples: 20
+      success_rate_threshold: 0.7
+      performance_drop_threshold: -0.1
+
+    # 优化策略
+    strategies:
+      - "lightning-rag"           # 基于成功案例
+      - "chain-of-thought"        # 思维链
+      - "constraint-clarification"  # 约束明确化
+      - "example-augmentation"    # 示例增强
+      - "style-refinement"        # 风格精炼
+
+    # A/B 测试配置
+    ab_test:
+      traffic_split: 0.3
+      min_test_duration_hours: 24
+      significance_level: 0.05
+      auto_deploy: false  # 人工确认后部署
+
+    # 目标技能（选择性优化）
+    target_skills:
+      - "cognitive-architect"
+      - "knowledge-explorer"
+      - "concept-singularity"
+      - "brand-alchemist"
+      - "official-writer"
+      - "prompt-pharmacist"
+
+    # 优化周期
+    schedule:
+      check_interval_hours: 24
+      max_optimizations_per_day: 5
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 统一触发层 (Unified Triggers Layer) - 继承 v21.1
+# ═══════════════════════════════════════════════════════════════════════════════
+
+unified_triggers:
+  enabled: true
+
+  # 快速路由表 (继承 v21.1)
+  quick_routes:
+    - pattern: "论文|研究|NHANES|队列"
+      target: "academic-forge"
+      confidence: 1.0
+
+    - pattern: "agent|智能体|ReAct"
+      target: "ai-agent-architect"
+      confidence: 1.0
+
+    - pattern: "react|nextjs|performance"
+      target: "vercel-react-best-practices"
+      confidence: 1.0
+
+    - pattern: "browser|网页|访问|截图"
+      target: "agent-browser"
+      confidence: 1.0
+
+    - pattern: "test|测试|playwright"
+      target: "webapp-testing"
+      confidence: 1.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 外部技能集成 (External Skills) - 继承 v21.1
+# ═══════════════════════════════════════════════════════════════════════════════
+
+external_skills:
+  enabled: true
+  index_path: "~/.claude/skills/mindsymphony/registry/external-skills-index.yml"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 进化协议 (Evolution Protocol) - 与 Lightning 层协同
+# ═══════════════════════════════════════════════════════════════════════════════
+
+evolution_protocol:
+  enabled: true
+  version: "3.0"  # v21.2 升级
+
+  # 使用 Lightning Store 存储进化数据
+  storage:
+    type: "lightning_store"  # 替代原 SQLite
+    path: "~/.claude/mindsymphony-v21/lightning/evolution.db"
+
+  # 自我学习 - 由 Reward Engine 驱动
+  self_learning:
+    enabled: true
+    reward_driven: true  # ⭐ 新增: 基于奖励信号的学习
+
+    metrics:
+      - "invocation_frequency"
+      - "success_rate"
+      - "user_satisfaction"
+      - "execution_time"
+      - "external_event_rate"
+      - "avg_reward"       # ⭐ 新增
+
+  # 协作进化 - 与 APO 协同
+  collaborative_evolution:
+    enabled: true
+    apo_integration: true  # ⭐ 新增: APO 自动优化协作模式
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 监控与质量 (Monitoring) - 增强 Lightning 指标
+# ═══════════════════════════════════════════════════════════════════════════════
+
+monitoring:
+  enabled: true
+  log_level: "info"
+
+  metrics:
+    # Lightning 层指标 ⭐ 新增
+    lightning:
+      - "spans_per_minute"
+      - "tracer_queue_depth"
+      - "reward_signals_per_hour"
+      - "apo_triggers"
+      - "ab_tests_active"
+      - "prompt_versions"
+
+    # 原有指标
+    system:
+      - "skill_coverage"
+      - "trigger_accuracy"
+      - "response_quality"
+
+    evolution:
+      - "pattern_discovery_rate"
+      - "adaptation_speed"
+      - "synergy_score"
+      - "learning_efficiency"
+      - "avg_episode_reward"  # ⭐ 新增
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 配置说明
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# MindSymphony v21.2 Lightning 升级要点:
+#
+# 1. 零代码侵入: 现有技能无需修改即可获得追踪和优化能力
+# 2. 自动进化: APO 自动识别并优化表现不佳的技能
+# 3. 数据驱动: Reward Engine 从交互中提取学习信号
+# 4. 安全验证: A/B 测试确保优化不会引入回归
+#
+# 升级方式:
+# 1. 复制此文件为 mindsymphony.config.yml
+# 2. Lightning 层自动初始化
+# 3. 观察 traces/ 和 store/ 目录生成数据
+# 4. 7天后 APO 开始自动优化
+#
+# 手动触发优化:
+#   python -m mindsymphony.lightning.apo.pipeline --skill knowledge-explorer
+#
+# 查看追踪数据:
+#   python -m mindsymphony.lightning.store.cli --query "SELECT * FROM spans LIMIT 10"
+#
+# ═══════════════════════════════════════════════════════════════════════════════

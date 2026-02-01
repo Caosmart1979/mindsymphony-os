@@ -1,0 +1,2332 @@
+{
+  "_version": "1.0",
+  "_cache_time": 1768647392.302156,
+  "index": {
+    "skills": {
+      "algorithmic-art": {
+        "name": "algorithmic-art",
+        "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+        "license": "Complete terms in LICENSE.txt",
+        "interop_metadata": {
+          "skill_id": "skills.algorithmic_art",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "algorithmic-art",
+          "version": "1.0.0",
+          "category": "creative",
+          "priority": "low",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Algorithmic Art",
+          "description": "Creating algorithmic art using p5.js with seeded randomness and interactivity",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "generative-art",
+            "interactive-art",
+            "algorithmic-patterns"
+          ],
+          "consumes": [
+            "art-philosophies",
+            "parameters"
+          ],
+          "tags": [
+            "art",
+            "generative",
+            "algorithmic",
+            "p5.js",
+            "creative",
+            "interactive"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "code_generation",
+            "file_write"
+          ],
+          "optional_features": [
+            "interactive_preview",
+            "parameter_tuning"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "geometric",
+              "weight": 0.5
+            },
+            {
+              "name": "organic",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "visual_appeal",
+            "code_quality"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "algorithmic art|generative art|p5.js|creative coding",
+              "confidence": 0.95
+            },
+            {
+              "pattern": "flow field|particle system|generative|algorithm",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "canvas-design",
+            "frontend-design",
+            "theme-factory"
+          ]
+        },
+        "_mtime": 1767835473.5490615,
+        "_path": "D:\\claudecode\\skills\\skills\\algorithmic-art"
+      },
+      "api-integration-designer": {
+        "name": "api-integration-designer",
+        "description": "Expert API design and integration guidance. Use this skill when designing REST APIs, GraphQL schemas, integrating third-party services, implementing authentication (OAuth, JWT, API keys), handling rate limiting, creating API clients, or working with webhooks and real-time data streams.",
+        "license": "Apache-2.0",
+        "interop_metadata": {
+          "skill_id": "skills.api_integration_designer",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "api-integration-designer",
+          "version": "1.0.0",
+          "category": "engineering",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "API Integration Designer",
+          "description": "Expert API design and integration guidance for REST, GraphQL, and webhooks",
+          "author": "Anthropic",
+          "license": "Apache-2.0",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "api-designs",
+            "integration-patterns",
+            "auth-strategies"
+          ],
+          "consumes": [
+            "service-specs"
+          ],
+          "tags": [
+            "api",
+            "integration",
+            "rest",
+            "graphql",
+            "oauth",
+            "webhooks",
+            "authentication"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "code_generation",
+            "file_write"
+          ],
+          "optional_features": [
+            "api_testing",
+            "schema_validation"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "rest-first",
+              "weight": 0.6
+            },
+            {
+              "name": "graphql-first",
+              "weight": 0.4
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "api_quality",
+            "security_score"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "api|integration|rest|graphql|webhook|authentication",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "oauth|jwt|api design|api integration",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "mcp-builder",
+            "code-refactoring-expert",
+            "devops-workflow-designer"
+          ]
+        },
+        "_mtime": 1767835473.758981,
+        "_path": "D:\\claudecode\\skills\\skills\\api-integration-designer"
+      },
+      "article-illustrator": {
+        "name": "article-illustrator",
+        "description": "分析文章内容，在需要配图的位置自动生成插画。当用户要求给文章配图、生成插画、为文章添加图片时使用。",
+        "triggers": {
+          "zh": [
+            "给文章配图",
+            "文章插画",
+            "自动配图",
+            "生成插画",
+            "文章插图"
+          ],
+          "en": [
+            "article illustration",
+            "auto illustrate",
+            "generate images for article"
+          ]
+        },
+        "type": "creative",
+        "layer": "shu",
+        "_mtime": 1768569920.63226,
+        "_path": "D:\\claudecode\\skills\\skills\\article-illustrator"
+      },
+      "bmad-pilot": {
+        "name": "bmad-pilot",
+        "description": "BMAD敏捷开发工作流编排器 - 自动编排6个角色完成端到端开发",
+        "version": "1.0.0",
+        "category": "workflow",
+        "tags": [
+          "agile",
+          "bmad",
+          "workflow",
+          "enterprise",
+          "orchestration"
+        ],
+        "author": "MindSymphony Team",
+        "license": "MIT",
+        "skill": {
+          "name": "bmad-pilot",
+          "version": "1.0.0",
+          "category": "workflow",
+          "priority": "high",
+          "description": "BMAD敏捷开发工作流编排器 - 自动编排6个角色完成端到端开发"
+        },
+        "capabilities": {
+          "provides": [
+            {
+              "id": "bmad-workflow",
+              "type": "workflow",
+              "description": "完整的BMAD敏捷开发流程"
+            },
+            {
+              "id": "enterprise-workflow",
+              "type": "workflow",
+              "description": "企业级开发工作流"
+            },
+            {
+              "id": "agile-sprint",
+              "type": "workflow",
+              "description": "敏捷Sprint规划和执行"
+            }
+          ],
+          "consumes": [
+            {
+              "id": "requirements-analysis",
+              "from": "c-06-knowledge-explorer",
+              "optional": false
+            },
+            {
+              "id": "architecture-design",
+              "from": "b-07-codebase-ecologist",
+              "optional": false
+            },
+            {
+              "id": "task-breakdown",
+              "from": "m-03-cognitive-architect",
+              "optional": false
+            },
+            {
+              "id": "code-implementation",
+              "from": "b-08-intelligent-refactor",
+              "optional": false
+            },
+            {
+              "id": "testing-strategy",
+              "from": "testing-strategy-planner",
+              "optional": false
+            }
+          ],
+          "tags": [
+            "agile",
+            "bmad",
+            "workflow",
+            "enterprise",
+            "orchestration",
+            "sprint",
+            "devops"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.8,
+          "routing_patterns": [
+            {
+              "pattern": "bmad|敏捷|sprint|工作流|企业开发",
+              "confidence": 0.95,
+              "description": "BMAD工作流关键词"
+            },
+            {
+              "pattern": "完整.*开发|端到端|全流程",
+              "confidence": 0.85,
+              "description": "完整开发流程"
+            },
+            {
+              "pattern": "需求.*设计.*开发.*测试|产品.*架构.*编码",
+              "confidence": 0.9,
+              "description": "多阶段开发流程"
+            },
+            {
+              "pattern": "product owner|architect|tech lead|developer|reviewer|qa",
+              "confidence": 0.85,
+              "description": "BMAD角色关键词"
+            }
+          ],
+          "triggers": [
+            {
+              "level": "high",
+              "keywords": [
+                "/bmad",
+                "bmad",
+                "敏捷开发",
+                "sprint规划",
+                "企业工作流"
+              ],
+              "confidence": 95
+            },
+            {
+              "level": "medium",
+              "keywords": [
+                "完整开发流程",
+                "端到端开发",
+                "全生命周期",
+                "产品开发"
+              ],
+              "confidence": 80
+            }
+          ]
+        },
+        "collaboration": {
+          "sequential": [
+            {
+              "skill": "c-06-knowledge-explorer",
+              "role": "Product Owner",
+              "description": "需求分析和用户故事"
+            },
+            {
+              "skill": "b-07-codebase-ecologist",
+              "role": "Architect",
+              "description": "系统架构设计"
+            },
+            {
+              "skill": "m-03-cognitive-architect",
+              "role": "Tech Lead",
+              "description": "Sprint规划和任务分解"
+            },
+            {
+              "skill": "b-08-intelligent-refactor",
+              "role": "Developer",
+              "description": "代码实现"
+            },
+            {
+              "skill": "code-review",
+              "role": "Code Reviewer",
+              "description": "代码审查（内置功能）"
+            },
+            {
+              "skill": "testing-strategy-planner",
+              "role": "QA Engineer",
+              "description": "测试验证"
+            }
+          ],
+          "parallel": [
+            {
+              "skills": [
+                "frontend-design",
+                "database-schema-architect"
+              ],
+              "when": "需要前端或数据库设计"
+            },
+            {
+              "skills": [
+                "api-integration-designer",
+                "devops-workflow-designer"
+              ],
+              "when": "需要API设计或DevOps配置"
+            }
+          ],
+          "conflicts": [
+            {
+              "with": [],
+              "reason": "BMAD是编排器，不与其他技能冲突"
+            }
+          ]
+        },
+        "metadata": {
+          "complexity": "medium",
+          "execution_time": "5-15分钟",
+          "output_format": "markdown",
+          "use_cases": [
+            "新功能开发",
+            "重构现有代码",
+            "快速原型验证",
+            "企业级项目交付",
+            "Sprint规划"
+          ],
+          "related_skills": [
+            "c-06-knowledge-explorer",
+            "b-07-codebase-ecologist",
+            "m-03-cognitive-architect",
+            "b-08-intelligent-refactor",
+            "testing-strategy-planner",
+            "frontend-design",
+            "database-schema-architect",
+            "api-integration-designer",
+            "devops-workflow-designer"
+          ]
+        },
+        "examples": [
+          {
+            "input": "/bmad 添加用户登录功能",
+            "output": "完整的6阶段交付包（需求、架构、计划、代码、审查、测试）"
+          },
+          {
+            "input": "/bmad 重构支付模块 - 重点关注安全性",
+            "output": "安全优先的完整重构方案"
+          },
+          {
+            "input": "/bmad 快速原型 - 实时聊天功能",
+            "output": "快速验证的原型实现"
+          }
+        ],
+        "quality_gates": {
+          "test_coverage": {
+            "threshold": 80,
+            "enforcement": "warning"
+          },
+          "code_quality": [
+            {
+              "no_lint_errors": true
+            },
+            {
+              "security_scan": true
+            },
+            {
+              "documentation": "recommended"
+            }
+          ],
+          "performance": [
+            {
+              "response_time": "<200ms"
+            },
+            {
+              "concurrent_users": ">500"
+            }
+          ]
+        },
+        "integration": {
+          "github": {
+            "create_issue": true,
+            "create_pr": true,
+            "link_issue": true
+          },
+          "linear": {
+            "create_epic": true,
+            "create_tasks": true
+          },
+          "ci_cd": {
+            "trigger_pipeline": "optional",
+            "run_tests": "recommended"
+          }
+        },
+        "version_history": [
+          {
+            "version": "1.0.0",
+            "date": "2026-01-12",
+            "changes": [
+              "初始发布",
+              "支持6个标准角色",
+              "完整的企业级工作流",
+              "灵活的技能编排"
+            ]
+          }
+        ],
+        "_mtime": 1768309543.1521785,
+        "_path": "D:\\claudecode\\skills\\skills\\bmad-pilot"
+      },
+      "brand-guidelines": {
+        "name": "brand-guidelines",
+        "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "design",
+        "tags": [
+          "brand",
+          "design",
+          "style",
+          "colors",
+          "typography",
+          "visual-identity",
+          "branding"
+        ],
+        "provides": [
+          "brand-guidelines",
+          "design-tokens",
+          "color-palette",
+          "typography-system"
+        ],
+        "consumes": [],
+        "related": [
+          "frontend-design",
+          "canvas-design",
+          "pptx",
+          "docx",
+          "theme-factory"
+        ],
+        "interop_metadata": {
+          "skill_id": "skills.brand_guidelines",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "brand-guidelines",
+          "version": "1.0.0",
+          "category": "design",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Brand Guidelines",
+          "description": "Applies Anthropic's official brand colors and typography to artifacts",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "brand-guidelines",
+            "design-tokens",
+            "color-palette",
+            "typography-system"
+          ],
+          "consumes": [],
+          "tags": [
+            "brand",
+            "design",
+            "style",
+            "colors",
+            "typography",
+            "visual-identity",
+            "branding"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [],
+          "optional_features": [
+            "color_picker",
+            "font_preview"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": false,
+          "variants": [],
+          "metrics": [
+            "adherence_rate",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "brand|branding|guidelines|colors|typography|anthropic brand",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "design tokens|visual identity|style guide",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "frontend-design",
+            "canvas-design",
+            "pptx",
+            "docx",
+            "theme-factory"
+          ]
+        },
+        "_mtime": 1767835473.9486012,
+        "_path": "D:\\claudecode\\skills\\skills\\brand-guidelines"
+      },
+      "canvas-design": {
+        "name": "canvas-design",
+        "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+        "license": "Complete terms in LICENSE.txt",
+        "interop_metadata": {
+          "skill_id": "skills.canvas_design",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "canvas-design",
+          "version": "1.0.0",
+          "category": "design",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Canvas Design",
+          "description": "Create beautiful visual art in .png and .pdf documents using design philosophy",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "visual-designs",
+            "art-philosophies",
+            "graphic-assets"
+          ],
+          "consumes": [
+            "design-concepts",
+            "brand-guidelines"
+          ],
+          "tags": [
+            "design",
+            "art",
+            "poster",
+            "canvas",
+            "visual",
+            "creative",
+            "graphic"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "image_generation",
+            "file_write"
+          ],
+          "optional_features": [
+            "pdf_generation",
+            "vector_export"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "minimalist",
+              "weight": 0.4
+            },
+            {
+              "name": "bold",
+              "weight": 0.6
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "aesthetic_quality",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "poster|art|design|canvas|visual|graphic",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "create design|visual art|graphic design",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "frontend-design",
+            "brand-guidelines",
+            "algorithmic-art",
+            "theme-factory"
+          ]
+        },
+        "_mtime": 1767835474.1366947,
+        "_path": "D:\\claudecode\\skills\\skills\\canvas-design"
+      },
+      "code-refactoring-expert": {
+        "name": "code-refactoring-expert",
+        "description": "Expert guidance on refactoring code for improved maintainability, readability, and performance. Use this skill when cleaning up legacy code, reducing technical debt, applying design patterns, optimizing algorithms, improving code organization, or making code more testable and modular.",
+        "license": "Apache-2.0",
+        "interop_metadata": {
+          "skill_id": "skills.code_refactoring_expert",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "code-refactoring-expert",
+          "version": "1.0.0",
+          "category": "engineering",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Code Refactoring Expert",
+          "description": "Expert guidance on refactoring code for improved maintainability and performance",
+          "author": "Anthropic",
+          "license": "Apache-2.0",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "refactoring-patterns",
+            "code-improvements",
+            "design-patterns"
+          ],
+          "consumes": [
+            "code-base",
+            "technical-debt-report"
+          ],
+          "tags": [
+            "refactoring",
+            "code-quality",
+            "design-patterns",
+            "technical-debt",
+            "optimization"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_read",
+            "file_write",
+            "code_analysis"
+          ],
+          "optional_features": [
+            "ast_analysis",
+            "dependency_graph"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "conservative",
+              "weight": 0.5
+            },
+            {
+              "name": "aggressive",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "code_quality_improvement",
+            "test_pass_rate"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "refactor|clean up|technical debt|code quality|improve code",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "design pattern|optimize|legacy code",
+              "confidence": 0.8
+            }
+          ],
+          "related_skills": [
+            "api-integration-designer",
+            "database-schema-architect",
+            "devops-workflow-designer"
+          ]
+        },
+        "_mtime": 1767835474.3610296,
+        "_path": "D:\\claudecode\\skills\\skills\\code-refactoring-expert"
+      },
+      "database-schema-architect": {
+        "name": "database-schema-architect",
+        "description": "Expert database schema design and optimization guidance. Use this skill when designing database schemas, creating ER diagrams, optimizing queries, normalizing data, implementing indexes, planning migrations, choosing between SQL/NoSQL, or working with ORMs and data modeling.",
+        "license": "Apache-2.0",
+        "interop_metadata": {
+          "skill_id": "skills.database_schema_architect",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "database-schema-architect",
+          "version": "1.0.0",
+          "category": "engineering",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Database Schema Architect",
+          "description": "Expert database schema design and optimization guidance",
+          "author": "Anthropic",
+          "license": "Apache-2.0",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "schema-designs",
+            "er-diagrams",
+            "optimization-strategies"
+          ],
+          "consumes": [
+            "data-requirements",
+            "business-logic"
+          ],
+          "tags": [
+            "database",
+            "schema",
+            "sql",
+            "nosql",
+            "orm",
+            "data-modeling",
+            "optimization"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "code_generation",
+            "diagram_creation"
+          ],
+          "optional_features": [
+            "query_analysis",
+            "migration_planning"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "sql-first",
+              "weight": 0.7
+            },
+            {
+              "name": "nosql-first",
+              "weight": 0.3
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "schema_quality",
+            "performance_improvement"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "database|schema|sql|nosql|orm|data model",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "database design|er diagram|query optimization",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "api-integration-designer",
+            "code-refactoring-expert",
+            "devops-workflow-designer"
+          ]
+        },
+        "_mtime": 1767835474.5535336,
+        "_path": "D:\\claudecode\\skills\\skills\\database-schema-architect"
+      },
+      "devops-workflow-designer": {
+        "name": "devops-workflow-designer",
+        "description": "Expert DevOps workflow and CI/CD pipeline design guidance. Use this skill when setting up CI/CD pipelines, automating deployments, configuring infrastructure as code, implementing monitoring/alerting, containerizing applications, managing cloud resources, or improving development workflows.",
+        "license": "Apache-2.0",
+        "interop_metadata": {
+          "skill_id": "skills.devops_workflow_designer",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "devops-workflow-designer",
+          "version": "1.0.0",
+          "category": "engineering",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "DevOps Workflow Designer",
+          "description": "Expert DevOps workflow and CI/CD pipeline design guidance",
+          "author": "Anthropic",
+          "license": "Apache-2.0",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "cicd-pipelines",
+            "infrastructure-as-code",
+            "monitoring-strategies"
+          ],
+          "consumes": [
+            "project-requirements",
+            "deployment-targets"
+          ],
+          "tags": [
+            "devops",
+            "cicd",
+            "pipeline",
+            "automation",
+            "infrastructure",
+            "monitoring"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "code_generation",
+            "file_write"
+          ],
+          "optional_features": [
+            "cloud_integration",
+            "container_orchestration"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "github-actions",
+              "weight": 0.4
+            },
+            {
+              "name": "gitlab-ci",
+              "weight": 0.3
+            },
+            {
+              "name": "jenkins",
+              "weight": 0.3
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "pipeline_reliability",
+            "deployment_frequency"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "devops|cicd|pipeline|deployment|automation|ci/cd",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "workflow|infrastructure|monitoring|container",
+              "confidence": 0.8
+            }
+          ],
+          "related_skills": [
+            "api-integration-designer",
+            "code-refactoring-expert",
+            "database-schema-architect"
+          ]
+        },
+        "_mtime": 1767835474.7392507,
+        "_path": "D:\\claudecode\\skills\\skills\\devops-workflow-designer"
+      },
+      "doc-coauthoring": {
+        "name": "doc-coauthoring",
+        "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+        "category": "workflow",
+        "tags": [
+          "documentation",
+          "writing",
+          "workflow",
+          "collaboration",
+          "docs",
+          "technical-writing",
+          "specification",
+          "proposal"
+        ],
+        "provides": [
+          "workflow-state",
+          "document-structure",
+          "document-metadata"
+        ],
+        "consumes": [
+          "document-templates",
+          "workflow-state"
+        ],
+        "related": [
+          "official-writer",
+          "docx",
+          "internal-comms",
+          "skill-creator",
+          "mcp-builder"
+        ],
+        "interop_metadata": {
+          "skill_id": "skills.doc_coauthoring",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "doc-coauthoring",
+          "version": "1.0.0",
+          "category": "workflow",
+          "priority": "high",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Documentation Coauthoring",
+          "description": "Structured workflow for co-authoring documentation, proposals, and technical specs",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "workflow-state",
+            "document-structure",
+            "document-metadata"
+          ],
+          "consumes": [
+            "document-templates",
+            "workflow-state"
+          ],
+          "tags": [
+            "documentation",
+            "writing",
+            "workflow",
+            "collaboration",
+            "docs",
+            "technical-writing",
+            "specification",
+            "proposal"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "conversation_memory"
+          ],
+          "optional_features": [
+            "template_engine",
+            "version_control_integration"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "structured",
+              "weight": 0.5
+            },
+            {
+              "name": "agile",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "document_quality",
+            "user_satisfaction",
+            "iteration_efficiency"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "documentation|docs|technical writing|proposal|spec|specification",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "write doc|create documentation|technical spec|design doc",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "official-writer",
+            "docx",
+            "internal-comms",
+            "skill-creator",
+            "mcp-builder"
+          ]
+        },
+        "_mtime": 1767835474.9191904,
+        "_path": "D:\\claudecode\\skills\\skills\\doc-coauthoring"
+      },
+      "docx": {
+        "name": "docx",
+        "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "interop_metadata": {
+          "skill_id": "skills.docx",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "docx",
+          "version": "1.0.0",
+          "category": "document",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "DOCX Processor",
+          "description": "Comprehensive document creation, editing, and analysis with .docx files",
+          "author": "Anthropic",
+          "license": "Proprietary - See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "document-creation",
+            "document-editing",
+            "tracked-changes",
+            "comments"
+          ],
+          "consumes": [
+            "templates",
+            "brand-guidelines"
+          ],
+          "tags": [
+            "docx",
+            "word",
+            "document",
+            "office",
+            "editing",
+            "tracked-changes"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "file_read"
+          ],
+          "optional_features": [
+            "template_engine",
+            "formatting_preservation"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "python-docx",
+              "weight": 0.7
+            },
+            {
+              "name": "mammoth",
+              "weight": 0.3
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "formatting_preservation",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "docx|word| .doc|document creation|document editing",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "tracked changes|comments|word document",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "doc-coauthoring",
+            "pptx",
+            "pdf",
+            "internal-comms"
+          ]
+        },
+        "_mtime": 1767835475.1328444,
+        "_path": "D:\\claudecode\\skills\\skills\\docx"
+      },
+      "frontend-design": {
+        "name": "frontend-design",
+        "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "design",
+        "tags": [
+          "frontend",
+          "ui",
+          "web",
+          "react",
+          "vue",
+          "html",
+          "css"
+        ],
+        "provides": [
+          "design-tokens",
+          "component-templates",
+          "html-css-code"
+        ],
+        "consumes": [
+          "brand-guidelines",
+          "design-tokens",
+          "user-assets"
+        ],
+        "related": [
+          "brand-guidelines",
+          "canvas-design",
+          "theme-factory",
+          "artifacts-builder"
+        ],
+        "interop_metadata": {
+          "skill_id": "skills.frontend_design",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "frontend-design",
+          "version": "1.0.0",
+          "category": "design",
+          "priority": "high",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Frontend Design",
+          "description": "Create distinctive, production-grade frontend interfaces with high design quality",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "design-tokens",
+            "component-templates",
+            "html-css-code"
+          ],
+          "consumes": [
+            "brand-guidelines",
+            "design-tokens",
+            "user-assets"
+          ],
+          "tags": [
+            "frontend",
+            "ui",
+            "web",
+            "react",
+            "vue",
+            "html",
+            "css",
+            "design"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "code_generation"
+          ],
+          "optional_features": [
+            "preview_mode",
+            "design_inspector"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "minimal",
+              "weight": 0.3
+            },
+            {
+              "name": "bold",
+              "weight": 0.7
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "design_quality",
+            "user_satisfaction",
+            "aesthetic_score"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "frontend|ui|interface|web|website|landing page|dashboard|component",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "react|vue|html|css|styling|design",
+              "confidence": 0.8
+            }
+          ],
+          "related_skills": [
+            "brand-guidelines",
+            "canvas-design",
+            "theme-factory",
+            "artifacts-builder"
+          ]
+        },
+        "_mtime": 1767835475.3856087,
+        "_path": "D:\\claudecode\\skills\\skills\\frontend-design"
+      },
+      "gemini-cli-integration": {
+        "name": "gemini-cli-integration",
+        "description": "Claude Code与Gemini CLI的深度集成方案。Use when (1) 需要在Claude Code中处理图片、视频、音频等多模态内容, (2) 需要分析超大文件或整个代码仓库(100万token上下文), (3) 想要自动化多模态工作流, (4) 配置Claude Code的Skills和Subagent调用外部AI, (5) 需要补齐Claude Code的多模态短板。",
+        "interop_metadata": {
+          "skill_id": "skills.gemini_cli_integration",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "gemini-cli-integration",
+          "version": "1.0.0",
+          "category": "integration",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Gemini CLI Integration",
+          "description": "Deep integration between Claude Code and Gemini CLI for multimodal capabilities",
+          "author": "Community",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "multimodal-processing",
+            "large-context",
+            "video-audio-analysis"
+          ],
+          "consumes": [
+            "media-files",
+            "large-codebases"
+          ],
+          "tags": [
+            "gemini",
+            "multimodal",
+            "video",
+            "audio",
+            "integration",
+            "external-ai"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "external_tools",
+            "file_processing"
+          ],
+          "optional_features": [
+            "media_analysis",
+            "context_bridge"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": false,
+          "variants": [],
+          "metrics": [
+            "success_rate",
+            "processing_quality",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "gemini|multimodal|video|audio|large context|1m token",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "image analysis|video processing|audio transcription",
+              "confidence": 0.8
+            }
+          ],
+          "related_skills": [
+            "mcp-builder",
+            "mindsymphony",
+            "skill-creator"
+          ]
+        },
+        "_mtime": 1767835475.562865,
+        "_path": "D:\\claudecode\\skills\\skills\\gemini-cli-integration"
+      },
+      "internal-comms": {
+        "name": "internal-comms",
+        "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+        "license": "Complete terms in LICENSE.txt",
+        "interop_metadata": {
+          "skill_id": "skills.internal_comms",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "internal-comms",
+          "version": "1.0.0",
+          "category": "communication",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Internal Communications",
+          "description": "Resources for writing internal communications in company formats",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "communication-templates",
+            "report-formats",
+            "update-structures"
+          ],
+          "consumes": [
+            "project-data",
+            "company-context"
+          ],
+          "tags": [
+            "communication",
+            "internal",
+            "reports",
+            "updates",
+            "newsletters",
+            "faqs"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "text_generation"
+          ],
+          "optional_features": [
+            "template_engine",
+            "format_validation"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "formal",
+              "weight": 0.6
+            },
+            {
+              "name": "casual",
+              "weight": 0.4
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "engagement_score",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "internal comms|status report|update|newsletter|faq",
+              "confidence": 0.9
+            },
+            {
+              "pattern": "communication|internal update|progress report",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "doc-coauthoring",
+            "docx",
+            "pptx",
+            "official-writer"
+          ]
+        },
+        "_mtime": 1767835475.7841797,
+        "_path": "D:\\claudecode\\skills\\skills\\internal-comms"
+      },
+      "linear-task-manager": {
+        "name": "linear-task-manager",
+        "version": "1.0.0",
+        "category": "productivity",
+        "integration": "mindsymphony",
+        "type": "workflow",
+        "description": "Linear 任务管理系统 - Epic/Story/Task 层级管理",
+        "triggers": {
+          "zh": [
+            "Linear",
+            "任务管理",
+            "Epic",
+            "Story",
+            "敏捷开发",
+            "任务分解"
+          ],
+          "en": [
+            "Linear",
+            "task management",
+            "Epic",
+            "Story",
+            "agile",
+            "task breakdown"
+          ]
+        },
+        "commands": [
+          "/linear [action]",
+          "/epic [operation]",
+          "/story [operation]"
+        ],
+        "_mtime": 1768212374.6161008,
+        "_path": "D:\\claudecode\\skills\\skills\\linear-task-manager"
+      },
+      "mcp-builder": {
+        "name": "mcp-builder",
+        "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "create",
+        "tags": [
+          "mcp",
+          "server",
+          "integration",
+          "api",
+          "tools",
+          "protocol",
+          "model-context-protocol"
+        ],
+        "provides": [
+          "mcp-templates",
+          "mcp-best-practices",
+          "evaluation-framework"
+        ],
+        "consumes": [
+          "api-specs"
+        ],
+        "related": [
+          "skill-creator",
+          "doc-skill-generator",
+          "gemini-cli-integration"
+        ],
+        "interop_metadata": {
+          "skill_id": "skills.mcp_builder",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "mcp-builder",
+          "version": "1.0.0",
+          "category": "engineering",
+          "priority": "high",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "MCP Builder",
+          "description": "Guide for creating high-quality MCP servers for external service integration",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "mcp-templates",
+            "mcp-best-practices",
+            "evaluation-framework"
+          ],
+          "consumes": [
+            "api-specs"
+          ],
+          "tags": [
+            "mcp",
+            "server",
+            "integration",
+            "api",
+            "tools",
+            "protocol",
+            "model-context-protocol"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "code_generation",
+            "file_write"
+          ],
+          "optional_features": [
+            "api_validation",
+            "testing_framework"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "python-fastmcp",
+              "weight": 0.5
+            },
+            {
+              "name": "typescript-sdk",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "code_quality",
+            "user_satisfaction",
+            "integration_success"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.75,
+          "routing_patterns": [
+            {
+              "pattern": "mcp|mcp server|model context protocol|build mcp|create mcp",
+              "confidence": 0.95
+            },
+            {
+              "pattern": "integration|external api|tool server|custom tools",
+              "confidence": 0.7
+            }
+          ],
+          "related_skills": [
+            "skill-creator",
+            "doc-skill-generator",
+            "gemini-cli-integration",
+            "api-integration-designer"
+          ]
+        },
+        "_mtime": 1767835475.9965572,
+        "_path": "D:\\claudecode\\skills\\skills\\mcp-builder"
+      },
+      "mindsymphony": {
+        "name": "mindsymphony",
+        "description": "心智协奏系统 v18.3（融合增强版）。6个核心技能 + 80个扩展技能，整合官方skill设计智慧，强化输出质量与系统协作。Use when (1) 需要战略规划和任务分解, (2) 需要知识研究和结构分析, (3) 需要创意设计和品牌塑造, (4) 需要批判思维和多角度审视, (5) 需要技术开发和代码优化, (6) 需要n8n自动化工作流。",
+        "_mtime": 1767078960.0,
+        "_path": "D:\\claudecode\\skills\\skills\\mindsymphony_backup_v18.3"
+      },
+      "obsidian-plugin-dev": {
+        "name": "obsidian-plugin-dev",
+        "version": "1.0.0",
+        "category": "development",
+        "integration": "mindsymphony",
+        "type": "specialist",
+        "description": "Obsidian 插件开发专家 - 遵循最佳实践的插件开发指南",
+        "triggers": {
+          "zh": [
+            "Obsidian插件",
+            "obsidian插件",
+            "插件开发",
+            "manifest.json",
+            "Obsidian API"
+          ],
+          "en": [
+            "Obsidian plugin",
+            "obsidian plugin",
+            "plugin development",
+            "manifest.json",
+            "Obsidian API"
+          ]
+        },
+        "commands": [
+          "/obsidian [任务描述]",
+          "/plugin [任务描述]"
+        ],
+        "_mtime": 1768212265.234492,
+        "_path": "D:\\claudecode\\skills\\skills\\obsidian-plugin-dev"
+      },
+      "pdf": {
+        "name": "pdf",
+        "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "interop_metadata": {
+          "skill_id": "skills.pdf",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "pdf",
+          "version": "1.0.0",
+          "category": "document",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "PDF Toolkit",
+          "description": "Comprehensive PDF manipulation for extraction, creation, merge, split, and forms",
+          "author": "Anthropic",
+          "license": "Proprietary - See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "pdf-extraction",
+            "pdf-creation",
+            "pdf-manipulation",
+            "form-filling"
+          ],
+          "consumes": [
+            "templates",
+            "data-sources"
+          ],
+          "tags": [
+            "pdf",
+            "document",
+            "extraction",
+            "forms",
+            "merge",
+            "split"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "file_read"
+          ],
+          "optional_features": [
+            "ocr",
+            "form_validation"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "pypdf",
+              "weight": 0.5
+            },
+            {
+              "name": "fitz",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "extraction_accuracy",
+            "processing_speed"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "pdf|extract pdf|pdf form|merge pdf|split pdf",
+              "confidence": 0.95
+            },
+            {
+              "pattern": "pdf creation|pdf analysis|fill form",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "docx",
+            "pptx",
+            "doc-coauthoring"
+          ]
+        },
+        "_mtime": 1767835476.4011674,
+        "_path": "D:\\claudecode\\skills\\skills\\pdf"
+      },
+      "planning-with-files": {
+        "name": "planning-with-files",
+        "version": "1.0.0",
+        "category": "meta",
+        "integration": "mindsymphony",
+        "type": "workflow-memory",
+        "description": "Manus风格持久化工作流记忆系统 - 通过文件系统实现AI的持久化记忆",
+        "triggers": {
+          "zh": [
+            "计划",
+            "规划",
+            "工作流",
+            "任务计划",
+            "项目管理"
+          ],
+          "en": [
+            "plan",
+            "planning",
+            "workflow",
+            "task plan",
+            "project management"
+          ]
+        },
+        "commands": [
+          "/plan [任务描述]",
+          "/planning [任务描述]"
+        ],
+        "_mtime": 1768210635.5473967,
+        "_path": "D:\\claudecode\\skills\\skills\\planning-with-files"
+      },
+      "pptx": {
+        "name": "pptx",
+        "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "interop_metadata": {
+          "skill_id": "skills.pptx",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "pptx",
+          "version": "1.0.0",
+          "category": "document",
+          "priority": "medium",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Presentation Designer",
+          "description": "Presentation creation, editing, and analysis with .pptx files",
+          "author": "Anthropic",
+          "license": "Proprietary - See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "presentation-creation",
+            "slide-designs",
+            "layout-templates"
+          ],
+          "consumes": [
+            "brand-guidelines",
+            "content-sources"
+          ],
+          "tags": [
+            "pptx",
+            "powerpoint",
+            "presentation",
+            "slides",
+            "deck"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "file_read"
+          ],
+          "optional_features": [
+            "template_engine",
+            "design_export"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "python-pptx",
+              "weight": 0.8
+            },
+            {
+              "name": "template-based",
+              "weight": 0.2
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "design_quality",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "pptx|presentation|slides|powerpoint|deck",
+              "confidence": 0.95
+            },
+            {
+              "pattern": "create presentation|slide design|ppt",
+              "confidence": 0.9
+            }
+          ],
+          "related_skills": [
+            "docx",
+            "pdf",
+            "frontend-design",
+            "brand-guidelines"
+          ]
+        },
+        "_mtime": 1767835476.6235912,
+        "_path": "D:\\claudecode\\skills\\skills\\pptx"
+      },
+      "skill-creator": {
+        "name": "skill-creator",
+        "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+        "license": "Complete terms in LICENSE.txt",
+        "category": "create",
+        "tags": [
+          "skill",
+          "creation",
+          "development",
+          "tools",
+          "templates",
+          "skill-development"
+        ],
+        "provides": [
+          "skill-templates",
+          "skill-validation",
+          "best-practices"
+        ],
+        "consumes": [],
+        "related": [
+          "mcp-builder",
+          "doc-skill-generator",
+          "cognitive-architect"
+        ],
+        "interop_metadata": {
+          "skill_id": "skills.skill_creator",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "skill-creator",
+          "version": "1.0.0",
+          "category": "create",
+          "priority": "critical",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Skill Creator",
+          "description": "Guide for creating effective skills that extend Claude's capabilities",
+          "author": "Anthropic",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "skill-templates",
+            "skill-validation",
+            "best-practices"
+          ],
+          "consumes": [],
+          "tags": [
+            "skill",
+            "creation",
+            "development",
+            "tools",
+            "templates",
+            "skill-development"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "code_generation"
+          ],
+          "optional_features": [
+            "skill_validator",
+            "template_engine"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "structured",
+              "weight": 0.6
+            },
+            {
+              "name": "agile",
+              "weight": 0.4
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "skill_quality",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.8,
+          "routing_patterns": [
+            {
+              "pattern": "create skill|new skill|skill development|build skill",
+              "confidence": 0.95
+            },
+            {
+              "pattern": "skill template|skill guide|how to skill",
+              "confidence": 0.85
+            }
+          ],
+          "related_skills": [
+            "mcp-builder",
+            "doc-skill-generator",
+            "cognitive-architect"
+          ]
+        },
+        "_mtime": 1767835476.8260117,
+        "_path": "D:\\claudecode\\skills\\skills\\skill-creator"
+      },
+      "slack-gif-creator": {
+        "name": "slack-gif-creator",
+        "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5605435,
+        "_path": "D:\\claudecode\\skills\\skills\\slack-gif-creator"
+      },
+      "testing-strategy-planner": {
+        "name": "testing-strategy-planner",
+        "description": "Comprehensive testing strategy and implementation guidance. Use this skill when planning test coverage, writing unit tests, integration tests, E2E tests, choosing testing frameworks, implementing TDD/BDD, mocking, test automation, or improving code quality through testing.",
+        "license": "Apache-2.0",
+        "_mtime": 1767157331.7265136,
+        "_path": "D:\\claudecode\\skills\\skills\\testing-strategy-planner"
+      },
+      "theme-factory": {
+        "name": "theme-factory",
+        "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+        "license": "Complete terms in LICENSE.txt",
+        "interop_metadata": {
+          "skill_id": "skills.theme_factory",
+          "api_version": "v1",
+          "authentication": "none",
+          "rate_limit": {
+            "requests_per_minute": 30
+          }
+        },
+        "skill": {
+          "name": "theme-factory",
+          "version": "1.0.0",
+          "category": "design",
+          "priority": "low",
+          "status": "active"
+        },
+        "metadata": {
+          "display_name": "Theme Factory",
+          "description": "Create and manage design themes for consistent UI across projects",
+          "author": "Anthropic / Community",
+          "license": "See LICENSE.txt",
+          "created_at": "2025-01-08",
+          "updated_at": "2025-01-08"
+        },
+        "capabilities": {
+          "provides": [
+            "design-themes",
+            "color-schemes",
+            "typography-pairings"
+          ],
+          "consumes": [
+            "brand-guidelines",
+            "design-requirements"
+          ],
+          "tags": [
+            "theme",
+            "design",
+            "colors",
+            "typography",
+            "ui-consistency"
+          ]
+        },
+        "compatibility": {
+          "claude_code_minimum": "1.0",
+          "required_features": [
+            "file_write",
+            "code_generation"
+          ],
+          "optional_features": [
+            "theme_preview",
+            "export_formats"
+          ]
+        },
+        "performance": {
+          "avg_execution_time": null,
+          "avg_success_rate": null,
+          "total_invocations": 0,
+          "last_invocation": null
+        },
+        "ab_testing": {
+          "enabled": true,
+          "variants": [
+            {
+              "name": "light",
+              "weight": 0.5
+            },
+            {
+              "name": "dark",
+              "weight": 0.5
+            }
+          ],
+          "metrics": [
+            "success_rate",
+            "theme_coherence",
+            "user_satisfaction"
+          ]
+        },
+        "discovery": {
+          "auto_route": true,
+          "confidence_threshold": 0.7,
+          "routing_patterns": [
+            {
+              "pattern": "theme|color scheme|typography|design system",
+              "confidence": 0.85
+            },
+            {
+              "pattern": "create theme|design tokens|ui theme",
+              "confidence": 0.8
+            }
+          ],
+          "related_skills": [
+            "brand-guidelines",
+            "frontend-design",
+            "canvas-design"
+          ]
+        },
+        "_mtime": 1767835477.0387173,
+        "_path": "D:\\claudecode\\skills\\skills\\theme-factory"
+      },
+      "web-artifacts-builder": {
+        "name": "web-artifacts-builder",
+        "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.5706298,
+        "_path": "D:\\claudecode\\skills\\skills\\web-artifacts-builder"
+      },
+      "webapp-testing": {
+        "name": "webapp-testing",
+        "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+        "license": "Complete terms in LICENSE.txt",
+        "_mtime": 1767149082.572635,
+        "_path": "D:\\claudecode\\skills\\skills\\webapp-testing"
+      },
+      "xlsx": {
+        "name": "xlsx",
+        "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualization in spreadsheets, or (5) Recalculating formulas",
+        "license": "Proprietary. LICENSE.txt has complete terms",
+        "_mtime": 1767149082.5765278,
+        "_path": "D:\\claudecode\\skills\\skills\\xlsx"
+      }
+    },
+    "statistics": {
+      "total_skills": 28,
+      "categories": {
+        "workflow": [
+          "bmad-pilot",
+          "doc-coauthoring"
+        ],
+        "design": [
+          "brand-guidelines",
+          "frontend-design"
+        ],
+        "productivity": [
+          "linear-task-manager"
+        ],
+        "create": [
+          "mcp-builder",
+          "skill-creator"
+        ],
+        "development": [
+          "obsidian-plugin-dev"
+        ],
+        "meta": [
+          "planning-with-files"
+        ]
+      },
+      "tags_count": 38,
+      "resources_count": 18
+    }
+  }
+}

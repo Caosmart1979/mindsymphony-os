@@ -1,0 +1,50 @@
+Create a tech-style infographic illustration about Five-Step Illustration Workflow.
+
+Image Specifications:
+- Type: Infographic illustration
+- Orientation: Landscape
+- Aspect Ratio: 16:9
+- Style: Hand-drawn illustration
+
+Color Palette:
+- Primary: Deep blue (#0A1628)
+- Secondary: Violet (#6366F1)
+- Accents: Neon cyan (#00F0FF), Neon magenta (#FF006E)
+- Neutral: Dark gray (#1E293B), Light gray (#CBD5E1)
+
+Visual Elements:
+- Circuit board patterns
+- Data flow lines
+- Geometric shapes (hexagons, triangles)
+- Glowing effects
+- Grid background
+
+Composition:
+- Center-aligned, emphasizing symmetry
+- Multi-layered stacking
+- Strong sense of depth
+- Connection lines between elements
+
+Core Principles:
+- Maintain hand-drawn quality throughout, no photorealistic elements
+- For sensitive/copyrighted subjects, create stylistically similar alternatives
+- Keep information concise and highlight key concepts
+- Use generous negative space for visual scanning
+- Maintain clear visual hierarchy
+
+Topic Description:
+The five-step workflow for automated article illustration, showing the sequential process from analysis to completion.
+
+Visual Content to Include:
+- Five circular nodes arranged horizontally left to right, connected by neon arrows
+- Node 1: Document icon + magnifying glass, label "分析结构" (Analyze Structure)
+- Node 2: Palette/color wheel icon, label "匹配风格" (Match Style)
+- Node 3: Text/document icon, label "生成提示词" (Generate Prompts)
+- Node 4: AI brain with sparkle, label "调用生成" (Generate Images)
+- Node 5: Document with thumbnail icons, label "自动插入" (Auto Insert)
+- Each node inside a hexagon frame with neon cyan glow
+- Step numbers (1-5) above each node
+- Data flow lines with circuit patterns connecting nodes
+- Gradient effect from node 1 to node 5 showing progress
+
+Output as a high-quality image file.

@@ -4,40 +4,44 @@
 system:
   name: "MindSymphony"
   full_name: "心智协奏系统™"
-  version: "19.1.0"
-  codename: "External Synapse"
-  release_date: "2026-01-05"
+  version: "21.0.0"
+  codename: "Evolutionary Intelligence"
+  release_date: "2025-01-11"
   
   # 版本历史
   evolution:
     - version: "15.3"
       codename: "Honeycomb Concert"
       description: "蜂巢协奏版，引入工蜂单元和信息素协议"
-      
+
     - version: "18.3"
       codename: "Boris Integration"
       description: "整合Boris Cherny 13条经验"
-      
+
     - version: "19.0"
       codename: "OS Architecture"
       description: "操作系统架构版，引入Intent Router和Security Gateway"
-      
+
     - version: "19.1"
       codename: "External Synapse"
       description: "外部神经突触版，打通n8n集成，解决封闭性悖论"
+
+    - version: "21.0"
+      codename: "Evolutionary Intelligence"
+      description: "进化智能体系统，统一触发层、进化协议、Skills-n8n协作层、MCP桥接协议"
 
 # 组件版本
 components:
   core:
     description: "核心认知框架（6个核心技能）"
-    version: "19.1.0"
-    min_compatible: "19.0.0"
+    version: "21.0.0"
+    min_compatible: "21.0.0"
     path: "core/"
     skills_count: 6
-    
+
   extensions:
     description: "扩展技能包（90+技能）"
-    version: "19.1.0"
+    version: "21.0.0"
     min_compatible: "18.0.0"
     path: "extensions/"
     modules:
@@ -60,29 +64,29 @@ components:
         
   router:
     description: "意图路由系统"
-    version: "19.1.0"
-    min_compatible: "19.0.0"
+    version: "21.0.0"
+    min_compatible: "21.0.0"
     path: "router/"
     components:
       - "intent-router.md"
       - "registry.yml"
       - "hard-logic-layer.md"
-      
+
   gateway:
     description: "安全网关系统"
-    version: "19.1.0"
-    min_compatible: "19.0.0"
+    version: "21.0.0"
+    min_compatible: "21.0.0"
     path: "gateway/"
     components:
       - "security-gateway.md"
       - "external-synapse.md"
       - "egress-policy.md"
       - "version-check.md"
-      
+
   integrations:
     description: "外部技能集成"
-    version: "19.1.0"
-    min_compatible: "19.0.0"
+    version: "21.0.0"
+    min_compatible: "21.0.0"
     path: "integrations/"
     external_skills:
       - name: "academic-forge"
@@ -121,13 +125,19 @@ features:
   security_gateway: true
   hard_logic_layer: true
   skill_registry: true
-  
+
   # v19.1引入
   external_synapse: true
   egress_policy: true
   version_check: true
   notebooklm_integration: true
-  
+
+  # v21.0引入
+  unified_triggers: true
+  evolution_protocol: true
+  skills_n8n_collaboration: true
+  mcp_bridge: true
+
   # 待开发
   visual_dashboard: false
   auto_config_generation: false
@@ -168,6 +178,16 @@ statistics:
   
 # 变更日志
 changelog:
+  "21.0.0":
+    date: "2025-01-11"
+    type: "major"
+    changes:
+      - "[新增] 统一触发层（Unified Triggers）- 合并 skill_router + commands"
+      - "[新增] 进化协议（Evolution Protocol）- 自我学习、环境适应、协作进化"
+      - "[新增] Skills-n8n 协作层 - 混合工作流架构"
+      - "[新增] MCP 桥接协议 - Skills ↔ n8n 双向调用"
+      - "[改进] 版本统一到 v21.0.0-evolution"
+
   "19.1.0":
     date: "2026-01-05"
     type: "minor"

@@ -1,0 +1,33 @@
+{
+  "name": "mindsymphony",
+  "version": "1.0.0",
+  "description": "MindSymphony - Advanced AI Assistant Platform with E2E Testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:install": "playwright install --with-deps",
+    "test:update": "npx playwright-update"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "e2e",
+    "testing",
+    "playwright"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "typescript": "^5.7.3"
+  }
+}

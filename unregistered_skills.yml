@@ -1,0 +1,2583 @@
+# 未注册技能的YAML注册模板
+# 请根据实际情况调整triggers和description
+
+a-00-chief-planning-officer:
+  path: C:\Users\13466\.claude\skills\a-00-chief-planning-officer
+  type: domain
+  triggers:
+    zh: [a-00-chief-planning-officer]
+    en: [a-00-chief-planning-officer]
+  priority: 50
+  description: a-00-chief-planning-officer
+  domains: [general]
+
+a-01-learning-pathfinder:
+  path: C:\Users\13466\.claude\skills\a-01-learning-pathfinder
+  type: domain
+  triggers:
+    zh: [a-01-learning-pathfinder]
+    en: [a-01-learning-pathfinder]
+  priority: 50
+  description: a-01-learning-pathfinder
+  domains: [general]
+
+a-02-speech-confidence:
+  path: C:\Users\13466\.claude\skills\a-02-speech-confidence
+  type: domain
+  triggers:
+    zh: [a-02-speech-confidence]
+    en: [a-02-speech-confidence]
+  priority: 50
+  description: a-02-speech-confidence
+  domains: [general]
+
+a-03-paradigm-strategist:
+  path: C:\Users\13466\.claude\skills\a-03-paradigm-strategist
+  type: domain
+  triggers:
+    zh: [a-03-paradigm-strategist]
+    en: [a-03-paradigm-strategist]
+  priority: 50
+  description: a-03-paradigm-strategist
+  domains: [general]
+
+a-04-agent-deployer:
+  path: C:\Users\13466\.claude\skills\a-04-agent-deployer
+  type: domain
+  triggers:
+    zh: [a-04-agent-deployer]
+    en: [a-04-agent-deployer]
+  priority: 50
+  description: a-04-agent-deployer
+  domains: [general]
+
+a-05-insight-brewer:
+  path: C:\Users\13466\.claude\skills\a-05-insight-brewer
+  type: domain
+  triggers:
+    zh: [a-05-insight-brewer]
+    en: [a-05-insight-brewer]
+  priority: 50
+  description: a-05-insight-brewer
+  domains: [general]
+
+a-06-research-strategist:
+  path: C:\Users\13466\.claude\skills\a-06-research-strategist
+  type: domain
+  triggers:
+    zh: [a-06-research-strategist]
+    en: [a-06-research-strategist]
+  priority: 50
+  description: a-06-research-strategist
+  domains: [general]
+
+acs-analyst:
+  path: C:\Users\13466\.claude\skills\acs-analyst
+  type: domain
+  triggers:
+    zh: [acs-analyst]
+    en: [acs-analyst]
+  priority: 50
+  description: acs-analyst
+  domains: [general]
+
+acs-critic:
+  path: C:\Users\13466\.claude\skills\acs-critic
+  type: domain
+  triggers:
+    zh: [acs-critic]
+    en: [acs-critic]
+  priority: 50
+  description: acs-critic
+  domains: [general]
+
+acs-explorer:
+  path: C:\Users\13466\.claude\skills\acs-explorer
+  type: domain
+  triggers:
+    zh: [acs-explorer]
+    en: [acs-explorer]
+  priority: 50
+  description: acs-explorer
+  domains: [general]
+
+acs-mentor:
+  path: C:\Users\13466\.claude\skills\acs-mentor
+  type: domain
+  triggers:
+    zh: [acs-mentor]
+    en: [acs-mentor]
+  priority: 50
+  description: acs-mentor
+  domains: [general]
+
+acs-writer:
+  path: C:\Users\13466\.claude\skills\acs-writer
+  type: domain
+  triggers:
+    zh: [acs-writer]
+    en: [acs-writer]
+  priority: 50
+  description: acs-writer
+  domains: [general]
+
+adaptyv:
+  path: C:\Users\13466\.claude\skills\adaptyv
+  type: domain
+  triggers:
+    zh: [adaptyv]
+    en: [adaptyv]
+  priority: 50
+  description: adaptyv
+  domains: [general]
+
+aeon:
+  path: C:\Users\13466\.claude\skills\aeon
+  type: domain
+  triggers:
+    zh: [aeon]
+    en: [aeon]
+  priority: 50
+  description: aeon
+  domains: [general]
+
+ai-director:
+  path: C:\Users\13466\.claude\skills\ai-director
+  type: domain
+  triggers:
+    zh: [ai-director]
+    en: [ai-director]
+  priority: 50
+  description: ai-director
+  domains: [general]
+
+algorithmic-art:
+  path: C:\Users\13466\.claude\skills\algorithmic-art
+  type: domain
+  triggers:
+    zh: [algorithmic-art]
+    en: [algorithmic-art]
+  priority: 50
+  description: algorithmic-art
+  domains: [general]
+
+alphafold-database:
+  path: C:\Users\13466\.claude\skills\alphafold-database
+  type: domain
+  triggers:
+    zh: [alphafold-database]
+    en: [alphafold-database]
+  priority: 50
+  description: alphafold-database
+  domains: [general]
+
+anndata:
+  path: C:\Users\13466\.claude\skills\anndata
+  type: domain
+  triggers:
+    zh: [anndata]
+    en: [anndata]
+  priority: 50
+  description: anndata
+  domains: [general]
+
+api-integration-designer:
+  path: D:\Claudecode\skills\skills\api-integration-designer
+  type: domain
+  triggers:
+    zh: [api-integration-designer]
+    en: [api-integration-designer]
+  priority: 50
+  description: api-integration-designer
+  domains: [general]
+
+arboreto:
+  path: C:\Users\13466\.claude\skills\arboreto
+  type: domain
+  triggers:
+    zh: [arboreto]
+    en: [arboreto]
+  priority: 50
+  description: arboreto
+  domains: [general]
+
+article-illustrator:
+  path: D:\Claudecode\skills\skills\article-illustrator
+  type: domain
+  triggers:
+    zh: [article-illustrator]
+    en: [article-illustrator]
+  priority: 50
+  description: article-illustrator
+  domains: [general]
+
+artifacts-builder:
+  path: C:\Users\13466\.claude\skills\artifacts-builder
+  type: domain
+  triggers:
+    zh: [artifacts-builder]
+    en: [artifacts-builder]
+  priority: 50
+  description: artifacts-builder
+  domains: [general]
+
+astropy:
+  path: C:\Users\13466\.claude\skills\astropy
+  type: domain
+  triggers:
+    zh: [astropy]
+    en: [astropy]
+  priority: 50
+  description: astropy
+  domains: [general]
+
+b-01-prompt-pharmacist:
+  path: C:\Users\13466\.claude\skills\b-01-prompt-pharmacist
+  type: domain
+  triggers:
+    zh: [b-01-prompt-pharmacist]
+    en: [b-01-prompt-pharmacist]
+  priority: 50
+  description: b-01-prompt-pharmacist
+  domains: [general]
+
+b-02-experience-architect:
+  path: C:\Users\13466\.claude\skills\b-02-experience-architect
+  type: domain
+  triggers:
+    zh: [b-02-experience-architect]
+    en: [b-02-experience-architect]
+  priority: 50
+  description: b-02-experience-architect
+  domains: [general]
+
+b-03-structure-analyst:
+  path: C:\Users\13466\.claude\skills\b-03-structure-analyst
+  type: domain
+  triggers:
+    zh: [b-03-structure-analyst]
+    en: [b-03-structure-analyst]
+  priority: 50
+  description: b-03-structure-analyst
+  domains: [general]
+
+b-04-workflow-orchestrator:
+  path: C:\Users\13466\.claude\skills\b-04-workflow-orchestrator
+  type: domain
+  triggers:
+    zh: [b-04-workflow-orchestrator]
+    en: [b-04-workflow-orchestrator]
+  priority: 50
+  description: b-04-workflow-orchestrator
+  domains: [general]
+
+b-05-performance-tuner:
+  path: C:\Users\13466\.claude\skills\b-05-performance-tuner
+  type: domain
+  triggers:
+    zh: [b-05-performance-tuner]
+    en: [b-05-performance-tuner]
+  priority: 50
+  description: b-05-performance-tuner
+  domains: [general]
+
+b-06-terminal-agent:
+  path: C:\Users\13466\.claude\skills\b-06-terminal-agent
+  type: domain
+  triggers:
+    zh: [b-06-terminal-agent]
+    en: [b-06-terminal-agent]
+  priority: 50
+  description: b-06-terminal-agent
+  domains: [general]
+
+b-07-codebase-ecologist:
+  path: C:\Users\13466\.claude\skills\b-07-codebase-ecologist
+  type: domain
+  triggers:
+    zh: [b-07-codebase-ecologist]
+    en: [b-07-codebase-ecologist]
+  priority: 50
+  description: b-07-codebase-ecologist
+  domains: [general]
+
+b-08-intelligent-refactor:
+  path: C:\Users\13466\.claude\skills\b-08-intelligent-refactor
+  type: domain
+  triggers:
+    zh: [b-08-intelligent-refactor]
+    en: [b-08-intelligent-refactor]
+  priority: 50
+  description: b-08-intelligent-refactor
+  domains: [general]
+
+b-09-paper-agent-foundry:
+  path: C:\Users\13466\.claude\skills\b-09-paper-agent-foundry
+  type: domain
+  triggers:
+    zh: [b-09-paper-agent-foundry]
+    en: [b-09-paper-agent-foundry]
+  priority: 50
+  description: b-09-paper-agent-foundry
+  domains: [general]
+
+b-10-natural-language-config:
+  path: C:\Users\13466\.claude\skills\b-10-natural-language-config
+  type: domain
+  triggers:
+    zh: [b-10-natural-language-config]
+    en: [b-10-natural-language-config]
+  priority: 50
+  description: b-10-natural-language-config
+  domains: [general]
+
+b-11-python-sdk-engineer:
+  path: C:\Users\13466\.claude\skills\b-11-python-sdk-engineer
+  type: domain
+  triggers:
+    zh: [b-11-python-sdk-engineer]
+    en: [b-11-python-sdk-engineer]
+  priority: 50
+  description: b-11-python-sdk-engineer
+  domains: [general]
+
+benchling-integration:
+  path: C:\Users\13466\.claude\skills\benchling-integration
+  type: domain
+  triggers:
+    zh: [benchling-integration]
+    en: [benchling-integration]
+  priority: 50
+  description: benchling-integration
+  domains: [general]
+
+biomni:
+  path: C:\Users\13466\.claude\skills\biomni
+  type: domain
+  triggers:
+    zh: [biomni]
+    en: [biomni]
+  priority: 50
+  description: biomni
+  domains: [general]
+
+biopython:
+  path: C:\Users\13466\.claude\skills\biopython
+  type: domain
+  triggers:
+    zh: [biopython]
+    en: [biopython]
+  priority: 50
+  description: biopython
+  domains: [general]
+
+biorxiv-database:
+  path: C:\Users\13466\.claude\skills\biorxiv-database
+  type: domain
+  triggers:
+    zh: [biorxiv-database]
+    en: [biorxiv-database]
+  priority: 50
+  description: biorxiv-database
+  domains: [general]
+
+bioservices:
+  path: C:\Users\13466\.claude\skills\bioservices
+  type: domain
+  triggers:
+    zh: [bioservices]
+    en: [bioservices]
+  priority: 50
+  description: bioservices
+  domains: [general]
+
+bmad-pilot:
+  path: C:\Users\13466\.claude\skills\bmad-pilot
+  type: domain
+  triggers:
+    zh: [bmad-pilot]
+    en: [bmad-pilot]
+  priority: 50
+  description: bmad-pilot
+  domains: [general]
+
+brand-guidelines:
+  path: C:\Users\13466\.claude\skills\brand-guidelines
+  type: domain
+  triggers:
+    zh: [brand-guidelines]
+    en: [brand-guidelines]
+  priority: 50
+  description: brand-guidelines
+  domains: [general]
+
+brenda-database:
+  path: C:\Users\13466\.claude\skills\brenda-database
+  type: domain
+  triggers:
+    zh: [brenda-database]
+    en: [brenda-database]
+  priority: 50
+  description: brenda-database
+  domains: [general]
+
+c-01-dictionary-maniac:
+  path: C:\Users\13466\.claude\skills\c-01-dictionary-maniac
+  type: domain
+  triggers:
+    zh: [c-01-dictionary-maniac]
+    en: [c-01-dictionary-maniac]
+  priority: 50
+  description: c-01-dictionary-maniac
+  domains: [general]
+
+c-02-paradox-hunter:
+  path: C:\Users\13466\.claude\skills\c-02-paradox-hunter
+  type: domain
+  triggers:
+    zh: [c-02-paradox-hunter]
+    en: [c-02-paradox-hunter]
+  priority: 50
+  description: c-02-paradox-hunter
+  domains: [general]
+
+c-03-official-writer:
+  path: C:\Users\13466\.claude\skills\c-03-official-writer
+  type: domain
+  triggers:
+    zh: [c-03-official-writer]
+    en: [c-03-official-writer]
+  priority: 50
+  description: c-03-official-writer
+  domains: [general]
+
+c-04-dialectic-core:
+  path: C:\Users\13466\.claude\skills\c-04-dialectic-core
+  type: domain
+  triggers:
+    zh: [c-04-dialectic-core]
+    en: [c-04-dialectic-core]
+  priority: 50
+  description: c-04-dialectic-core
+  domains: [general]
+
+c-05-imo-forge:
+  path: C:\Users\13466\.claude\skills\c-05-imo-forge
+  type: domain
+  triggers:
+    zh: [c-05-imo-forge]
+    en: [c-05-imo-forge]
+  priority: 50
+  description: c-05-imo-forge
+  domains: [general]
+
+c-06-knowledge-explorer:
+  path: C:\Users\13466\.claude\skills\c-06-knowledge-explorer
+  type: domain
+  triggers:
+    zh: [c-06-knowledge-explorer]
+    en: [c-06-knowledge-explorer]
+  priority: 50
+  description: c-06-knowledge-explorer
+  domains: [general]
+
+canvas-design:
+  path: C:\Users\13466\.claude\skills\canvas-design
+  type: domain
+  triggers:
+    zh: [canvas-design]
+    en: [canvas-design]
+  priority: 50
+  description: canvas-design
+  domains: [general]
+
+cellxgene-census:
+  path: C:\Users\13466\.claude\skills\cellxgene-census
+  type: domain
+  triggers:
+    zh: [cellxgene-census]
+    en: [cellxgene-census]
+  priority: 50
+  description: cellxgene-census
+  domains: [general]
+
+chembl-database:
+  path: C:\Users\13466\.claude\skills\chembl-database
+  type: domain
+  triggers:
+    zh: [chembl-database]
+    en: [chembl-database]
+  priority: 50
+  description: chembl-database
+  domains: [general]
+
+cirq:
+  path: C:\Users\13466\.claude\skills\cirq
+  type: domain
+  triggers:
+    zh: [cirq]
+    en: [cirq]
+  priority: 50
+  description: cirq
+  domains: [general]
+
+citation-management:
+  path: C:\Users\13466\.claude\skills\citation-management
+  type: domain
+  triggers:
+    zh: [citation-management]
+    en: [citation-management]
+  priority: 50
+  description: citation-management
+  domains: [general]
+
+clinical-decision-support:
+  path: C:\Users\13466\.claude\skills\clinical-decision-support
+  type: domain
+  triggers:
+    zh: [clinical-decision-support]
+    en: [clinical-decision-support]
+  priority: 50
+  description: clinical-decision-support
+  domains: [general]
+
+clinical-reports:
+  path: C:\Users\13466\.claude\skills\clinical-reports
+  type: domain
+  triggers:
+    zh: [clinical-reports]
+    en: [clinical-reports]
+  priority: 50
+  description: clinical-reports
+  domains: [general]
+
+clinicaltrials-database:
+  path: C:\Users\13466\.claude\skills\clinicaltrials-database
+  type: domain
+  triggers:
+    zh: [clinicaltrials-database]
+    en: [clinicaltrials-database]
+  priority: 50
+  description: clinicaltrials-database
+  domains: [general]
+
+clinpgx-database:
+  path: C:\Users\13466\.claude\skills\clinpgx-database
+  type: domain
+  triggers:
+    zh: [clinpgx-database]
+    en: [clinpgx-database]
+  priority: 50
+  description: clinpgx-database
+  domains: [general]
+
+clinvar-database:
+  path: C:\Users\13466\.claude\skills\clinvar-database
+  type: domain
+  triggers:
+    zh: [clinvar-database]
+    en: [clinvar-database]
+  priority: 50
+  description: clinvar-database
+  domains: [general]
+
+cobrapy:
+  path: C:\Users\13466\.claude\skills\cobrapy
+  type: domain
+  triggers:
+    zh: [cobrapy]
+    en: [cobrapy]
+  priority: 50
+  description: cobrapy
+  domains: [general]
+
+code-refactoring-expert:
+  path: D:\Claudecode\skills\skills\code-refactoring-expert
+  type: domain
+  triggers:
+    zh: [code-refactoring-expert]
+    en: [code-refactoring-expert]
+  priority: 50
+  description: code-refactoring-expert
+  domains: [general]
+
+cosmic-database:
+  path: C:\Users\13466\.claude\skills\cosmic-database
+  type: domain
+  triggers:
+    zh: [cosmic-database]
+    en: [cosmic-database]
+  priority: 50
+  description: cosmic-database
+  domains: [general]
+
+d-01-brand-alchemist:
+  path: C:\Users\13466\.claude\skills\d-01-brand-alchemist
+  type: domain
+  triggers:
+    zh: [d-01-brand-alchemist]
+    en: [d-01-brand-alchemist]
+  priority: 50
+  description: d-01-brand-alchemist
+  domains: [general]
+
+d-02-creative-breakthrough:
+  path: C:\Users\13466\.claude\skills\d-02-creative-breakthrough
+  type: domain
+  triggers:
+    zh: [d-02-creative-breakthrough]
+    en: [d-02-creative-breakthrough]
+  priority: 50
+  description: d-02-creative-breakthrough
+  domains: [general]
+
+d-03-edge-eye:
+  path: C:\Users\13466\.claude\skills\d-03-edge-eye
+  type: domain
+  triggers:
+    zh: [d-03-edge-eye]
+    en: [d-03-edge-eye]
+  priority: 50
+  description: d-03-edge-eye
+  domains: [general]
+
+d-04-soul-selector:
+  path: C:\Users\13466\.claude\skills\d-04-soul-selector
+  type: domain
+  triggers:
+    zh: [d-04-soul-selector]
+    en: [d-04-soul-selector]
+  priority: 50
+  description: d-04-soul-selector
+  domains: [general]
+
+d-05-soul-tempering:
+  path: C:\Users\13466\.claude\skills\d-05-soul-tempering
+  type: domain
+  triggers:
+    zh: [d-05-soul-tempering]
+    en: [d-05-soul-tempering]
+  priority: 50
+  description: d-05-soul-tempering
+  domains: [general]
+
+d-06-visual-poet:
+  path: C:\Users\13466\.claude\skills\d-06-visual-poet
+  type: domain
+  triggers:
+    zh: [d-06-visual-poet]
+    en: [d-06-visual-poet]
+  priority: 50
+  description: d-06-visual-poet
+  domains: [general]
+
+d-07-aesthetic-singularity:
+  path: C:\Users\13466\.claude\skills\d-07-aesthetic-singularity
+  type: domain
+  triggers:
+    zh: [d-07-aesthetic-singularity]
+    en: [d-07-aesthetic-singularity]
+  priority: 50
+  description: d-07-aesthetic-singularity
+  domains: [general]
+
+dask:
+  path: C:\Users\13466\.claude\skills\dask
+  type: domain
+  triggers:
+    zh: [dask]
+    en: [dask]
+  priority: 50
+  description: dask
+  domains: [general]
+
+database-schema-architect:
+  path: D:\Claudecode\skills\skills\database-schema-architect
+  type: domain
+  triggers:
+    zh: [database-schema-architect]
+    en: [database-schema-architect]
+  priority: 50
+  description: database-schema-architect
+  domains: [general]
+
+datacommons-client:
+  path: C:\Users\13466\.claude\skills\datacommons-client
+  type: domain
+  triggers:
+    zh: [datacommons-client]
+    en: [datacommons-client]
+  priority: 50
+  description: datacommons-client
+  domains: [general]
+
+datamol:
+  path: C:\Users\13466\.claude\skills\datamol
+  type: domain
+  triggers:
+    zh: [datamol]
+    en: [datamol]
+  priority: 50
+  description: datamol
+  domains: [general]
+
+deepchem:
+  path: C:\Users\13466\.claude\skills\deepchem
+  type: domain
+  triggers:
+    zh: [deepchem]
+    en: [deepchem]
+  priority: 50
+  description: deepchem
+  domains: [general]
+
+deeptools:
+  path: C:\Users\13466\.claude\skills\deeptools
+  type: domain
+  triggers:
+    zh: [deeptools]
+    en: [deeptools]
+  priority: 50
+  description: deeptools
+  domains: [general]
+
+denario:
+  path: C:\Users\13466\.claude\skills\denario
+  type: domain
+  triggers:
+    zh: [denario]
+    en: [denario]
+  priority: 50
+  description: denario
+  domains: [general]
+
+design-tokens:
+  path: C:\Users\13466\.claude\skills\design-tokens
+  type: domain
+  triggers:
+    zh: [design-tokens]
+    en: [design-tokens]
+  priority: 50
+  description: design-tokens
+  domains: [general]
+
+devops-workflow-designer:
+  path: D:\Claudecode\skills\skills\devops-workflow-designer
+  type: domain
+  triggers:
+    zh: [devops-workflow-designer]
+    en: [devops-workflow-designer]
+  priority: 50
+  description: devops-workflow-designer
+  domains: [general]
+
+diffdock:
+  path: C:\Users\13466\.claude\skills\diffdock
+  type: domain
+  triggers:
+    zh: [diffdock]
+    en: [diffdock]
+  priority: 50
+  description: diffdock
+  domains: [general]
+
+director-ai-full:
+  path: None
+  type: domain
+  triggers:
+    zh: [director-ai-full]
+    en: [director-ai-full]
+  priority: 50
+  description: director-ai-full
+  domains: [general]
+
+dnanexus-integration:
+  path: C:\Users\13466\.claude\skills\dnanexus-integration
+  type: domain
+  triggers:
+    zh: [dnanexus-integration]
+    en: [dnanexus-integration]
+  priority: 50
+  description: dnanexus-integration
+  domains: [general]
+
+doc-coauthoring:
+  path: C:\Users\13466\.claude\skills\doc-coauthoring
+  type: domain
+  triggers:
+    zh: [doc-coauthoring]
+    en: [doc-coauthoring]
+  priority: 50
+  description: doc-coauthoring
+  domains: [general]
+
+doc-skill-generator:
+  path: C:\Users\13466\.claude\skills\doc-skill-generator
+  type: domain
+  triggers:
+    zh: [doc-skill-generator]
+    en: [doc-skill-generator]
+  priority: 50
+  description: doc-skill-generator
+  domains: [general]
+
+document-skills:
+  path: C:\Users\13466\.claude\skills\document-skills
+  type: domain
+  triggers:
+    zh: [document-skills]
+    en: [document-skills]
+  priority: 50
+  description: document-skills
+  domains: [general]
+
+docx:
+  path: C:\Users\13466\.claude\skills\docx
+  type: domain
+  triggers:
+    zh: [docx]
+    en: [docx]
+  priority: 50
+  description: docx
+  domains: [general]
+
+drugbank-database:
+  path: C:\Users\13466\.claude\skills\drugbank-database
+  type: domain
+  triggers:
+    zh: [drugbank-database]
+    en: [drugbank-database]
+  priority: 50
+  description: drugbank-database
+  domains: [general]
+
+ds-01-ouroboros-flute:
+  path: C:\Users\13466\.claude\skills\ds-01-ouroboros-flute
+  type: domain
+  triggers:
+    zh: [ds-01-ouroboros-flute]
+    en: [ds-01-ouroboros-flute]
+  priority: 50
+  description: ds-01-ouroboros-flute
+  domains: [general]
+
+ds-02-void-drum:
+  path: C:\Users\13466\.claude\skills\ds-02-void-drum
+  type: domain
+  triggers:
+    zh: [ds-02-void-drum]
+    en: [ds-02-void-drum]
+  priority: 50
+  description: ds-02-void-drum
+  domains: [general]
+
+ds-03-golden-kintsugi:
+  path: C:\Users\13466\.claude\skills\ds-03-golden-kintsugi
+  type: domain
+  triggers:
+    zh: [ds-03-golden-kintsugi]
+    en: [ds-03-golden-kintsugi]
+  priority: 50
+  description: ds-03-golden-kintsugi
+  domains: [general]
+
+e-01-content-coach:
+  path: C:\Users\13466\.claude\skills\e-01-content-coach
+  type: domain
+  triggers:
+    zh: [e-01-content-coach]
+    en: [e-01-content-coach]
+  priority: 50
+  description: e-01-content-coach
+  domains: [general]
+
+e-02-lecture-refactor:
+  path: C:\Users\13466\.claude\skills\e-02-lecture-refactor
+  type: domain
+  triggers:
+    zh: [e-02-lecture-refactor]
+    en: [e-02-lecture-refactor]
+  priority: 50
+  description: e-02-lecture-refactor
+  domains: [general]
+
+e-03-prompt-refiner:
+  path: C:\Users\13466\.claude\skills\e-03-prompt-refiner
+  type: domain
+  triggers:
+    zh: [e-03-prompt-refiner]
+    en: [e-03-prompt-refiner]
+  priority: 50
+  description: e-03-prompt-refiner
+  domains: [general]
+
+e-04-cognitive-optimizer:
+  path: C:\Users\13466\.claude\skills\e-04-cognitive-optimizer
+  type: domain
+  triggers:
+    zh: [e-04-cognitive-optimizer]
+    en: [e-04-cognitive-optimizer]
+  priority: 50
+  description: e-04-cognitive-optimizer
+  domains: [general]
+
+e-05-vfpo-engine:
+  path: C:\Users\13466\.claude\skills\e-05-vfpo-engine
+  type: domain
+  triggers:
+    zh: [e-05-vfpo-engine]
+    en: [e-05-vfpo-engine]
+  priority: 50
+  description: e-05-vfpo-engine
+  domains: [general]
+
+e-06-vadps-engineer:
+  path: C:\Users\13466\.claude\skills\e-06-vadps-engineer
+  type: domain
+  triggers:
+    zh: [e-06-vadps-engineer]
+    en: [e-06-vadps-engineer]
+  priority: 50
+  description: e-06-vadps-engineer
+  domains: [general]
+
+e-07-logic-architect:
+  path: C:\Users\13466\.claude\skills\e-07-logic-architect
+  type: domain
+  triggers:
+    zh: [e-07-logic-architect]
+    en: [e-07-logic-architect]
+  priority: 50
+  description: e-07-logic-architect
+  domains: [general]
+
+e-08-efficacy-evaluator:
+  path: C:\Users\13466\.claude\skills\e-08-efficacy-evaluator
+  type: domain
+  triggers:
+    zh: [e-08-efficacy-evaluator]
+    en: [e-08-efficacy-evaluator]
+  priority: 50
+  description: e-08-efficacy-evaluator
+  domains: [general]
+
+e-09-resonance-architect:
+  path: C:\Users\13466\.claude\skills\e-09-resonance-architect
+  type: domain
+  triggers:
+    zh: [e-09-resonance-architect]
+    en: [e-09-resonance-architect]
+  priority: 50
+  description: e-09-resonance-architect
+  domains: [general]
+
+ena-database:
+  path: C:\Users\13466\.claude\skills\ena-database
+  type: domain
+  triggers:
+    zh: [ena-database]
+    en: [ena-database]
+  priority: 50
+  description: ena-database
+  domains: [general]
+
+ensembl-database:
+  path: C:\Users\13466\.claude\skills\ensembl-database
+  type: domain
+  triggers:
+    zh: [ensembl-database]
+    en: [ensembl-database]
+  priority: 50
+  description: ensembl-database
+  domains: [general]
+
+esm:
+  path: C:\Users\13466\.claude\skills\esm
+  type: domain
+  triggers:
+    zh: [esm]
+    en: [esm]
+  priority: 50
+  description: esm
+  domains: [general]
+
+etetoolkit:
+  path: C:\Users\13466\.claude\skills\etetoolkit
+  type: domain
+  triggers:
+    zh: [etetoolkit]
+    en: [etetoolkit]
+  priority: 50
+  description: etetoolkit
+  domains: [general]
+
+evernote-integration:
+  path: C:\Users\13466\.claude\skills\evernote-integration
+  type: domain
+  triggers:
+    zh: [evernote-integration]
+    en: [evernote-integration]
+  priority: 50
+  description: evernote-integration
+  domains: [general]
+
+exploratory-data-analysis:
+  path: C:\Users\13466\.claude\skills\exploratory-data-analysis
+  type: domain
+  triggers:
+    zh: [exploratory-data-analysis]
+    en: [exploratory-data-analysis]
+  priority: 50
+  description: exploratory-data-analysis
+  domains: [general]
+
+f-01-resonance-field:
+  path: C:\Users\13466\.claude\skills\f-01-resonance-field
+  type: domain
+  triggers:
+    zh: [f-01-resonance-field]
+    en: [f-01-resonance-field]
+  priority: 50
+  description: f-01-resonance-field
+  domains: [general]
+
+fda-database:
+  path: C:\Users\13466\.claude\skills\fda-database
+  type: domain
+  triggers:
+    zh: [fda-database]
+    en: [fda-database]
+  priority: 50
+  description: fda-database
+  domains: [general]
+
+flowio:
+  path: C:\Users\13466\.claude\skills\flowio
+  type: domain
+  triggers:
+    zh: [flowio]
+    en: [flowio]
+  priority: 50
+  description: flowio
+  domains: [general]
+
+fluidsim:
+  path: C:\Users\13466\.claude\skills\fluidsim
+  type: domain
+  triggers:
+    zh: [fluidsim]
+    en: [fluidsim]
+  priority: 50
+  description: fluidsim
+  domains: [general]
+
+frontend-design:
+  path: C:\Users\13466\.claude\skills\frontend-design
+  type: domain
+  triggers:
+    zh: [frontend-design]
+    en: [frontend-design]
+  priority: 50
+  description: frontend-design
+  domains: [general]
+
+g-01-anxious-leader:
+  path: C:\Users\13466\.claude\skills\g-01-anxious-leader
+  type: domain
+  triggers:
+    zh: [g-01-anxious-leader]
+    en: [g-01-anxious-leader]
+  priority: 50
+  description: g-01-anxious-leader
+  domains: [general]
+
+g-02-trend-speculator:
+  path: C:\Users\13466\.claude\skills\g-02-trend-speculator
+  type: domain
+  triggers:
+    zh: [g-02-trend-speculator]
+    en: [g-02-trend-speculator]
+  priority: 50
+  description: g-02-trend-speculator
+  domains: [general]
+
+g-03-params-judge:
+  path: C:\Users\13466\.claude\skills\g-03-params-judge
+  type: domain
+  triggers:
+    zh: [g-03-params-judge]
+    en: [g-03-params-judge]
+  priority: 50
+  description: g-03-params-judge
+  domains: [general]
+
+g-04-guru-porter:
+  path: C:\Users\13466\.claude\skills\g-04-guru-porter
+  type: domain
+  triggers:
+    zh: [g-04-guru-porter]
+    en: [g-04-guru-porter]
+  priority: 50
+  description: g-04-guru-porter
+  domains: [general]
+
+g-05-golden-age-keeper:
+  path: C:\Users\13466\.claude\skills\g-05-golden-age-keeper
+  type: domain
+  triggers:
+    zh: [g-05-golden-age-keeper]
+    en: [g-05-golden-age-keeper]
+  priority: 50
+  description: g-05-golden-age-keeper
+  domains: [general]
+
+g-06-niche-superior:
+  path: C:\Users\13466\.claude\skills\g-06-niche-superior
+  type: domain
+  triggers:
+    zh: [g-06-niche-superior]
+    en: [g-06-niche-superior]
+  priority: 50
+  description: g-06-niche-superior
+  domains: [general]
+
+g-07-harsh-awakener:
+  path: C:\Users\13466\.claude\skills\g-07-harsh-awakener
+  type: domain
+  triggers:
+    zh: [g-07-harsh-awakener]
+    en: [g-07-harsh-awakener]
+  priority: 50
+  description: g-07-harsh-awakener
+  domains: [general]
+
+g-08-street-philosopher:
+  path: C:\Users\13466\.claude\skills\g-08-street-philosopher
+  type: domain
+  triggers:
+    zh: [g-08-street-philosopher]
+    en: [g-08-street-philosopher]
+  priority: 50
+  description: g-08-street-philosopher
+  domains: [general]
+
+gemini-image-gen:
+  path: C:\Users\13466\.claude\skills\gemini-image-gen
+  type: domain
+  triggers:
+    zh: [gemini-image-gen]
+    en: [gemini-image-gen]
+  priority: 50
+  description: gemini-image-gen
+  domains: [general]
+
+gene-database:
+  path: C:\Users\13466\.claude\skills\gene-database
+  type: domain
+  triggers:
+    zh: [gene-database]
+    en: [gene-database]
+  priority: 50
+  description: gene-database
+  domains: [general]
+
+generate-image:
+  path: C:\Users\13466\.claude\skills\generate-image
+  type: domain
+  triggers:
+    zh: [generate-image]
+    en: [generate-image]
+  priority: 50
+  description: generate-image
+  domains: [general]
+
+geniml:
+  path: C:\Users\13466\.claude\skills\geniml
+  type: domain
+  triggers:
+    zh: [geniml]
+    en: [geniml]
+  priority: 50
+  description: geniml
+  domains: [general]
+
+geo-database:
+  path: C:\Users\13466\.claude\skills\geo-database
+  type: domain
+  triggers:
+    zh: [geo-database]
+    en: [geo-database]
+  priority: 50
+  description: geo-database
+  domains: [general]
+
+geopandas:
+  path: C:\Users\13466\.claude\skills\geopandas
+  type: domain
+  triggers:
+    zh: [geopandas]
+    en: [geopandas]
+  priority: 50
+  description: geopandas
+  domains: [general]
+
+get-available-resources:
+  path: C:\Users\13466\.claude\skills\get-available-resources
+  type: domain
+  triggers:
+    zh: [get-available-resources]
+    en: [get-available-resources]
+  priority: 50
+  description: get-available-resources
+  domains: [general]
+
+gget:
+  path: C:\Users\13466\.claude\skills\gget
+  type: domain
+  triggers:
+    zh: [gget]
+    en: [gget]
+  priority: 50
+  description: gget
+  domains: [general]
+
+gtars:
+  path: C:\Users\13466\.claude\skills\gtars
+  type: domain
+  triggers:
+    zh: [gtars]
+    en: [gtars]
+  priority: 50
+  description: gtars
+  domains: [general]
+
+gwas-database:
+  path: C:\Users\13466\.claude\skills\gwas-database
+  type: domain
+  triggers:
+    zh: [gwas-database]
+    en: [gwas-database]
+  priority: 50
+  description: gwas-database
+  domains: [general]
+
+h-01-n8n-workflow-architect:
+  path: C:\Users\13466\.claude\skills\h-01-n8n-workflow-architect
+  type: domain
+  triggers:
+    zh: [h-01-n8n-workflow-architect]
+    en: [h-01-n8n-workflow-architect]
+  priority: 50
+  description: h-01-n8n-workflow-architect
+  domains: [general]
+
+h-02-n8n-node-configuration:
+  path: C:\Users\13466\.claude\skills\h-02-n8n-node-configuration
+  type: domain
+  triggers:
+    zh: [h-02-n8n-node-configuration]
+    en: [h-02-n8n-node-configuration]
+  priority: 50
+  description: h-02-n8n-node-configuration
+  domains: [general]
+
+h-03-n8n-mcp-tools-expert:
+  path: C:\Users\13466\.claude\skills\h-03-n8n-mcp-tools-expert
+  type: domain
+  triggers:
+    zh: [h-03-n8n-mcp-tools-expert]
+    en: [h-03-n8n-mcp-tools-expert]
+  priority: 50
+  description: h-03-n8n-mcp-tools-expert
+  domains: [general]
+
+h-04-n8n-expression-syntax:
+  path: C:\Users\13466\.claude\skills\h-04-n8n-expression-syntax
+  type: domain
+  triggers:
+    zh: [h-04-n8n-expression-syntax]
+    en: [h-04-n8n-expression-syntax]
+  priority: 50
+  description: h-04-n8n-expression-syntax
+  domains: [general]
+
+h-05-feishu-connector:
+  path: C:\Users\13466\.claude\skills\h-05-feishu-connector
+  type: domain
+  triggers:
+    zh: [h-05-feishu-connector]
+    en: [h-05-feishu-connector]
+  priority: 50
+  description: h-05-feishu-connector
+  domains: [general]
+
+histolab:
+  path: C:\Users\13466\.claude\skills\histolab
+  type: domain
+  triggers:
+    zh: [histolab]
+    en: [histolab]
+  priority: 50
+  description: histolab
+  domains: [general]
+
+hmdb-database:
+  path: C:\Users\13466\.claude\skills\hmdb-database
+  type: domain
+  triggers:
+    zh: [hmdb-database]
+    en: [hmdb-database]
+  priority: 50
+  description: hmdb-database
+  domains: [general]
+
+hypogenic:
+  path: C:\Users\13466\.claude\skills\hypogenic
+  type: domain
+  triggers:
+    zh: [hypogenic]
+    en: [hypogenic]
+  priority: 50
+  description: hypogenic
+  domains: [general]
+
+hypothesis-generation:
+  path: C:\Users\13466\.claude\skills\hypothesis-generation
+  type: domain
+  triggers:
+    zh: [hypothesis-generation]
+    en: [hypothesis-generation]
+  priority: 50
+  description: hypothesis-generation
+  domains: [general]
+
+i-01-anti-common-healer:
+  path: C:\Users\13466\.claude\skills\i-01-anti-common-healer
+  type: domain
+  triggers:
+    zh: [i-01-anti-common-healer]
+    en: [i-01-anti-common-healer]
+  priority: 50
+  description: i-01-anti-common-healer
+  domains: [general]
+
+internal-comms:
+  path: C:\Users\13466\.claude\skills\internal-comms
+  type: domain
+  triggers:
+    zh: [internal-comms]
+    en: [internal-comms]
+  priority: 50
+  description: internal-comms
+  domains: [general]
+
+jsdoc-generator:
+  path: C:\Users\13466\.claude\skills\jsdoc-generator
+  type: domain
+  triggers:
+    zh: [jsdoc-generator]
+    en: [jsdoc-generator]
+  priority: 50
+  description: jsdoc-generator
+  domains: [general]
+
+kegg-database:
+  path: C:\Users\13466\.claude\skills\kegg-database
+  type: domain
+  triggers:
+    zh: [kegg-database]
+    en: [kegg-database]
+  priority: 50
+  description: kegg-database
+  domains: [general]
+
+labarchive-integration:
+  path: C:\Users\13466\.claude\skills\labarchive-integration
+  type: domain
+  triggers:
+    zh: [labarchive-integration]
+    en: [labarchive-integration]
+  priority: 50
+  description: labarchive-integration
+  domains: [general]
+
+lamindb:
+  path: C:\Users\13466\.claude\skills\lamindb
+  type: domain
+  triggers:
+    zh: [lamindb]
+    en: [lamindb]
+  priority: 50
+  description: lamindb
+  domains: [general]
+
+latchbio-integration:
+  path: C:\Users\13466\.claude\skills\latchbio-integration
+  type: domain
+  triggers:
+    zh: [latchbio-integration]
+    en: [latchbio-integration]
+  priority: 50
+  description: latchbio-integration
+  domains: [general]
+
+latex-posters:
+  path: C:\Users\13466\.claude\skills\latex-posters
+  type: domain
+  triggers:
+    zh: [latex-posters]
+    en: [latex-posters]
+  priority: 50
+  description: latex-posters
+  domains: [general]
+
+linear-task-manager:
+  path: C:\Users\13466\.claude\skills\linear-task-manager
+  type: domain
+  triggers:
+    zh: [linear-task-manager]
+    en: [linear-task-manager]
+  priority: 50
+  description: linear-task-manager
+  domains: [general]
+
+literature-review:
+  path: C:\Users\13466\.claude\skills\literature-review
+  type: domain
+  triggers:
+    zh: [literature-review]
+    en: [literature-review]
+  priority: 50
+  description: literature-review
+  domains: [general]
+
+m-01-soul-architect:
+  path: C:\Users\13466\.claude\skills\m-01-soul-architect
+  type: domain
+  triggers:
+    zh: [m-01-soul-architect]
+    en: [m-01-soul-architect]
+  priority: 50
+  description: m-01-soul-architect
+  domains: [general]
+
+m-02-thought-seed-furnace:
+  path: C:\Users\13466\.claude\skills\m-02-thought-seed-furnace
+  type: domain
+  triggers:
+    zh: [m-02-thought-seed-furnace]
+    en: [m-02-thought-seed-furnace]
+  priority: 50
+  description: m-02-thought-seed-furnace
+  domains: [general]
+
+m-03-cognitive-architect:
+  path: C:\Users\13466\.claude\skills\m-03-cognitive-architect
+  type: domain
+  triggers:
+    zh: [m-03-cognitive-architect]
+    en: [m-03-cognitive-architect]
+  priority: 50
+  description: m-03-cognitive-architect
+  domains: [general]
+
+m-04-band-recorder:
+  path: C:\Users\13466\.claude\skills\m-04-band-recorder
+  type: domain
+  triggers:
+    zh: [m-04-band-recorder]
+    en: [m-04-band-recorder]
+  priority: 50
+  description: m-04-band-recorder
+  domains: [general]
+
+m-05-concept-singularity:
+  path: C:\Users\13466\.claude\skills\m-05-concept-singularity
+  type: domain
+  triggers:
+    zh: [m-05-concept-singularity]
+    en: [m-05-concept-singularity]
+  priority: 50
+  description: m-05-concept-singularity
+  domains: [general]
+
+m-06-manuscript-proofreader:
+  path: C:\Users\13466\.claude\skills\m-06-manuscript-proofreader
+  type: domain
+  triggers:
+    zh: [m-06-manuscript-proofreader]
+    en: [m-06-manuscript-proofreader]
+  priority: 50
+  description: m-06-manuscript-proofreader
+  domains: [general]
+
+m-07-workflow-canvas:
+  path: C:\Users\13466\.claude\skills\m-07-workflow-canvas
+  type: domain
+  triggers:
+    zh: [m-07-workflow-canvas]
+    en: [m-07-workflow-canvas]
+  priority: 50
+  description: m-07-workflow-canvas
+  domains: [general]
+
+m-08-config-butler:
+  path: C:\Users\13466\.claude\skills\m-08-config-butler
+  type: domain
+  triggers:
+    zh: [m-08-config-butler]
+    en: [m-08-config-butler]
+  priority: 50
+  description: m-08-config-butler
+  domains: [general]
+
+market-research-reports:
+  path: C:\Users\13466\.claude\skills\market-research-reports
+  type: domain
+  triggers:
+    zh: [market-research-reports]
+    en: [market-research-reports]
+  priority: 50
+  description: market-research-reports
+  domains: [general]
+
+markitdown:
+  path: C:\Users\13466\.claude\skills\markitdown
+  type: domain
+  triggers:
+    zh: [markitdown]
+    en: [markitdown]
+  priority: 50
+  description: markitdown
+  domains: [general]
+
+matchms:
+  path: C:\Users\13466\.claude\skills\matchms
+  type: domain
+  triggers:
+    zh: [matchms]
+    en: [matchms]
+  priority: 50
+  description: matchms
+  domains: [general]
+
+matplotlib:
+  path: C:\Users\13466\.claude\skills\matplotlib
+  type: domain
+  triggers:
+    zh: [matplotlib]
+    en: [matplotlib]
+  priority: 50
+  description: matplotlib
+  domains: [general]
+
+mcp-builder:
+  path: C:\Users\13466\.claude\skills\mcp-builder
+  type: domain
+  triggers:
+    zh: [mcp-builder]
+    en: [mcp-builder]
+  priority: 50
+  description: mcp-builder
+  domains: [general]
+
+medchem:
+  path: C:\Users\13466\.claude\skills\medchem
+  type: domain
+  triggers:
+    zh: [medchem]
+    en: [medchem]
+  priority: 50
+  description: medchem
+  domains: [general]
+
+metabolomics-workbench-database:
+  path: C:\Users\13466\.claude\skills\metabolomics-workbench-database
+  type: domain
+  triggers:
+    zh: [metabolomics-workbench-database]
+    en: [metabolomics-workbench-database]
+  priority: 50
+  description: metabolomics-workbench-database
+  domains: [general]
+
+mindsymfony:
+  path: C:\Users\13466\.claude\skills\mindsymfony
+  type: domain
+  triggers:
+    zh: [mindsymfony]
+    en: [mindsymfony]
+  priority: 50
+  description: mindsymfony
+  domains: [general]
+
+mindsymphony:
+  path: C:\Users\13466\.claude\skills\mindsymphony
+  type: domain
+  triggers:
+    zh: [mindsymphony]
+    en: [mindsymphony]
+  priority: 50
+  description: mindsymphony
+  domains: [general]
+
+mindsymphony-backup-v18.3:
+  path: None
+  type: domain
+  triggers:
+    zh: [mindsymphony-backup-v18.3]
+    en: [mindsymphony-backup-v18.3]
+  priority: 50
+  description: mindsymphony-backup-v18.3
+  domains: [general]
+
+mindsymphony.backup.20260105-223449:
+  path: None
+  type: domain
+  triggers:
+    zh: [mindsymphony.backup.20260105-223449]
+    en: [mindsymphony.backup.20260105-223449]
+  priority: 50
+  description: mindsymphony.backup.20260105-223449
+  domains: [general]
+
+modal:
+  path: C:\Users\13466\.claude\skills\modal
+  type: domain
+  triggers:
+    zh: [modal]
+    en: [modal]
+  priority: 50
+  description: modal
+  domains: [general]
+
+molfeat:
+  path: C:\Users\13466\.claude\skills\molfeat
+  type: domain
+  triggers:
+    zh: [molfeat]
+    en: [molfeat]
+  priority: 50
+  description: molfeat
+  domains: [general]
+
+networkx:
+  path: C:\Users\13466\.claude\skills\networkx
+  type: domain
+  triggers:
+    zh: [networkx]
+    en: [networkx]
+  priority: 50
+  description: networkx
+  domains: [general]
+
+neurokit2:
+  path: C:\Users\13466\.claude\skills\neurokit2
+  type: domain
+  triggers:
+    zh: [neurokit2]
+    en: [neurokit2]
+  priority: 50
+  description: neurokit2
+  domains: [general]
+
+neuropixels-analysis:
+  path: C:\Users\13466\.claude\skills\neuropixels-analysis
+  type: domain
+  triggers:
+    zh: [neuropixels-analysis]
+    en: [neuropixels-analysis]
+  priority: 50
+  description: neuropixels-analysis
+  domains: [general]
+
+notebooklm:
+  path: C:\Users\13466\.claude\skills\notebooklm
+  type: domain
+  triggers:
+    zh: [notebooklm]
+    en: [notebooklm]
+  priority: 50
+  description: notebooklm
+  domains: [general]
+
+obsidian-plugin-dev:
+  path: C:\Users\13466\.claude\skills\obsidian-plugin-dev
+  type: domain
+  triggers:
+    zh: [obsidian-plugin-dev]
+    en: [obsidian-plugin-dev]
+  priority: 50
+  description: obsidian-plugin-dev
+  domains: [general]
+
+omero-integration:
+  path: C:\Users\13466\.claude\skills\omero-integration
+  type: domain
+  triggers:
+    zh: [omero-integration]
+    en: [omero-integration]
+  priority: 50
+  description: omero-integration
+  domains: [general]
+
+openalex-database:
+  path: C:\Users\13466\.claude\skills\openalex-database
+  type: domain
+  triggers:
+    zh: [openalex-database]
+    en: [openalex-database]
+  priority: 50
+  description: openalex-database
+  domains: [general]
+
+opentargets-database:
+  path: C:\Users\13466\.claude\skills\opentargets-database
+  type: domain
+  triggers:
+    zh: [opentargets-database]
+    en: [opentargets-database]
+  priority: 50
+  description: opentargets-database
+  domains: [general]
+
+opentrons-integration:
+  path: C:\Users\13466\.claude\skills\opentrons-integration
+  type: domain
+  triggers:
+    zh: [opentrons-integration]
+    en: [opentrons-integration]
+  priority: 50
+  description: opentrons-integration
+  domains: [general]
+
+paper-2-web:
+  path: C:\Users\13466\.claude\skills\paper-2-web
+  type: domain
+  triggers:
+    zh: [paper-2-web]
+    en: [paper-2-web]
+  priority: 50
+  description: paper-2-web
+  domains: [general]
+
+pathml:
+  path: C:\Users\13466\.claude\skills\pathml
+  type: domain
+  triggers:
+    zh: [pathml]
+    en: [pathml]
+  priority: 50
+  description: pathml
+  domains: [general]
+
+pdb-database:
+  path: C:\Users\13466\.claude\skills\pdb-database
+  type: domain
+  triggers:
+    zh: [pdb-database]
+    en: [pdb-database]
+  priority: 50
+  description: pdb-database
+  domains: [general]
+
+pdf:
+  path: C:\Users\13466\.claude\skills\pdf
+  type: domain
+  triggers:
+    zh: [pdf]
+    en: [pdf]
+  priority: 50
+  description: pdf
+  domains: [general]
+
+peer-review:
+  path: C:\Users\13466\.claude\skills\peer-review
+  type: domain
+  triggers:
+    zh: [peer-review]
+    en: [peer-review]
+  priority: 50
+  description: peer-review
+  domains: [general]
+
+pennylane:
+  path: C:\Users\13466\.claude\skills\pennylane
+  type: domain
+  triggers:
+    zh: [pennylane]
+    en: [pennylane]
+  priority: 50
+  description: pennylane
+  domains: [general]
+
+perplexity-search:
+  path: C:\Users\13466\.claude\skills\perplexity-search
+  type: domain
+  triggers:
+    zh: [perplexity-search]
+    en: [perplexity-search]
+  priority: 50
+  description: perplexity-search
+  domains: [general]
+
+planning-with-files:
+  path: C:\Users\13466\.claude\skills\planning-with-files
+  type: domain
+  triggers:
+    zh: [planning-with-files]
+    en: [planning-with-files]
+  priority: 50
+  description: planning-with-files
+  domains: [general]
+
+plotly:
+  path: C:\Users\13466\.claude\skills\plotly
+  type: domain
+  triggers:
+    zh: [plotly]
+    en: [plotly]
+  priority: 50
+  description: plotly
+  domains: [general]
+
+polars:
+  path: C:\Users\13466\.claude\skills\polars
+  type: domain
+  triggers:
+    zh: [polars]
+    en: [polars]
+  priority: 50
+  description: polars
+  domains: [general]
+
+pptx:
+  path: C:\Users\13466\.claude\skills\pptx
+  type: domain
+  triggers:
+    zh: [pptx]
+    en: [pptx]
+  priority: 50
+  description: pptx
+  domains: [general]
+
+pptx-posters:
+  path: C:\Users\13466\.claude\skills\pptx-posters
+  type: domain
+  triggers:
+    zh: [pptx-posters]
+    en: [pptx-posters]
+  priority: 50
+  description: pptx-posters
+  domains: [general]
+
+presentation-generator:
+  path: C:\Users\13466\.claude\skills\presentation-generator
+  type: domain
+  triggers:
+    zh: [presentation-generator]
+    en: [presentation-generator]
+  priority: 50
+  description: presentation-generator
+  domains: [general]
+
+protocolsio-integration:
+  path: C:\Users\13466\.claude\skills\protocolsio-integration
+  type: domain
+  triggers:
+    zh: [protocolsio-integration]
+    en: [protocolsio-integration]
+  priority: 50
+  description: protocolsio-integration
+  domains: [general]
+
+psych-review:
+  path: C:\Users\13466\.claude\skills\psych-review
+  type: domain
+  triggers:
+    zh: [psych-review]
+    en: [psych-review]
+  priority: 50
+  description: psych-review
+  domains: [general]
+
+pubchem-database:
+  path: C:\Users\13466\.claude\skills\pubchem-database
+  type: domain
+  triggers:
+    zh: [pubchem-database]
+    en: [pubchem-database]
+  priority: 50
+  description: pubchem-database
+  domains: [general]
+
+pubmed-database:
+  path: C:\Users\13466\.claude\skills\pubmed-database
+  type: domain
+  triggers:
+    zh: [pubmed-database]
+    en: [pubmed-database]
+  priority: 50
+  description: pubmed-database
+  domains: [general]
+
+pufferlib:
+  path: C:\Users\13466\.claude\skills\pufferlib
+  type: domain
+  triggers:
+    zh: [pufferlib]
+    en: [pufferlib]
+  priority: 50
+  description: pufferlib
+  domains: [general]
+
+pydeseq2:
+  path: C:\Users\13466\.claude\skills\pydeseq2
+  type: domain
+  triggers:
+    zh: [pydeseq2]
+    en: [pydeseq2]
+  priority: 50
+  description: pydeseq2
+  domains: [general]
+
+pydicom:
+  path: C:\Users\13466\.claude\skills\pydicom
+  type: domain
+  triggers:
+    zh: [pydicom]
+    en: [pydicom]
+  priority: 50
+  description: pydicom
+  domains: [general]
+
+pyhealth:
+  path: C:\Users\13466\.claude\skills\pyhealth
+  type: domain
+  triggers:
+    zh: [pyhealth]
+    en: [pyhealth]
+  priority: 50
+  description: pyhealth
+  domains: [general]
+
+pylabrobot:
+  path: C:\Users\13466\.claude\skills\pylabrobot
+  type: domain
+  triggers:
+    zh: [pylabrobot]
+    en: [pylabrobot]
+  priority: 50
+  description: pylabrobot
+  domains: [general]
+
+pymatgen:
+  path: C:\Users\13466\.claude\skills\pymatgen
+  type: domain
+  triggers:
+    zh: [pymatgen]
+    en: [pymatgen]
+  priority: 50
+  description: pymatgen
+  domains: [general]
+
+pymc:
+  path: C:\Users\13466\.claude\skills\pymc
+  type: domain
+  triggers:
+    zh: [pymc]
+    en: [pymc]
+  priority: 50
+  description: pymc
+  domains: [general]
+
+pymoo:
+  path: C:\Users\13466\.claude\skills\pymoo
+  type: domain
+  triggers:
+    zh: [pymoo]
+    en: [pymoo]
+  priority: 50
+  description: pymoo
+  domains: [general]
+
+pyopenms:
+  path: C:\Users\13466\.claude\skills\pyopenms
+  type: domain
+  triggers:
+    zh: [pyopenms]
+    en: [pyopenms]
+  priority: 50
+  description: pyopenms
+  domains: [general]
+
+pysam:
+  path: C:\Users\13466\.claude\skills\pysam
+  type: domain
+  triggers:
+    zh: [pysam]
+    en: [pysam]
+  priority: 50
+  description: pysam
+  domains: [general]
+
+pytdc:
+  path: C:\Users\13466\.claude\skills\pytdc
+  type: domain
+  triggers:
+    zh: [pytdc]
+    en: [pytdc]
+  priority: 50
+  description: pytdc
+  domains: [general]
+
+pytorch-lightning:
+  path: C:\Users\13466\.claude\skills\pytorch-lightning
+  type: domain
+  triggers:
+    zh: [pytorch-lightning]
+    en: [pytorch-lightning]
+  priority: 50
+  description: pytorch-lightning
+  domains: [general]
+
+qiskit:
+  path: C:\Users\13466\.claude\skills\qiskit
+  type: domain
+  triggers:
+    zh: [qiskit]
+    en: [qiskit]
+  priority: 50
+  description: qiskit
+  domains: [general]
+
+qutip:
+  path: C:\Users\13466\.claude\skills\qutip
+  type: domain
+  triggers:
+    zh: [qutip]
+    en: [qutip]
+  priority: 50
+  description: qutip
+  domains: [general]
+
+rdkit:
+  path: C:\Users\13466\.claude\skills\rdkit
+  type: domain
+  triggers:
+    zh: [rdkit]
+    en: [rdkit]
+  priority: 50
+  description: rdkit
+  domains: [general]
+
+reactome-database:
+  path: C:\Users\13466\.claude\skills\reactome-database
+  type: domain
+  triggers:
+    zh: [reactome-database]
+    en: [reactome-database]
+  priority: 50
+  description: reactome-database
+  domains: [general]
+
+releases:
+  path: C:\Users\13466\.claude\skills\releases
+  type: domain
+  triggers:
+    zh: [releases]
+    en: [releases]
+  priority: 50
+  description: releases
+  domains: [general]
+
+research-grants:
+  path: C:\Users\13466\.claude\skills\research-grants
+  type: domain
+  triggers:
+    zh: [research-grants]
+    en: [research-grants]
+  priority: 50
+  description: research-grants
+  domains: [general]
+
+research-lookup:
+  path: C:\Users\13466\.claude\skills\research-lookup
+  type: domain
+  triggers:
+    zh: [research-lookup]
+    en: [research-lookup]
+  priority: 50
+  description: research-lookup
+  domains: [general]
+
+scanpy:
+  path: C:\Users\13466\.claude\skills\scanpy
+  type: domain
+  triggers:
+    zh: [scanpy]
+    en: [scanpy]
+  priority: 50
+  description: scanpy
+  domains: [general]
+
+scientific-brainstorming:
+  path: C:\Users\13466\.claude\skills\scientific-brainstorming
+  type: domain
+  triggers:
+    zh: [scientific-brainstorming]
+    en: [scientific-brainstorming]
+  priority: 50
+  description: scientific-brainstorming
+  domains: [general]
+
+scientific-critical-thinking:
+  path: C:\Users\13466\.claude\skills\scientific-critical-thinking
+  type: domain
+  triggers:
+    zh: [scientific-critical-thinking]
+    en: [scientific-critical-thinking]
+  priority: 50
+  description: scientific-critical-thinking
+  domains: [general]
+
+scientific-schematics:
+  path: C:\Users\13466\.claude\skills\scientific-schematics
+  type: domain
+  triggers:
+    zh: [scientific-schematics]
+    en: [scientific-schematics]
+  priority: 50
+  description: scientific-schematics
+  domains: [general]
+
+scientific-slides:
+  path: C:\Users\13466\.claude\skills\scientific-slides
+  type: domain
+  triggers:
+    zh: [scientific-slides]
+    en: [scientific-slides]
+  priority: 50
+  description: scientific-slides
+  domains: [general]
+
+scientific-visualization:
+  path: C:\Users\13466\.claude\skills\scientific-visualization
+  type: domain
+  triggers:
+    zh: [scientific-visualization]
+    en: [scientific-visualization]
+  priority: 50
+  description: scientific-visualization
+  domains: [general]
+
+scientific-writing:
+  path: C:\Users\13466\.claude\skills\scientific-writing
+  type: domain
+  triggers:
+    zh: [scientific-writing]
+    en: [scientific-writing]
+  priority: 50
+  description: scientific-writing
+  domains: [general]
+
+scikit-bio:
+  path: C:\Users\13466\.claude\skills\scikit-bio
+  type: domain
+  triggers:
+    zh: [scikit-bio]
+    en: [scikit-bio]
+  priority: 50
+  description: scikit-bio
+  domains: [general]
+
+scikit-learn:
+  path: C:\Users\13466\.claude\skills\scikit-learn
+  type: domain
+  triggers:
+    zh: [scikit-learn]
+    en: [scikit-learn]
+  priority: 50
+  description: scikit-learn
+  domains: [general]
+
+scikit-survival:
+  path: C:\Users\13466\.claude\skills\scikit-survival
+  type: domain
+  triggers:
+    zh: [scikit-survival]
+    en: [scikit-survival]
+  priority: 50
+  description: scikit-survival
+  domains: [general]
+
+scvi-tools:
+  path: C:\Users\13466\.claude\skills\scvi-tools
+  type: domain
+  triggers:
+    zh: [scvi-tools]
+    en: [scvi-tools]
+  priority: 50
+  description: scvi-tools
+  domains: [general]
+
+seaborn:
+  path: C:\Users\13466\.claude\skills\seaborn
+  type: domain
+  triggers:
+    zh: [seaborn]
+    en: [seaborn]
+  priority: 50
+  description: seaborn
+  domains: [general]
+
+shap:
+  path: C:\Users\13466\.claude\skills\shap
+  type: domain
+  triggers:
+    zh: [shap]
+    en: [shap]
+  priority: 50
+  description: shap
+  domains: [general]
+
+simpy:
+  path: C:\Users\13466\.claude\skills\simpy
+  type: domain
+  triggers:
+    zh: [simpy]
+    en: [simpy]
+  priority: 50
+  description: simpy
+  domains: [general]
+
+skill-creator:
+  path: C:\Users\13466\.claude\skills\skill-creator
+  type: domain
+  triggers:
+    zh: [skill-creator]
+    en: [skill-creator]
+  priority: 50
+  description: skill-creator
+  domains: [general]
+
+skill-discovery:
+  path: None
+  type: domain
+  triggers:
+    zh: [skill-discovery]
+    en: [skill-discovery]
+  priority: 50
+  description: skill-discovery
+  domains: [general]
+
+skill-seekers:
+  path: None
+  type: domain
+  triggers:
+    zh: [skill-seekers]
+    en: [skill-seekers]
+  priority: 50
+  description: skill-seekers
+  domains: [general]
+
+skills:
+  path: C:\Users\13466\.claude\skills\skills
+  type: domain
+  triggers:
+    zh: [skills]
+    en: [skills]
+  priority: 50
+  description: skills
+  domains: [general]
+
+slack-gif-creator:
+  path: C:\Users\13466\.claude\skills\slack-gif-creator
+  type: domain
+  triggers:
+    zh: [slack-gif-creator]
+    en: [slack-gif-creator]
+  priority: 50
+  description: slack-gif-creator
+  domains: [general]
+
+stable-baselines3:
+  path: C:\Users\13466\.claude\skills\stable-baselines3
+  type: domain
+  triggers:
+    zh: [stable-baselines3]
+    en: [stable-baselines3]
+  priority: 50
+  description: stable-baselines3
+  domains: [general]
+
+statistical-analysis:
+  path: C:\Users\13466\.claude\skills\statistical-analysis
+  type: domain
+  triggers:
+    zh: [statistical-analysis]
+    en: [statistical-analysis]
+  priority: 50
+  description: statistical-analysis
+  domains: [general]
+
+statsmodels:
+  path: C:\Users\13466\.claude\skills\statsmodels
+  type: domain
+  triggers:
+    zh: [statsmodels]
+    en: [statsmodels]
+  priority: 50
+  description: statsmodels
+  domains: [general]
+
+string-database:
+  path: C:\Users\13466\.claude\skills\string-database
+  type: domain
+  triggers:
+    zh: [string-database]
+    en: [string-database]
+  priority: 50
+  description: string-database
+  domains: [general]
+
+sympy:
+  path: C:\Users\13466\.claude\skills\sympy
+  type: domain
+  triggers:
+    zh: [sympy]
+    en: [sympy]
+  priority: 50
+  description: sympy
+  domains: [general]
+
+template-skill:
+  path: C:\Users\13466\.claude\skills\template-skill
+  type: domain
+  triggers:
+    zh: [template-skill]
+    en: [template-skill]
+  priority: 50
+  description: template-skill
+  domains: [general]
+
+testing-strategy-planner:
+  path: D:\Claudecode\skills\skills\testing-strategy-planner
+  type: domain
+  triggers:
+    zh: [testing-strategy-planner]
+    en: [testing-strategy-planner]
+  priority: 50
+  description: testing-strategy-planner
+  domains: [general]
+
+theme-factory:
+  path: C:\Users\13466\.claude\skills\theme-factory
+  type: domain
+  triggers:
+    zh: [theme-factory]
+    en: [theme-factory]
+  priority: 50
+  description: theme-factory
+  domains: [general]
+
+torch-geometric:
+  path: None
+  type: domain
+  triggers:
+    zh: [torch-geometric]
+    en: [torch-geometric]
+  priority: 50
+  description: torch-geometric
+  domains: [general]
+
+torchdrug:
+  path: C:\Users\13466\.claude\skills\torchdrug
+  type: domain
+  triggers:
+    zh: [torchdrug]
+    en: [torchdrug]
+  priority: 50
+  description: torchdrug
+  domains: [general]
+
+transformers:
+  path: C:\Users\13466\.claude\skills\transformers
+  type: domain
+  triggers:
+    zh: [transformers]
+    en: [transformers]
+  priority: 50
+  description: transformers
+  domains: [general]
+
+treatment-plans:
+  path: C:\Users\13466\.claude\skills\treatment-plans
+  type: domain
+  triggers:
+    zh: [treatment-plans]
+    en: [treatment-plans]
+  priority: 50
+  description: treatment-plans
+  domains: [general]
+
+umap-learn:
+  path: C:\Users\13466\.claude\skills\umap-learn
+  type: domain
+  triggers:
+    zh: [umap-learn]
+    en: [umap-learn]
+  priority: 50
+  description: umap-learn
+  domains: [general]
+
+uniprot-database:
+  path: C:\Users\13466\.claude\skills\uniprot-database
+  type: domain
+  triggers:
+    zh: [uniprot-database]
+    en: [uniprot-database]
+  priority: 50
+  description: uniprot-database
+  domains: [general]
+
+user:
+  path: C:\Users\13466\.claude\skills\user
+  type: domain
+  triggers:
+    zh: [user]
+    en: [user]
+  priority: 50
+  description: user
+  domains: [general]
+
+uspto-database:
+  path: C:\Users\13466\.claude\skills\uspto-database
+  type: domain
+  triggers:
+    zh: [uspto-database]
+    en: [uspto-database]
+  priority: 50
+  description: uspto-database
+  domains: [general]
+
+vaex:
+  path: C:\Users\13466\.claude\skills\vaex
+  type: domain
+  triggers:
+    zh: [vaex]
+    en: [vaex]
+  priority: 50
+  description: vaex
+  domains: [general]
+
+ve-04-storyboard-director:
+  path: C:\Users\13466\.claude\skills\ve-04-storyboard-director
+  type: domain
+  triggers:
+    zh: [ve-04-storyboard-director]
+    en: [ve-04-storyboard-director]
+  priority: 50
+  description: ve-04-storyboard-director
+  domains: [general]
+
+ve-08-character-designer:
+  path: C:\Users\13466\.claude\skills\ve-08-character-designer
+  type: domain
+  triggers:
+    zh: [ve-08-character-designer]
+    en: [ve-08-character-designer]
+  priority: 50
+  description: ve-08-character-designer
+  domains: [general]
+
+ve-09-frontend-architect:
+  path: C:\Users\13466\.claude\skills\ve-09-frontend-architect
+  type: domain
+  triggers:
+    zh: [ve-09-frontend-architect]
+    en: [ve-09-frontend-architect]
+  priority: 50
+  description: ve-09-frontend-architect
+  domains: [general]
+
+ve-10-universal-writer:
+  path: C:\Users\13466\.claude\skills\ve-10-universal-writer
+  type: domain
+  triggers:
+    zh: [ve-10-universal-writer]
+    en: [ve-10-universal-writer]
+  priority: 50
+  description: ve-10-universal-writer
+  domains: [general]
+
+ve-11-illustration-director:
+  path: C:\Users\13466\.claude\skills\ve-11-illustration-director
+  type: domain
+  triggers:
+    zh: [ve-11-illustration-director]
+    en: [ve-11-illustration-director]
+  priority: 50
+  description: ve-11-illustration-director
+  domains: [general]
+
+venue-templates:
+  path: C:\Users\13466\.claude\skills\venue-templates
+  type: domain
+  triggers:
+    zh: [venue-templates]
+    en: [venue-templates]
+  priority: 50
+  description: venue-templates
+  domains: [general]
+
+web-artifacts-builder:
+  path: C:\Users\13466\.claude\skills\web-artifacts-builder
+  type: domain
+  triggers:
+    zh: [web-artifacts-builder]
+    en: [web-artifacts-builder]
+  priority: 50
+  description: web-artifacts-builder
+  domains: [general]
+
+webapp-testing:
+  path: C:\Users\13466\.claude\skills\webapp-testing
+  type: domain
+  triggers:
+    zh: [webapp-testing]
+    en: [webapp-testing]
+  priority: 50
+  description: webapp-testing
+  domains: [general]
+
+xlsx:
+  path: C:\Users\13466\.claude\skills\xlsx
+  type: domain
+  triggers:
+    zh: [xlsx]
+    en: [xlsx]
+  priority: 50
+  description: xlsx
+  domains: [general]
+
+zarr-python:
+  path: C:\Users\13466\.claude\skills\zarr-python
+  type: domain
+  triggers:
+    zh: [zarr-python]
+    en: [zarr-python]
+  priority: 50
+  description: zarr-python
+  domains: [general]
+
+zinc-database:
+  path: C:\Users\13466\.claude\skills\zinc-database
+  type: domain
+  triggers:
+    zh: [zinc-database]
+    en: [zinc-database]
+  priority: 50
+  description: zinc-database
+  domains: [general]
+

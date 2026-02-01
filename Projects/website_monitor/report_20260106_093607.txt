@@ -1,0 +1,73 @@
+================================================================================
+Website Availability Report
+Time: 2026-01-06 09:36:07
+================================================================================
+
+Total: 10
+Accessible: 7
+Inaccessible: 3
+Success Rate: 70.0%
+
+--------------------------------------------------------------------------------
+Details:
+--------------------------------------------------------------------------------
+
+URL: https://www.google.com
+Status: OK
+Code: 200
+Time: 1931.25ms
+Title: Google
+
+URL: https://www.github.com
+Status: OK
+Code: 200
+Time: 3565.79ms
+Title: GitHub · Change is constant. GitHub keeps you ahead. · GitHub
+
+URL: https://www.python.org
+Status: OK
+Code: 200
+Time: 1247.23ms
+Title: Welcome to Python.org
+
+URL: https://www.stackoverflow.com
+Status: OK
+Code: 200
+Time: 3731.61ms
+Title: Newest Questions - Stack Overflow
+
+URL: https://www.wikipedia.org
+Status: OK
+Code: 200
+Time: 1641.93ms
+Title: Wikipedia
+
+URL: https://www.microsoft.com
+Status: FAIL
+Code: 403
+Time: 856.39ms
+Error: HTTP Status: 403
+
+URL: https://www.amazon.com
+Status: FAIL
+Code: 202
+Time: 1693.38ms
+Error: HTTP Status: 202
+
+URL: https://www.reddit.com
+Status: FAIL
+Code: 403
+Time: 980.2ms
+Error: HTTP Status: 403
+
+URL: https://www.mozilla.org
+Status: OK
+Code: 200
+Time: 950.98ms
+Title: Internet for people, not profit — Mozilla Global
+
+URL: https://www.wordpress.org
+Status: OK
+Code: 200
+Time: 3971.0ms
+Title: Blog Tool, Publishing Platform, and CMS – WordPress.org

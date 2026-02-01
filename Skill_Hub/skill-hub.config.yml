@@ -1,0 +1,31 @@
+cache:
+  db_path: C:\Users\13466/.skill-hub/skills.db
+  dir: C:\Users\13466/.skill-hub/cache
+evaluation:
+  auto_adapt: true
+  overlap_threshold: 0.8
+  quality_threshold: 0.6
+integration:
+  mindsymphony:
+    auto_register: true
+    path: C:\Users\13466/.claude/skills
+    router_path: ''
+    scan_on_startup: true
+security:
+  allow_unknown_sources: false
+  max_dependency_count: 20
+  scan_on_install: true
+sources:
+  fortytwoplugin:
+    api_key: ${FORTY_TWO_PLUGIN_KEY}
+    enabled: true
+  github:
+    enabled: true
+  local:
+    enabled: true
+    path: C:\Users\13466/.claude/skills
+    scan_on_startup: true
+  skillslm:
+    auto_update: true
+    enabled: true
+    priority: 1

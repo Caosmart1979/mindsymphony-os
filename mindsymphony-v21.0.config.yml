@@ -1,0 +1,935 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# MindSymphony v21.0 - 进化智能体系统
+# ═══════════════════════════════════════════════════════════════════════════════
+# 版本: 21.0.0-evolution
+# 更新: 2025-01-11
+# 理念: 从"静态配置"到"进化智能体"
+#
+# 核心升级:
+# 1. 统一触发层 - 合并 skill_router + commands
+# 2. 进化协议 - 自我学习、环境适应、协作进化
+# 3. Skills-n8n 协作层 - 明确分工，智能路由
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 系统元数据
+# ═══════════════════════════════════════════════════════════════════════════════
+
+system:
+  version: "21.0.0-evolution"
+  updated: "2025-01-11"
+  mode: "evolutionary"
+  description: "进化的智能生态系统 - Skills + n8n 协同"
+
+  # 核心哲学
+  philosophy:
+    v20: "配置驱动的技能库"
+    v21: "进化的智能生态系统"
+
+  # 三大支柱
+  pillars:
+    - "unified_triggers"      # 统一触发层
+    - "evolution_protocol"    # 进化协议层
+    - "collaboration_orchestrator"  # 协作编排层
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 1. 统一触发层 (Unified Triggers Layer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+unified_triggers:
+  enabled: true
+
+  # 触发优先级（从高到低）
+  priority_order:
+    - explicit_command    # 显式命令: /paper
+    - semantic_match      # 语义匹配: "帮我写论文"
+    - pattern_match       # 模式匹配: "论文|学术"
+    - context_inference   # 上下文推理
+
+  # 技能触发配置（示例）
+  skill_triggers:
+    # ──────────────── 科学研究技能 ────────────────
+    - skill: "k-dense-ai/claude-scientific-skills/scientific-writing"
+      priority: "critical"
+      category: "research"
+
+      triggers:
+        - type: "command"
+          patterns: ["/paper", "/论文", "/scientific"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "academic_writing"
+          examples: ["帮我写论文", "生成研究草稿", "学术文章"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "论文|学术|IMRaD|scientific.*paper"
+          weight: 5.0
+
+      learning:
+        track_usage: true
+        optimize_patterns: true
+        user_adaptation: true
+
+    - skill: "k-dense-ai/claude-scientific-skills/citation-management"
+      priority: "critical"
+      category: "research"
+
+      triggers:
+        - type: "command"
+          patterns: ["/cite", "/引用"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "citation_management"
+          examples: ["管理引用", "BibTeX", "文献管理"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "引用|citation|BibTeX|参考文献"
+          weight: 5.0
+
+    - skill: "k-dense-ai/claude-scientific-skills/literature-review"
+      priority: "high"
+      category: "research"
+
+      triggers:
+        - type: "command"
+          patterns: ["/review", "/综述"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "literature_review"
+          examples: ["文献综述", "研究综述", "调研"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "综述|文献.*研究|literature.*review"
+          weight: 5.0
+
+    # ──────────────── 数据库技能 ────────────────
+    - skill: "k-dense-ai/claude-scientific-skills/pubmed-database"
+      priority: "critical"
+      category: "database"
+
+      triggers:
+        - type: "command"
+          patterns: ["/pubmed", "/医学文献"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "pubmed_search"
+          examples: ["搜索PubMed", "医学文献", "MEDLINE"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "PubMed|医学文献|MEDLINE"
+          weight: 5.0
+
+    - skill: "k-dense-ai/claude-scientific-skills/uniprot-database"
+      priority: "high"
+      category: "database"
+
+      triggers:
+        - type: "command"
+          patterns: ["/uniprot", "/蛋白质"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "protein_query"
+          examples: ["查询蛋白质", "蛋白序列", "UniProt"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "UniProt|蛋白质|蛋白序列"
+          weight: 5.0
+
+    # ──────────────── 机器学习技能 ────────────────
+    - skill: "k-dense-ai/claude-scientific-skills/scikit-learn"
+      priority: "critical"
+      category: "ml"
+
+      triggers:
+        - type: "command"
+          patterns: ["/sklearn", "/机器学习"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "machine_learning"
+          examples: ["训练模型", "机器学习", "sklearn"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "scikit-learn|sklearn|机器学习"
+          weight: 5.0
+
+    - skill: "k-dense-ai/claude-scientific-skills/transformers"
+      priority: "critical"
+      category: "ml"
+
+      triggers:
+        - type: "command"
+          patterns: ["/transformers", "/预训练模型"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "pretrained_models"
+          examples: ["BERT", "GPT", "预训练模型", "transformers"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "transformers|BERT|GPT|预训练模型"
+          weight: 5.0
+
+    # ──────────────── 可视化技能 ────────────────
+    - skill: "k-dense-ai/claude-scientific-skills/matplotlib"
+      priority: "critical"
+      category: "visualization"
+
+      triggers:
+        - type: "command"
+          patterns: ["/plot", "/绘图"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "data_visualization"
+          examples: ["绘图", "可视化", "matplotlib"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "matplotlib|绘图|可视化"
+          weight: 5.0
+
+    # ──────────────── MindSymphony 核心技能 ────────────────
+    # UPAF Layer 1: 战略规划层
+    - skill: "cognitive-architect"
+      version: "2.0"
+      priority: "critical"
+      category: "core"
+
+      triggers:
+        # 战略分解模式
+        - type: "semantic"
+          intent: "strategic_decomposition"
+          mode: "decomposition"
+          examples: ["任务分解", "技能调度", "项目管理", "计划", "协调"]
+          weight: 9.0
+
+        - type: "pattern"
+          mode: "decomposition"
+          regex: "复杂任务|战略规划|任务分解|项目管理"
+          weight: 6.0
+
+        # 自主执行模式
+        - type: "semantic"
+          intent: "autonomous_execution"
+          mode: "autonomous"
+          examples: ["全权负责", "自主完成", "端到端"]
+          weight: 10.0
+
+        - type: "pattern"
+          mode: "autonomous"
+          regex: "全权负责|自主完成|端到端"
+          weight: 8.0
+
+        # 评估验证模式
+        - type: "semantic"
+          intent: "evaluation_verification"
+          mode: "evaluation"
+          examples: ["评估方案", "可行性分析", "效果验证"]
+          weight: 8.0
+
+        - type: "pattern"
+          mode: "evaluation"
+          regex: "评估|可行性|有效性|验证"
+          weight: 5.0
+
+      # 整合信息
+      integrated:
+        - "action-planning"
+        - "efficacy-evaluator"
+
+      # 持久化规划集成
+      persistent_planning:
+        enabled: true
+        auto_trigger:
+          min_steps: 3
+          min_tools: 10
+          min_duration: 5min
+
+    # UPAF Layer 2: 批判思维层 - 超越模式
+    - skill: "paradox-transcend"
+      version: "2.0"
+      priority: "high"
+      category: "thinking"
+
+      triggers:
+        # 超越模式
+        - type: "semantic"
+          intent: "paradox_transcend"
+          mode: "transcend"
+          examples: ["悖论", "自指", "逻辑困境", "认知跃迁"]
+          weight: 9.0
+
+        - type: "pattern"
+          mode: "transcend"
+          regex: "悖论|自指|逻辑困境|认知跃迁"
+          weight: 7.0
+
+        # 揭示模式
+        - type: "semantic"
+          intent: "paradox_reveal"
+          mode: "reveal"
+          examples: ["矛盾识别", "不可能三角", "风险分析"]
+          weight: 8.0
+
+        - type: "pattern"
+          mode: "reveal"
+          regex: "矛盾|冲突|不可能三角|风险"
+          weight: 6.0
+
+      # 整合信息
+      integrated:
+        - "paradox-reveal"
+
+    # UPAF Layer 2: 批判思维层 - 虚空定音鼓
+    - skill: "assumption-remove"
+      version: "1.0"
+      priority: "high"
+      category: "thinking"
+
+      triggers:
+        - type: "semantic"
+          intent: "assumption_removal"
+          examples: ["质疑假设", "第一性原理", "本质追问"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "假设|第一性原理|质疑|本质"
+          weight: 5.0
+
+    # UPAF Layer 2: 批判思维层 - 辩证核心
+    - skill: "dialectic-analysis"
+      version: "1.0"
+      priority: "high"
+      category: "thinking"
+
+      triggers:
+        - type: "semantic"
+          intent: "dialectic_analysis"
+          examples: ["辩证分析", "对立统一", "综合观点"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "辩证|综合|对立统一|矛盾统一"
+          weight: 5.0
+
+    # UPAF Layer 3: 质量门 - Skill_Hub 集成
+    - skill: "quality-gate"
+      version: "2.0"
+      priority: "critical"
+      category: "meta"
+
+      triggers:
+        # 人工校验模式
+        - type: "semantic"
+          intent: "manual_validation"
+          mode: "manual"
+          examples: ["校验", "质量门", "完整性检查"]
+          weight: 9.0
+
+        - type: "pattern"
+          mode: "manual"
+          regex: "校验|校对|质量门|完整性"
+          weight: 7.0
+
+        # 自动评估模式
+        - type: "semantic"
+          intent: "auto_evaluation"
+          mode: "auto_eval"
+          examples: ["评估质量", "检查验证"]
+          weight: 8.0
+
+        - type: "pattern"
+          mode: "auto_eval"
+          regex: "质量检查|验证|评估.*skill"
+          weight: 6.0
+
+        # 自动适配模式
+        - type: "semantic"
+          intent: "auto_adaptation"
+          mode: "auto_adapt"
+          examples: ["适配skill", "转换格式", "标准化"]
+          weight: 8.0
+
+        - type: "pattern"
+          mode: "auto_adapt"
+          regex: "适配|转换|标准化|skill.*转换"
+          weight: 6.0
+
+      # 整合信息
+      integrated:
+        - "Skill_Hub"
+      tools:
+        - "evaluation.py"
+        - "adapt.py"
+
+    # ──────────────── 外部集成技能 ────────────────
+    # NotebookLM 知识检索
+    - skill: "notebooklm"
+      priority: "high"
+      category: "integration"
+
+      triggers:
+        - type: "semantic"
+          intent: "notebooklm_query"
+          examples: ["查询知识库", "NotebookLM", "问我的笔记本", "基于文档回答"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "notebooklm|知识库查询|基于文档"
+          weight: 6.0
+
+    # Gemini CLI 多模态
+    - skill: "gemini-cli"
+      priority: "high"
+      category: "integration"
+
+      triggers:
+        - type: "semantic"
+          intent: "gemini_multimodal"
+          examples: ["视频分析", "音频转录", "大文件处理", "用Gemini"]
+          weight: 9.0
+
+        - type: "pattern"
+          regex: "gemini|视频|音频|大文件|多模态|100万token"
+          weight: 7.0
+
+    # 印象笔记集成
+    - skill: "evernote"
+      priority: "high"
+      category: "integration"
+
+      triggers:
+        - type: "semantic"
+          intent: "evernote_query"
+          examples: ["印象笔记", "查询我的笔记", "搜索笔记", "创建笔记"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "印象笔记|evernote|笔记查询|搜索笔记|创建.*笔记"
+          weight: 6.0
+
+      # 集成配置
+      integration:
+        type: "api"
+        requires_oauth: false  # 使用开发者令牌
+        supports:
+          - search_notes
+          - get_note
+          - create_note
+          - list_notebooks
+
+    - skill: "meta/persistent-planning"
+      priority: "high"
+      category: "meta"
+
+      triggers:
+        - type: "command"
+          patterns: ["/planning", "/pwp"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "persistent_planning"
+          examples: ["启用持久化规划", "使用规划文件", "planning with files"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "持久化|规划文件|task_plan|planning.*files"
+          weight: 5.0
+
+      # 三文件模式配置
+      file_pattern:
+        directory: ".mindsymphony/planning/"
+        files:
+          plan: "task_plan.md"
+          findings: "findings.md"
+          progress: "progress.md"
+
+      # Hooks 配置
+      hooks:
+        session_start:
+          - check_complexity
+          - create_planning_files
+        post_tool_use:
+          - check_2_action_rule
+          - save_findings
+        stop:
+          - verify_completion
+          - update_progress
+
+    - skill: "c-06-knowledge-explorer"
+      priority: "high"
+      category: "core"
+
+      triggers:
+        - type: "semantic"
+          intent: "research_exploration"
+          examples: ["研究", "调研", "探索主题"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "研究|调研|探索.*主题"
+          weight: 5.0
+
+    - skill: "b-07-codebase-ecologist"
+      priority: "high"
+      category: "core"
+
+      triggers:
+        - type: "command"
+          patterns: ["/analyze", "/codebase", "/分析"]
+          weight: 10.0
+
+        - type: "semantic"
+          intent: "code_analysis"
+          examples: ["分析代码", "代码结构", "项目架构"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "分析.*代码|代码.*分析|项目.*结构"
+          weight: 5.0
+
+    # ──────────────── n8n 工作流技能 ────────────────
+    - skill: "h-01-n8n-workflow-architect"
+      priority: "medium"
+      category: "workflow"
+
+      triggers:
+        - type: "semantic"
+          intent: "workflow_automation"
+          keywords: ["自动化", "定时", "工作流", "cron", "n8n"]
+          examples: ["设计自动化流程", "定时任务", "工作流设计"]
+          weight: 7.0
+
+        - type: "pattern"
+          regex: "n8n|工作流|自动化.*流程|定时.*任务"
+          weight: 6.0
+
+      workflow_capabilities:
+        - "scheduled_execution"
+        - "external_integration"
+        - "persistent_state"
+
+    # ──────────────── 开发技能 ────────────────
+    - skill: "anthropics/skills/mcp-builder"
+      priority: "high"
+      category: "development"
+
+      triggers:
+        - type: "semantic"
+          intent: "mcp_development"
+          examples: ["构建MCP", "MCP服务器", "Model Context Protocol"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "MCP|mcp.*服务器|Model Context Protocol"
+          weight: 5.0
+
+    - skill: "anthropics/skills/frontend-design"
+      priority: "high"
+      category: "development"
+
+      triggers:
+        - type: "semantic"
+          intent: "frontend_development"
+          examples: ["前端设计", "React组件", "网页设计"]
+          weight: 8.0
+
+        - type: "pattern"
+          regex: "前端|React|网页设计|Tailwind"
+          weight: 5.0
+
+    # ──────────────── 文档技能 ────────────────
+    - skill: "anthropics/skills/pdf"
+      priority: "high"
+      category: "document"
+
+      triggers:
+        - type: "command"
+          patterns: ["/pdf"]
+          weight: 10.0
+
+        - type: "pattern"
+          regex: "PDF|pdf|合并.*PDF"
+          weight: 5.0
+
+    - skill: "anthropics/skills/docx"
+      priority: "high"
+      category: "document"
+
+      triggers:
+        - type: "command"
+          patterns: ["/docx", "/word"]
+          weight: 10.0
+
+        - type: "pattern"
+          regex: "Word|docx|文档.*编辑"
+          weight: 5.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 2. 进化协议层 (Evolution Protocol Layer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+evolution_protocol:
+  enabled: true
+  version: "2.0"
+
+  # ─────────────────────────────────────────────────────────
+  # 自我学习机制
+  # ─────────────────────────────────────────────────────────
+  self_learning:
+    # 使用追踪
+    usage_tracking:
+      enabled: true
+      metrics:
+        - "invocation_frequency"
+        - "success_rate"
+        - "user_satisfaction"
+        - "execution_time"
+      storage:
+        type: "sqlite"
+        path: "C:/Users/13466/.claude/mindsymphony-v21/evolution/learning.db"
+
+    # 模式优化
+    pattern_optimization:
+      enabled: true
+      algorithm: "bandit"
+      exploration_rate: 0.1
+      decay_factor: 0.95
+
+    # 用户偏好学习
+    user_adaptation:
+      enabled: true
+      dimensions:
+        - "communication_style"
+        - "detail_preference"
+        - "response_format"
+
+  # ─────────────────────────────────────────────────────────
+  # 环境适应机制
+  # ─────────────────────────────────────────────────────────
+  environmental_adaptation:
+    # 项目上下文检测
+    project_detection:
+      enabled: true
+      indicators:
+        - "project_type"
+        - "tech_stack"
+        - "team_size"
+        - "development_stage"
+
+    # 团队规范学习
+    convention_learning:
+      enabled: true
+      conventions:
+        - "代码风格"
+        - "提交消息格式"
+        - "文档规范"
+
+  # ─────────────────────────────────────────────────────────
+  # 协作进化机制
+  # ─────────────────────────────────────────────────────────
+  collaborative_evolution:
+    # 技能协同分析
+    synergy_analysis:
+      enabled: true
+
+    # 跨技能学习
+    cross_skill_learning:
+      enabled: true
+
+    # 集体智能
+    collective_intelligence:
+      enabled: true
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 3. Skills-n8n 协作层 (Collaboration Layer)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+skills_n8n_collaboration:
+  enabled: true
+  philosophy: "智能决策 + 持久执行"
+
+  # 能力矩阵
+  capability_matrix:
+    skills_excellence:
+      cognitive_tasks:
+        - "内容生成"
+        - "决策推理"
+        - "上下文理解"
+        - "质量评估"
+      dynamic_tasks:
+        - "即时响应"
+        - "灵活适应"
+        - "探索性任务"
+
+    n8n_excellence:
+      operational_tasks:
+        - "定时执行"
+        - "持久监听"
+        - "状态管理"
+        - "错误重试"
+      integration_tasks:
+        - "外部API"
+        - "数据库操作"
+        - "消息队列"
+
+  # 智能路由器
+  intelligent_router:
+    enabled: true
+
+    decision_tree:
+      - question: "需要持久运行？"
+        yes: "n8n"
+        no: "next"
+      - question: "需要定时触发？"
+        yes: "n8n"
+        no: "next"
+      - question: "需要复杂外部集成？"
+        yes: "n8n"
+        no: "next"
+      - question: "需要智能决策？"
+        yes: "skills"
+        no: "hybrid"
+
+    # 混合模式
+    hybrid_patterns:
+      - name: "plan_and_execute"
+        description: "Skills 规划，n8n 执行"
+      - name: "trigger_and_process"
+        description: "n8n 触发，Skills 处理"
+      - name: "optimize_and_automate"
+        description: "Skills 优化，n8n 自动化"
+
+  # MCP 桥接协议
+  mcp_bridge:
+    enabled: true
+
+    n8n_mcp_server:
+      endpoint: "http://localhost:5678/mcp"
+      capabilities:
+        - "workflow.trigger"
+        - "workflow.status"
+        - "workflow.list"
+
+    skills_to_n8n:
+      trigger_workflow:
+        method: "mcp.call"
+      check_status:
+        method: "mcp.call"
+
+    n8n_to_skills:
+      request_decision:
+        method: "webhook"
+        endpoint: "/api/skills/decide"
+
+  # 协作模板
+  collaboration_templates:
+    - name: "content_generation_and_distribution"
+      description: "Skills 生成，n8n 分发"
+
+    - name: "intelligent_monitoring"
+      description: "n8n 监控，Skills 分析"
+
+    - name: "data_processing_pipeline"
+      description: "n8n 收集，Skills 处理"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 4. 蜂后协奏系统 (Queen Orchestrator)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+queen:
+  strategy:
+    decomposition_mode: "intelligent"
+    max_workers: 8
+    auto_cleanup: true
+    parallel_threshold: 3
+
+  # 技能编组（更新版）
+  worker_groups:
+    research_team:
+      - "c-06-knowledge-explorer"
+      - "k-dense-ai/claude-scientific-skills/literature-review"
+      - "k-dense-ai/claude-scientific-skills/citation-management"
+
+    writing_team:
+      - "k-dense-ai/claude-scientific-skills/scientific-writing"
+      - "c-03-official-writer"
+      - "k-dense-ai/claude-scientific-skills/peer-review"
+
+    bioinformatics_team:
+      - "k-dense-ai/claude-scientific-skills/biopython"
+      - "k-dense-ai/claude-scientific-skills/scanpy"
+      - "k-dense-ai/claude-scientific-skills/cellxgene-census"
+
+    ml_team:
+      - "k-dense-ai/claude-scientific-skills/scikit-learn"
+      - "k-dense-ai/claude-scientific-skills/transformers"
+      - "k-dense-ai/claude-scientific-skills/torch_geometric"
+
+    visualization_team:
+      - "k-dense-ai/claude-scientific-skills/matplotlib"
+      - "k-dense-ai/claude-scientific-skills/plotly"
+      - "k-dense-ai/claude-scientific-skills/scientific-schematics"
+
+    workflow_team:
+      - "h-01-n8n-workflow-architect"
+      - "h-02-n8n-node-configuration"
+      - "h-03-n8n-mcp-tools-expert"
+
+    development_team:
+      - "anthropics/skills/mcp-builder"
+      - "anthropics/skills/webapp-testing"
+      - "b-07-codebase-ecologist"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 5. 信息素协同协议 (Pheromone Synergy Protocol)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+pheromones:
+  # 研究工作流
+  - on_event: "research.initiated"
+    from: "user"
+    to: "k-dense-ai/claude-scientific-skills/scientific-writing"
+    action: "初始化科学研究"
+
+  - on_event: "literature.search.needed"
+    from: "any"
+    to: "k-dense-ai/claude-scientific-skills/research-lookup"
+    action: "搜索研究文献"
+
+  - on_event: "paper.draft.completed"
+    from: "k-dense-ai/claude-scientific-skills/scientific-writing"
+    to: "k-dense-ai/claude-scientific-skills/peer-review"
+    action: "同行评审模拟"
+
+  # n8n 协作工作流
+  - on_event: "automation.requested"
+    from: "user"
+    to: "h-01-n8n-workflow-architect"
+    decision: "needs_scheduled_or_persistent"
+    action_if_true: "设计 n8n 工作流"
+    action_if_false: "使用 Skills 处理"
+
+  - on_event: "workflow.needs.intelligence"
+    from: "h-01-n8n-workflow-architect"
+    to: "m-03-cognitive-architect"
+    action: "智能决策辅助"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 6. MCP 集成配置
+# ═══════════════════════════════════════════════════════════════════════════════
+
+mcp:
+  enabled: true
+  config_file: "mcp_config.json"
+
+  servers:
+    filesystem:
+      description: "文件系统操作"
+      status: "enabled"
+
+    github:
+      description: "GitHub 集成"
+      status: "enabled"
+
+    google-search:
+      description: "Google 学术搜索"
+      status: "enabled"
+
+    n8n-mcp:
+      description: "n8n 平台集成（协作桥接）"
+      status: "enabled"
+      role: "collaboration_bridge"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 7. 记忆系统 (Memory System)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+memory:
+  enabled: true
+  database: "C:/Users/13466/.claude/mindsymphony-v21/memory/symphony.db"
+
+  auto_save:
+    - "insights"
+    - "research_results"
+    - "learning_progress"
+    - "skill_usage"
+    - "user_preferences"
+    - "evolution_patterns"
+
+  retention:
+    days: 365
+    auto_cleanup: true
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 8. 监控与质量 (Monitoring & Quality)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+monitoring:
+  enabled: true
+  log_level: "info"
+
+  metrics:
+    # 系统级
+    system:
+      - "skill_coverage"
+      - "trigger_accuracy"
+      - "response_quality"
+      - "user_satisfaction"
+
+    # 进化级
+    evolution:
+      - "pattern_discovery_rate"
+      - "adaptation_speed"
+      - "synergy_score"
+      - "learning_efficiency"
+
+    # 协作级
+    collaboration:
+      - "skills_n8n_handoff"
+      - "hybrid_workflow_success"
+      - "resource_utilization"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 配置说明
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# MindSymphony v21.0 的核心升级：
+#
+# 1. 统一触发层 (unified_triggers)
+#    - 合并了 v20.1 的 skill_router 和 commands
+#    - 支持4种触发模式：命令、语义、模式、上下文
+#    - 每个技能可配置多个触发器，带优先级和权重
+#
+# 2. 进化协议 (evolution_protocol)
+#    - 自我学习：追踪使用、优化模式、适应用户
+#    - 环境适应：项目检测、规范学习
+#    - 协作进化：协同分析、跨技能学习、集体智能
+#
+# 3. Skills-n8n 协作层 (skills_n8n_collaboration)
+#    - 明确能力矩阵：Skills 擅长智能任务，n8n 擅长操作任务
+#    - 智能路由器：自动判断用哪个工具
+#    - MCP 桥接：Skills 和 n8n 可以互相调用
+#
+# 使用方式：
+# 1. 将此文件复制为 mindsymphony.config.yml
+# 2. 或在启动时指定：--config mindsymphony-v21.0.config.yml
+#
+# 版本历史：
+# - v21.0.0 (2025-01-11): 进化智能体系统
+# - v20.1.0 (2025-01-11): 超级完整版 (157个技能)
+# - v20.0.0 (2025-01-10): 初次完整版
+# ═══════════════════════════════════════════════════════════════════════════════

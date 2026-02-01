@@ -1,7 +1,7 @@
 # INTEROP.yml - MindSymphony技能互操作性配置
 skill:
   name: mindsymphony
-  version: 19.1.0
+  version: 21.0.0
   category: meta
   priority: critical
   status: active
@@ -12,7 +12,7 @@ metadata:
   author: Anthropic / Community
   license: See LICENSE.txt
   created_at: 2025-01-08
-  updated_at: 2025-01-08
+  updated_at: 2025-01-23
 
 capabilities:
   provides: [intelligent-routing, task-decomposition, skill-orchestration, security-gateway]
@@ -33,10 +33,10 @@ performance:
 ab_testing:
   enabled: true
   variants:
-    - name: v19.0
-      weight: 0.3
     - name: v19.1
-      weight: 0.7
+      weight: 0
+    - name: v21.0
+      weight: 100
   metrics: ["success_rate", "execution_time", "user_satisfaction", "task_completion_quality"]
 
 discovery:

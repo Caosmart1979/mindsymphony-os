@@ -1,0 +1,271 @@
+﻿
+鈿?k-dense-ai/claude-scientific-skills/clinical-decision-support v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/neuropixels-analysis v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/aeon v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/venue-templates v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/citation-management v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-slides v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/exploratory-data-analysis v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/markitdown v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/perplexity-search v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pymoo v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-visualization v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scikit-learn v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/astropy v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/dnanexus-integration v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/etetoolkit v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/geniml v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/market-research-reports v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/deeptools v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/hypothesis-generation v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/literature-review v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/neurokit2 v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/openalex-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/opentargets-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/protocolsio-integration v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pufferlib v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pydicom v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/uspto-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/vaex v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/bioservices v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/diffdock v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/fda-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/lamindb v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/latchbio-integration v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pptx-posters v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/qiskit v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/seaborn v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/simpy v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/torchdrug v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/chembl-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/clinicaltrials-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/fluidsim v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/gene-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pathml v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/plotly v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pytorch-lightning v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/stable-baselines3 v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/biomni v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/biopython v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/drugbank-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/esm v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/rdkit v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/statsmodels v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/sympy v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/torch_geometric v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/arboreto v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/cellxgene-census v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/geopandas v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/labarchive-integration v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/matplotlib v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/metabolomics-workbench-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pyopenms v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/alphafold-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/biorxiv-database vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/clinvar-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/gget v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/hypogenic v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/peer-review v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-writing v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scikit-bio v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/clinical-reports vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/datacommons-client v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/ensembl-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/generate-image v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/gtars v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/histolab v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pylabrobot v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/qutip v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/research-lookup v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pennylane vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pymatgen v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scikit-survival v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scvi-tools v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/shap v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/statistical-analysis v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/anndata v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/deepchem v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/paper-2-web v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/uniprot-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/opentrons-integration v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/datamol v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pdb-database vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/transformers v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/zarr-python v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pubchem-database vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pymc v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pysam v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scanpy v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/treatment-plans vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/brenda-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/cirq v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/dask v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/modal vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pubmed-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pyhealth v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/zinc-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/adaptyv v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/clinpgx-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/cobrapy v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/cosmic-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/get-available-resources vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/gwas-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/hmdb-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pytdc vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/pydeseq2 v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-brainstorming v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-critical-thinking vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/scientific-schematics v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/denario v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/matchms v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/omero-integration vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/reactome-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/string-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/umap-learn v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/benchling-integration vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/ena-database vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/geo-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/medchem vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/molfeat vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/flowio vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/latex-posters v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/research-grants vlatest
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/kegg-database v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/networkx v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+鈿?k-dense-ai/claude-scientific-skills/polars v1.0.0
+  鎵€灞炲鍖? k-dense-ai/claude-scientific-skills
+
+

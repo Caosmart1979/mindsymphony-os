@@ -173,11 +173,37 @@ external_skills:
     description: Gemini CLI多模态集成
     domains: [multimodal, tools]
 
+  professional-pptx:
+    path: /mnt/skills/user/professional-pptx
+    type: domain
+    triggers:
+      zh: [PPT, 幻灯片, presentation, slide deck, 演讲稿, keynote, 学术报告, 项目汇报, 答辩PPT]
+      en: [PPT, presentation, slides, slide deck, keynote, academic presentation, business report, thesis defense]
+    priority: 85
+    description: 专业演示文稿制作技能，从内容到视觉的完整PPT工作流
+    domains: [presentation, design, academic, business]
+
+  videocut:
+    path: skills/videocut
+    type: domain
+    triggers:
+      zh: [剪视频, 口播剪辑, 视频处理, 识别口误, 加字幕, 视频剪辑, videocut]
+      en: [cut video, edit video, video processing, subtitle, video editing, videocut]
+    priority: 85
+    description: 口播视频自动化剪辑 - 口误识别、静音检测、字幕生成、自更新
+    domains: [video, editing, automation, multimedia]
+    skills:
+      - videocut:安装
+      - videocut:剪口播
+      - videocut:剪辑
+      - videocut:字幕
+      - videocut:自更新
+
 # ============================================================
 # 领域路由规则
 # ============================================================
 domain_routing:
-  
+
   # 学术领域 -> 优先academic系列
   academic:
     keywords: [论文, 研究, 学术, SCI, 统计, 队列, NHANES, 流行病]
@@ -198,6 +224,20 @@ domain_routing:
     primary: gemini-cli-integration
     secondary: null
     fallback: knowledge-explorer
+
+  # PPT制作 -> professional-pptx
+  presentation:
+    keywords: [PPT, 幻灯片, presentation, 演讲稿, keynote, 学术报告, 项目汇报, 答辩PPT]
+    primary: professional-pptx
+    secondary: pptx
+    fallback: cognitive-architect
+
+  # 视频剪辑 -> videocut
+  video:
+    keywords: [剪视频, 口播剪辑, 视频处理, 识别口误, 加字幕, 视频剪辑, videocut]
+    primary: videocut
+    secondary: gemini-cli-integration
+    fallback: cognitive-architect
 
   # 技能管理 -> skill系列
   skill_management:

@@ -1,7 +1,7 @@
 ---
 name: mindsymphony
-description: "心智协奏系统 v19.1（外部神经突触版）。统一的AI认知操作系统，集成意图路由、安全网关、外部通信接口。6核心技能 + 90扩展技能 + 6外部集成。Use when 需要智能调度多个专业技能完成复杂任务。"
-version: "19.1.0"
+description: "心智协奏系统 v21.0（进化智能体系统）。统一的AI认知操作系统，集成统一触发层、进化协议、Skills-n8n协作层、MCP桥接协议。6核心技能 + 90扩展技能 + 6外部集成。Use when 需要智能调度多个专业技能完成复杂任务。"
+version: "21.0.0"
 category: meta
 tags: [orchestration, coordination, workflow, meta, cognitive, routing, ai-system, agent]
 provides: [intelligent-routing, task-decomposition, skill-orchestration, security-gateway]
@@ -15,11 +15,11 @@ interop_metadata:
     requests_per_minute: 30
 ---
 
-# 心智协奏系统 MindSymphony v19.1（External Synapse）
+# 心智协奏系统 MindSymphony v21.0（Evolutionary Intelligence）
 
 > 我『共生』，故我"活"。 (I co-exist, therefore I live.)
-> 
-> "蜂巢不再封闭，神经触及世界。" —— v19.1设计理念
+>
+> "智能体进化，协奏超越边界。" —— v21.0设计理念
 
 ---
 
@@ -27,48 +27,42 @@ interop_metadata:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    MindSymphony OS v19.1                    │
+│                    MindSymphony OS v21.0                    │
 ├─────────────────────────────────────────────────────────────┤
 │  Layer 6: 外部世界 (External World)                          │
 │  n8n ◄──► Feishu ◄──► Slack ◄──► Notion ◄──► NotebookLM    │
 ├─────────────────────────────────────────────────────────────┤
 │  Layer 5: 外部集成 (External Integrations)                   │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌───────┐ │
-│  │academic │ │ai-agent │ │gemini   │ │skill-   │ │note-  │ │
-│  │-forge   │ │-arch    │ │-cli     │ │creator  │ │bookLM │ │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └───────┘ │
+│  academic-forge │ ai-agent-arch │ gemini-cli │ skill-creator │
 ├─────────────────────────────────────────────────────────────┤
-│  Layer 4: 领域扩展 (Domain Extensions)                       │
-│  strategy/ │ research/ │ creative/ │ engineering/ │ ...    │
+│  Layer 4: 进化协议 (Evolution Protocol)  ⭐ v21.0 新增        │
+│  自我学习 │ 环境适应 │ 协作进化                               │
 ├─────────────────────────────────────────────────────────────┤
-│  Layer 3: 核心认知 (Core Cognition)                          │
+│  Layer 3: 统一触发层 (Unified Triggers)  ⭐ v21.0 新增        │
+│  显式命令 │ 语义匹配 │ 模式匹配 │ 上下文推理                   │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 2: Skills-n8n 协作层  ⭐ v21.0 新增                   │
+│  plan_and_execute │ trigger_and_process │ optimize_and_auto │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 1: 核心认知 (Core Cognition)                          │
 │  cognitive-architect │ knowledge-explorer │ brand-alchemist │
-├─────────────────────────────────────────────────────────────┤
-│  Layer 2: 系统服务 (System Services)                         │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐           │
-│  │Intent Router│ │Security Gate│ │Ext. Synapse │           │
-│  │ (意图路由)   │ │ (安全网关)   │ │ (外部突触)   │           │
-│  └─────────────┘ └─────────────┘ └─────────────┘           │
-├─────────────────────────────────────────────────────────────┤
-│  Layer 1: 第一性原理 (First Principles)                      │
-│  价值对齐 │ 计划先行 │ 验证闭环 │ 持续学习 │ 安全优先        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## v19.1 新增能力
+## v21.0 新增能力
 
 | 能力 | 说明 | 解决的问题 |
 |------|------|-----------|
-| **External Synapse** | 外部通信接口（Webhook入站/出站） | 封闭性悖论 |
-| **Egress Policy** | 出站安全策略（白名单+脱敏） | 安全开放接口 |
-| **Version Check** | 版本一致性校验 | 版本号差异 |
-| **NotebookLM** | 知识库查询集成 | 基于来源的可靠回答 |
+| **统一触发层** | 合并 skill_router + commands，统一入口 | 触发机制分散 |
+| **进化协议** | 自我学习、环境适应、协作进化 | 静态系统缺陷 |
+| **Skills-n8n 协作层** | 混合工作流架构（plan_and_execute 等） | 纯 AI/n8n 局限 |
+| **MCP 桥接协议** | Skills ↔ n8n 双向调用 | 集成能力不足 |
 
 ---
 
-## 第一性原理（v19.1增强）
+## 第一性原理（v21.0增强）
 
 | 原则 | 说明 | 来源 |
 |------|------|------|
@@ -103,12 +97,13 @@ interop_metadata:
 | 找skill/搜索技能 | skill-curator | 100% |
 | 分解任务/项目规划 | cognitive-architect | 100% |
 | NotebookLM/知识库/查文档 | notebooklm | 100% |
+| 剪视频/口播剪辑/加字幕 | videocut | 100% |
 
 **详细路由规则**：见 `router/intent-router.md`
 
 ---
 
-## 外部集成（6个）
+## 外部集成（7个）
 
 | Skill | 领域 | 触发词 | 位置 |
 |-------|------|--------|------|
@@ -118,6 +113,7 @@ interop_metadata:
 | **skill-creator-meta** | 元能力 | 创建skill/skill设计 | /mnt/skills/user/ |
 | **gemini-cli-integration** | 多模态 | gemini/视频分析/大文件 | /mnt/skills/user/ |
 | **notebooklm** | 知识检索 | NotebookLM/知识库/查文档 | integrations/ |
+| **videocut** | 视频剪辑 | 剪视频/口播剪辑/加字幕 | skills/videocut/ |
 
 **详细接口**：见 `integrations/_INDEX.md`
 
@@ -440,7 +436,10 @@ extensions:
 | v17 | 扁平结构，71技能 |
 | v18.0 | MECE模块化重构 |
 | v18.2 | 完整模块化，人格分层 |
-| **v18.3** | **融合官方skill设计智慧：质量锚点、反模式、调度逻辑、核心skill增强** |
+| v18.3 | 融合官方skill设计智慧：质量锚点、反模式、调度逻辑、核心skill增强 |
+| v19.0 | 操作系统架构版，引入Intent Router和Security Gateway |
+| v19.1 | 外部神经突触版，打通n8n集成，解决封闭性悖论 |
+| **v21.0** | **进化智能体系统：统一触发层、进化协议、Skills-n8n协作层、MCP桥接协议** |
 
 ---
 

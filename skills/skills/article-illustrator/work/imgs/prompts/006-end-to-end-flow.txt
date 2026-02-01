@@ -1,0 +1,55 @@
+Create a tech-style infographic illustration about End-to-End Illustration Workflow.
+
+Image Specifications:
+- Type: Infographic illustration
+- Orientation: Landscape
+- Aspect Ratio: 16:9
+- Style: Hand-drawn illustration
+
+Color Palette:
+- Primary: Deep blue (#0A1628)
+- Secondary: Violet (#6366F1)
+- Accents: Neon cyan (#00F0FF), Neon magenta (#FF006E)
+- Neutral: Dark gray (#1E293B), Light gray (#CBD5E1)
+
+Visual Elements:
+- Circuit board patterns
+- Data flow lines
+- Geometric shapes (hexagons, triangles)
+- Glowing effects
+- Grid background
+
+Composition:
+- Center-aligned, emphasizing symmetry
+- Multi-layered stacking
+- Strong sense of depth
+- Connection lines between elements
+
+Core Principles:
+- Maintain hand-drawn quality throughout, no photorealistic elements
+- For sensitive/copyrighted subjects, create stylistically similar alternatives
+- Keep information concise and highlight key concepts
+- Use generous negative space for visual scanning
+- Maintain clear visual hierarchy
+
+Topic Description:
+The complete end-to-end workflow showing the entire process from user input to final illustrated article.
+
+Visual Content to Include:
+- S-shaped or zigzag flow showing 8 steps (numbered):
+  1. User input: Terminal/command prompt icon, "用户输入命令"
+  2. Analyze: Magnifying glass over document, "读取并分析文章"
+  3. Select style: Palette with checkmark, "选择配图风格"
+  4. Plan: Document with bullet points, "生成配图方案"
+  5. Write prompts: Text document, "写入提示词文件"
+  6. Generate: AI brain with image icon, "逐张生成图片"
+  7. Insert: Document with image thumbnails being added, "插入图片到文章"
+  8. Output: Final document with illustrations, "输出图文并茂文章"
+- Each step in a hexagonal node
+- Neon arrows connecting steps in sequence
+- Circuit pattern lines flowing through the entire diagram
+- Steps 1-4 on top row, 5-8 on bottom row (or S-curve)
+- Final output (step 8) with brightest glow effect
+- Labels: "Fully Automated" and "One Command"
+
+Output as a high-quality image file.
