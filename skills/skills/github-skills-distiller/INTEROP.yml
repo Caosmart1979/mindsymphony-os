@@ -1,0 +1,167 @@
+apiVersion: mindsymphony.io/v1
+kind: SkillInterop
+metadata:
+  name: github-skills-distiller
+  displayName: "GitHub Skills Distiller"
+  description: "将整个GitHub压缩成你自己的超级技能库"
+  version: "1.0.0"
+  author: "MindSymphony Team"
+  layer: shu
+  category: ["knowledge", "development", "automation"]
+  tags:
+    - github
+    - skill
+    - distill
+    - knowledge-graph
+    - methodology
+    - best-practices
+
+spec:
+  # 执行配置
+  execution:
+    type: python_module
+    entryPoint: "mindsymphony.extensions.github_skills.skill_adapter"
+    mainClass: "GitHubSkillAdapter"
+    supportsAutonomous: true
+
+  # 触发配置
+  triggers:
+    keywords:
+      - "github"
+      - "skill"
+      - "distill"
+      - "extract"
+      - "methodology"
+      - "蒸馏"
+      - "技能"
+      - "提取"
+      - "方法论"
+      - "超级技能库"
+    patterns:
+      - "从github.*学习"
+      - "蒸馏.*技能"
+      - "构建.*技能库"
+      - "分析.*github"
+    intents:
+      - distill
+      - search
+      - generate
+      - profile
+      - recommend
+
+  # 能力声明
+  capabilities:
+    - name: github_repo_analysis
+      description: "分析GitHub仓库结构和方法论"
+      inputs: ["repo_url"]
+      outputs: ["analysis_result"]
+
+    - name: skill_distillation
+      description: "从GitHub提取结构化技能"
+      inputs: ["repo_url", "options"]
+      outputs: ["skill_content", "metadata"]
+
+    - name: knowledge_graph_mgmt
+      description: "管理技能知识图谱"
+      inputs: ["operation", "data"]
+      outputs: ["graph_state"]
+
+    - name: personal_dna_tracking
+      description: "追踪个人技能DNA和专长"
+      inputs: ["user_id", "activity"]
+      outputs: ["dna_profile", "expertise_report"]
+
+    - name: dynamic_skill_generation
+      description: "根据任务需求动态生成技能"
+      inputs: ["task_description", "context"]
+      outputs: ["generated_skill"]
+
+    - name: skill_recommendation
+      description: "推荐技能和学习路径"
+      inputs: ["user_profile", "target"]
+      outputs: ["recommendations"]
+
+  # 信息素协作配置
+  pheromone:
+    emits:
+      - type: intent
+        description: "执行意图"
+      - type: deliverable
+        description: "技能交付成果"
+      - type: insight
+        description: "知识洞察"
+      - type: evolution
+        description: "系统进化信号"
+    receives:
+      - type: request
+        description: "协作请求"
+        handler: "handle_collaboration_request"
+      - type: capability
+        description: "能力声明"
+        handler: "update_capability_map"
+
+  # 价值对齐配置
+  valueAlignment:
+    explicitIntentSupport: true
+    implicitIntentDetection: true
+    layerIdentification: true
+
+  # 协同进化配置
+  evolution:
+    feedbackEnabled: true
+    learningMode: continuous
+    adaptationRate: 0.1
+
+  # 安全配置
+  security:
+    fileSystemAccess: read_write  # 需要读写技能文件
+    networkAccess: optional       # GitHub API调用
+    sandboxed: false              # 需要访问本地存储
+    confirmationRequired:
+      - clear_graph
+      - bulk_delete
+
+  # 依赖配置
+  dependencies:
+    required:
+      - module: "mindsymphony.extensions.github_skills.github_skill_distiller"
+      - module: "mindsymphony.extensions.github_skills.skill_knowledge_graph"
+      - module: "mindsymphony.extensions.github_skills.skill_dna"
+      - module: "mindsymphony.extensions.github_skills.dynamic_skill_generator"
+    optional:
+      - module: "requests"
+        description: "用于GitHub API调用"
+      - module: "PyGithub"
+        description: "高级GitHub操作"
+
+  # 集成配置
+  integration:
+    mindsymphony:
+      version: ">=21.4"
+      router: "intent-router"
+      orchestrator: "cognitive-architect"
+    bmad:
+      compatible: true
+      workflow_integration: true
+
+  # 存储配置
+  storage:
+    local:
+      path: "~/.mindsymphony/github_skills"
+      files:
+        - "skill_graph.json"
+        - "dna/{user_id}/profile.json"
+        - "skills/*.md"
+        - "feedback.json"
+
+  # 性能配置
+  performance:
+    caching: true
+    cache_ttl: 3600
+    max_concurrent: 3
+
+  # 健康检查
+  healthCheck:
+    endpoint: "internal"
+    interval: 300
+    timeout: 30
