@@ -260,18 +260,39 @@ class WorkflowRouter:
         """
         路由用户请求到合适的工作流
 
+        执行流程:
+        1. 评估任务复杂度 (或使用强制路径)
+        2. 选择合适的工作流 (Quick/Full/Party)
+        3. 创建工作流执行实例
+        4. 返回执行计划
+
         Args:
             user_input: 用户描述的任务
             context: 可选的上下文信息
             force_path: 强制指定路径 ("quick", "full", "party")
 
         Returns:
-            包含工作流选择和执行计划的字典
+            包含工作流选择和执行计划的字典:
+            {
+                "execution_id": str,
+                "workflow_type": "quick" | "full" | "party",
+                "complexity_score": ComplexityScore,
+                "stages": [...],
+                "total_estimated_duration": int
+            }
+
+        Example:
+            >>> router = WorkflowRouter()
+            >>> result = router.route("fix typo")
+            >>> result["workflow_type"]
+            'quick'
         """
         context = context or {}
 
-        # 如果强制指定路径
+        # 步骤1: 确定工作流路径
+        # 方式A: 用户强制指定路径
         if force_path:
+            # 创建强制路径的复杂度评分
             path = WorkflowPath(force_path)
             complexity_score = ComplexityScore(
                 total_score=0, domain_score=0, scale_score=0, impact_score=0,
@@ -280,13 +301,14 @@ class WorkflowRouter:
                 reasoning=[f"用户强制指定 {force_path} 路径"]
             )
         else:
-            # 评估复杂度
+            # 方式B: 自动评估复杂度
             complexity_score = self.complexity_evaluator.evaluate(user_input, context)
             path = WorkflowPath(complexity_score.recommended_path)
 
+        # 步骤2: 获取选定工作流的定义
         workflow = self.workflows[path]
 
-        # 创建工作流执行实例
+        # 步骤3: 创建工作流执行实例
         execution_id = f"wf_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{id(user_input) % 10000}"
         execution = WorkflowExecution(
             workflow_id=execution_id,
@@ -303,10 +325,11 @@ class WorkflowRouter:
         )
         self.active_executions[execution_id] = execution
 
-        # 如果 Lightning 集成可用，记录事件
+        # 步骤4: 记录追踪数据 (如果 Lightning 可用)
         if self.lightning:
             self._emit_workflow_event("workflow_started", execution, complexity_score)
 
+        # 步骤5: 返回执行计划
         return {
             "execution_id": execution_id,
             "workflow_type": path.value,
