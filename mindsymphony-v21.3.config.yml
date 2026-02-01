@@ -1,0 +1,230 @@
+# MindSymphony v21.3 Configuration
+# BMAD Integration Edition - "Collaborative Evolution"
+
+system:
+  name: "MindSymphony"
+  version: "21.3.0"
+  codename: "BMAD Collaborative"
+
+  # 继承 v21.2 配置
+  extends: "mindsymphony-v21.2.config.yml"
+
+  # 新增 BMAD 集成层
+  layers:
+    - cognitive        # v21.0 认知层
+    - lightning        # v21.2 进化层
+    - bmad             # v21.3 协作层 ★
+
+# BMAD 集成配置
+bmad_integration:
+  enabled: true
+  version: "1.0.0"
+
+  # 复杂度评估引擎
+  complexity_evaluator:
+    enabled: true
+
+    # 阈值配置
+    thresholds:
+      quick_flow_max: 3      # 总分 <= 3 走 Quick Flow
+      full_flow_min: 4       # 总分 >= 4 走 Full Planning
+      party_mode_min: 6      # 总分 >= 6 建议 Party Mode
+
+    # 调整因子
+    adjustments:
+      user_explicit_simple: -1   # 用户说"简单"减1分
+      user_explicit_complex: +2  # 用户说"复杂"加2分
+      cross_domain: +1           # 跨领域加1分
+      low_history_success: +1    # 历史成功率低加1分
+
+  # 工作流路由
+  workflow_router:
+    enabled: true
+
+    # 路径配置
+    paths:
+      quick:
+        name: "快速流程"
+        description: "适合bug修复、小功能、文档更新"
+        max_stages: 4
+        estimated_duration: "< 15 min"
+
+      full:
+        name: "完整规划"
+        description: "适合产品功能、架构设计、复杂重构"
+        max_stages: 7
+        estimated_duration: "30+ min"
+
+      party:
+        name: "多Agent协作"
+        description: "适合超复杂任务、跨领域问题"
+        max_stages: 8
+        estimated_duration: "45+ min"
+
+  # Party Mode 配置
+  party_mode:
+    enabled: true
+
+    # 默认角色组合
+    default_roles:
+      - architect
+      - developer
+
+    # 可选角色
+    available_roles:
+      - architect
+      - developer
+      - tester
+      - designer
+      - product_manager
+      - devops
+      - security
+
+    # 阶段配置
+    phases:
+      understanding:
+        duration: 5
+        description: "需求理解 - 所有角色阅读并提出问题"
+
+      divergence:
+        duration: 8
+        description: "观点发散 - 提出不同解决方案"
+
+      convergence:
+        duration: 8
+        description: "观点收敛 - 讨论权衡，寻求共识"
+
+      synthesis:
+        duration: 5
+        description: "方案综合 - 形成统一计划"
+
+    # 自动触发条件
+    auto_trigger:
+      complexity_threshold: 6
+      cross_domain: true
+
+  # 快捷指令
+  quick_commands:
+    prefix: "/ms-"
+
+    commands:
+      quick:
+        syntax: "/ms-quick [描述] [--complexity=N]"
+        aliases: ["/fix", "/patch", "/docs"]
+        workflow: "quick"
+
+      deep:
+        syntax: "/ms-deep [描述] [--plan-only]"
+        aliases: ["/plan", "/arch", "/design"]
+        workflow: "full"
+
+      party:
+        syntax: "/ms-party [描述] [--roles=r1,r2]"
+        aliases: ["/collab", "/discuss"]
+        workflow: "party"
+
+      help:
+        syntax: "/ms-help [主题]"
+        aliases: ["/help", "/?"]
+
+      status:
+        syntax: "/ms-status"
+        aliases: ["/status"]
+
+      cancel:
+        syntax: "/ms-cancel [execution_id] [--all]"
+        aliases: ["/cancel", "/stop"]
+
+# Lightning Layer 集成
+lightning_integration:
+  # 追踪 BMAD 工作流
+  workflow_tracking:
+    enabled: true
+    events:
+      - workflow_started
+      - workflow_completed
+      - party_mode_initiated
+      - party_phase_completed
+      - agent_contribution
+
+  # 自适应学习
+  adaptive_learning:
+    enabled: true
+
+    # 阈值自动优化
+    threshold_optimization:
+      enabled: true
+      min_samples: 20
+      adjustment_delta: 0.5
+      target_success_rate: 0.85
+
+    # Party 配置优化
+    party_optimization:
+      enabled: true
+      track_role_combinations: true
+      recommend_best_roles: true
+
+  # APO 集成
+  apo_integration:
+    enabled: true
+
+    optimize_workflows:
+      - target: "quick_flow_prompt"
+        trigger_success_rate: 0.75
+        min_samples: 20
+
+      - target: "party_consensus_prompt"
+        trigger_conflict_time: 5  # 分钟
+        min_samples: 15
+
+# 与现有系统集成
+integrations:
+  # 意图路由器集成
+  intent_router:
+    bmad_enabled: true
+    complexity_check: true
+
+  # 蜂后调度器集成
+  queen_bee:
+    party_mode_support: true
+    multi_agent_coordination: true
+
+  # 技能系统集成
+  skills:
+    bmad_skills_available:
+      - complexity-evaluator
+      - workflow-router
+      - party-orchestrator
+      - consensus-synthesizer
+
+# 用户界面配置
+ui:
+  # 命令提示
+  command_hints:
+    on_start: true
+    suggest_on_ambiguous: true
+
+  # 进度展示
+  progress_display:
+    workflow_stages: true
+    party_phases: true
+    estimated_time: true
+
+  # 报告格式
+  reports:
+    complexity_summary: true
+    consensus_visualization: true
+    action_item_checklist: true
+
+# 性能优化
+performance:
+  # 复杂度评估缓存
+  complexity_cache:
+    enabled: true
+    ttl_seconds: 3600
+    max_entries: 1000
+
+  # 并行执行
+  parallel_execution:
+    party_mode: true
+    max_parallel_agents: 4
