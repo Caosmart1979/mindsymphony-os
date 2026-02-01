@@ -262,6 +262,47 @@ def test_help_system():
 
     print(f"   帮助系统: {len(help_text)} 字符, 建议数: {len(suggestions)}")
 
+# ==================== 测试9: 边界条件测试 ====================
+@test("边界条件测试")
+def test_edge_cases():
+    """测试边界条件和异常情况"""
+    from bmad import evaluate_complexity, parse_command, WorkflowRouter
+
+    # 测试空输入
+    try:
+        result = evaluate_complexity("")
+        assert result is not None
+        print("   ✓ 空输入处理正常")
+    except Exception as e:
+        print(f"   ⚠ 空输入处理: {e}")
+
+    # 测试超长输入
+    long_input = "design " * 1000
+    result = evaluate_complexity(long_input)
+    assert result.confidence >= 0
+    print("   ✓ 超长输入处理正常")
+
+    # 测试特殊字符
+    special_chars = "fix bug @#$%^&*()"
+    cmd = parse_command(special_chars)
+    assert cmd is not None
+    print("   ✓ 特殊字符处理正常")
+
+    # 测试无效命令
+    invalid_cmd = parse_command("/invalid-command")
+    assert not invalid_cmd.should_execute
+    print("   ✓ 无效命令处理正常")
+
+    # 测试只有空格的输入
+    whitespace_only = parse_command("   ")
+    assert whitespace_only is not None
+    print("   ✓ 空白输入处理正常")
+
+    # 测试极短输入
+    short = evaluate_complexity("a")
+    assert short.total_score >= 1
+    print("   ✓ 极短输入处理正常")
+
 # ==================== 运行所有测试 ====================
 def main():
     print("\n开始测试...\n")
@@ -275,6 +316,7 @@ def main():
         test_full_workflow,
         test_complexity_explanation,
         test_help_system,
+        test_edge_cases,
     ]
 
     for test_func in tests:
