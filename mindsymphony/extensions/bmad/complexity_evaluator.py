@@ -175,6 +175,16 @@ class ComplexityEvaluator:
         """
         评估用户输入的复杂度
 
+        执行三个维度的评估:
+        1. 领域评估 (Domain Evaluation) - 技术领域复杂度
+        2. 规模评估 (Scale Evaluation) - 代码量/文件数
+        3. 影响评估 (Impact Evaluation) - 变更影响范围
+
+        总分 = domain + scale + impact
+        - 1-3: Quick Flow
+        - 4-5: Full Planning
+        - 6+: Party Mode
+
         Args:
             user_input: 用户描述的任务
             context: 可选的上下文信息
@@ -184,6 +194,14 @@ class ComplexityEvaluator:
 
         Returns:
             ComplexityScore: 复杂度评分结果
+
+        Example:
+            >>> evaluator = ComplexityEvaluator()
+            >>> score = evaluator.evaluate("fix typo")
+            >>> score.total_score
+            3
+            >>> score.recommended_path
+            'quick'
         """
         context = context or {}
         reasoning = []
@@ -231,7 +249,21 @@ class ComplexityEvaluator:
         )
 
     def _evaluate_domain(self, user_input: str) -> Tuple[int, str]:
-        """评估领域复杂度"""
+        """
+        领域评估 (Domain Evaluation)
+
+        评估任务的技术领域复杂度，基于关键词匹配识别：
+        - SIMPLE: bugfix, docs, refactor (1分)
+        - MEDIUM: feature, api (3分)
+        - COMPLEX: architecture, service (5分)
+        - EXPERT: distributed, ai-model (8分)
+
+        Args:
+            user_input: 用户描述的任务
+
+        Returns:
+            (分数, 类型名称) 元组
+        """
         scores = {domain: 0 for domain in DomainComplexity}
         user_lower = user_input.lower()
 
@@ -257,7 +289,22 @@ class ComplexityEvaluator:
         return max_domain.value, max_domain.name.lower()
 
     def _evaluate_scale(self, user_input: str, context: Dict) -> Tuple[int, str]:
-        """评估规模复杂度"""
+        """
+        规模评估 (Scale Evaluation)
+
+        评估任务的代码规模复杂度，基于：
+        - TINY: <50 lines (1分)
+        - SMALL: 50-200 lines (2分)
+        - MEDIUM: 200-1000 lines (4分)
+        - LARGE: 1000+ lines (7分)
+
+        Args:
+            user_input: 用户描述的任务
+            context: 上下文信息（可能包含代码库统计）
+
+        Returns:
+            (分数, 类型名称) 元组
+        """
         user_lower = user_input.lower()
 
         # 检查是否是极小规模任务
@@ -293,7 +340,22 @@ class ComplexityEvaluator:
         return ScaleComplexity.SMALL.value, "small"
 
     def _evaluate_impact(self, user_input: str, context: Dict) -> Tuple[int, str]:
-        """评估影响范围"""
+        """
+        影响评估 (Impact Evaluation)
+
+        评估任务的影响范围，基于：
+        - ISOLATED: 单一模块 (1分)
+        - MODULE: 多个模块 (3分)
+        - CROSS_TEAM: 跨团队 (5分)
+        - BREAKING: 破坏性变更 (7分)
+
+        Args:
+            user_input: 用户描述的任务
+            context: 上下文信息
+
+        Returns:
+            (分数, 类型名称) 元组
+        """
         user_lower = user_input.lower()
         scores = {impact: 0 for impact in ImpactScope}
 
