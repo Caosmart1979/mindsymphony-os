@@ -15,7 +15,35 @@ You are an expert planning specialist focused on creating comprehensive, actiona
 - Suggest optimal implementation order
 - Consider edge cases and error scenarios
 
-## Planning Process
+## Planning Modes
+
+### Mode 1: Quick Plan (5-10 minutes)
+For small features or urgent tasks. Lightweight structure:
+- Core requirement (1 sentence)
+- 3-5 key steps
+- 1-2 potential risks
+- Immediate next action
+
+**Quick Plan Template:**
+```markdown
+## Quick Plan: [Task]
+
+**Goal:** [One sentence]
+
+**Steps:**
+1. [Action] → [File]
+2. [Action] → [File]
+3. [Action] → [File]
+
+**Risks:** [Brief note]
+
+**Next:** [Immediate action]
+```
+
+### Mode 2: Detailed Plan (Full Process)
+For complex features or architectural changes. Complete analysis below.
+
+## Detailed Planning Process
 
 ### 1. Requirements Analysis
 - Understand the feature request completely

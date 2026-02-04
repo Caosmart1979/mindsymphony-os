@@ -482,6 +482,153 @@ Before ANY production deployment:
 - [ ] **File Uploads**: Validated (size, type)
 - [ ] **Wallet Signatures**: Verified (if blockchain)
 
+## Security Best Practices (from OpenAI Skills)
+
+### Secure Coding Principles
+
+#### 1. Defense in Depth
+Apply multiple layers of security:
+- Input validation at API boundary
+- Database-level constraints (RLS)
+- Output encoding
+- Content Security Policy
+
+#### 2. Least Privilege
+- Grant minimum permissions required
+- Use service accounts with limited scope
+- Separate read/write credentials
+- Rotate credentials regularly
+
+#### 3. Fail Securely
+```typescript
+// ❌ WRONG: Error exposes internal state
+catch (error) {
+  return { error: error.stack }
+}
+
+// ✅ CORRECT: Generic error, log details internally
+catch (error) {
+  logger.error('Operation failed', { error, userId })
+  return { error: 'Operation failed' }
+}
+```
+
+#### 4. Never Trust Input
+- Validate all external data
+- Sanitize user-generated content
+- Verify webhook signatures
+- Check file types, not just extensions
+
+### Security Checklist by Layer
+
+#### Application Layer
+- [ ] All API endpoints authenticated (unless public)
+- [ ] Input validation on every parameter
+- [ ] Rate limiting per user/IP
+- [ ] CORS properly configured
+- [ ] Security headers set (CSP, HSTS, X-Frame-Options)
+
+#### Data Layer
+- [ ] Database connections use TLS
+- [ ] Sensitive data encrypted at rest
+- [ ] Backups encrypted
+- [ ] No PII in logs
+- [ ] Query parameterization enforced
+
+#### Infrastructure Layer
+- [ ] HTTPS only (HSTS enabled)
+- [ ] Secrets in environment variables
+- [ ] Container images scanned for vulnerabilities
+- [ ] Network policies restrict traffic
+- [ ] DDoS protection enabled
+
+## Threat Modeling (STRIDE)
+
+Use STRIDE framework to identify threats:
+
+### S - Spoofing Identity
+**Threat:** Attacker impersonates legitimate user
+**Mitigation:**
+- Strong authentication (MFA)
+- Session management
+- JWT token validation
+
+### T - Tampering
+**Threat:** Attacker modifies data in transit or at rest
+**Mitigation:**
+- HTTPS/TLS for all communications
+- Request signing for webhooks
+- Database integrity constraints
+
+### R - Repudiation
+**Threat:** Attacker denies performing an action
+**Mitigation:**
+- Audit logging
+- Digital signatures
+- Immutable logs
+
+### I - Information Disclosure
+**Threat:** Sensitive data exposed to unauthorized parties
+**Mitigation:**
+- Encryption at rest and in transit
+- Access controls
+- Error message sanitization
+
+### D - Denial of Service
+**Threat:** Attacker makes system unavailable
+**Mitigation:**
+- Rate limiting
+- Resource quotas
+- DDoS protection
+- Circuit breakers
+
+### E - Elevation of Privilege
+**Threat:** Attacker gains unauthorized permissions
+**Mitigation:**
+- Authorization checks on every request
+- Role-based access control (RBAC)
+- Principle of least privilege
+- Regular permission audits
+
+### Threat Modeling Workflow
+```
+1. Identify assets (data, systems, capabilities)
+2. Create data flow diagram
+3. Apply STRIDE to each component
+4. Rate threats (Critical/High/Medium/Low)
+5. Design mitigations
+6. Verify mitigations implemented
+```
+
+### Example Threat Model: API Endpoint
+
+```markdown
+## Threat Model: POST /api/transactions
+
+### Assets
+- User financial data
+- Transaction records
+- Wallet private keys
+
+### Threats
+
+#### [CRITICAL] Spoofing - Unauthorized transaction
+- **Attack:** Attacker uses stolen session token
+- **Mitigation:** Validate wallet signature for every transaction
+
+#### [HIGH] Tampering - Modify transaction amount
+- **Attack:** MITM modifies request payload
+- **Mitigation:** HTTPS + request signing
+
+#### [HIGH] Elevation - Access other user's transactions
+- **Attack:** Change user_id parameter
+- **Mitigation:** Verify authorization server-side
+
+#### [MEDIUM] DoS - Flood with invalid transactions
+- **Attack:** Bot submits thousands of requests
+- **Mitigation:** Rate limiting + CAPTCHA
+```
+
 ## Resources
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)

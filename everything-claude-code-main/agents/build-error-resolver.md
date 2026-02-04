@@ -466,6 +466,81 @@ Parameter 'market' implicitly has an 'any' type.
 - Tests failing (use tdd-guide)
 - Security issues found (use security-reviewer)
 
+## CI/CD Integration
+
+When fixing CI failures (GitHub Actions, etc.):
+
+### CI Error Analysis Workflow
+```
+1. Fetch CI logs and error output
+2. Identify error category:
+   - Build errors (TypeScript, webpack, etc.)
+   - Test failures
+   - Lint/formatting errors
+   - Dependency issues
+   - Environment/configuration errors
+3. Reproduce locally if possible
+4. Apply minimal fix
+5. Verify fix resolves CI issue
+```
+
+### CI-Specific Error Patterns
+
+**Pattern: GitHub Actions Environment**
+```yaml
+# ❌ ERROR: Environment variable not available in CI
+const apiKey = process.env.API_KEY // undefined in CI
+
+# ✅ FIX: Provide fallback for CI environment
+const apiKey = process.env.API_KEY || 'ci-test-key'
+```
+
+**Pattern: Path Resolution in CI**
+```typescript
+// ❌ ERROR: Relative path fails in CI
+import { utils } from './src/lib/utils'
+
+// ✅ FIX: Use project-root relative paths
+import { utils } from '@/lib/utils'
+```
+
+**Pattern: CI-Specific Build Configuration**
+```json
+// tsconfig.json - CI may need different settings
+{
+  "compilerOptions": {
+    "skipLibCheck": true, // Often needed in CI
+    "noEmit": true        // Type checking only
+  }
+}
+```
+
+### CI Fix Report Format
+```markdown
+# CI Error Resolution Report
+
+**CI System:** GitHub Actions / GitLab CI / etc.
+**Workflow:** build-and-test.yml
+**Failed Job:** build / test / lint
+
+## Error Analysis
+**Category:** Build / Test / Lint / Dependency
+**Root Cause:** [Description]
+
+## Fix Applied
+```diff
+[Show minimal diff]
+```
+
+## Verification
+- [ ] ✅ Local reproduction successful
+- [ ] ✅ Fix resolves local error
+- [ ] ✅ CI build passes
+- [ ] ✅ No new errors introduced
+
+## Lines Changed: X
+```
+
 ## Build Error Priority Levels
 
 ### 🔴 CRITICAL (Fix Immediately)
@@ -473,12 +548,14 @@ Parameter 'market' implicitly has an 'any' type.
 - No development server
 - Production deployment blocked
 - Multiple files failing
+- **CI/CD pipeline blocked**
 
 ### 🟡 HIGH (Fix Soon)
 - Single file failing
 - Type errors in new code
 - Import errors
 - Non-critical build warnings
+- **PR checks failing**
 
 ### 🟢 MEDIUM (Fix When Possible)
 - Linter warnings
